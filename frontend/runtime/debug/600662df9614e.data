@@ -1,0 +1,561 @@
+a:14:{s:6:"config";s:1779:"a:5:{s:10:"phpVersion";s:6:"7.3.24";s:10:"yiiVersion";s:8:"2.0.39.3";s:11:"application";a:8:{s:3:"yii";s:8:"2.0.39.3";s:4:"name";s:14:"My Application";s:7:"version";s:3:"1.0";s:8:"language";s:5:"en-US";s:14:"sourceLanguage";s:5:"en-US";s:7:"charset";s:5:"UTF-8";s:3:"env";s:3:"dev";s:5:"debug";b:1;}s:3:"php";a:5:{s:7:"version";s:6:"7.3.24";s:6:"xdebug";b:0;s:3:"apc";b:0;s:8:"memcache";b:0;s:9:"memcached";b:0;}s:10:"extensions";a:7:{s:22:"yiisoft/yii2-bootstrap";a:3:{s:4:"name";s:22:"yiisoft/yii2-bootstrap";s:7:"version";s:8:"2.0.10.0";s:5:"alias";a:1:{s:14:"@yii/bootstrap";s:49:"D:\website\web2\vendor/yiisoft/yii2-bootstrap/src";}}s:16:"yiisoft/yii2-gii";a:3:{s:4:"name";s:16:"yiisoft/yii2-gii";s:7:"version";s:7:"2.1.4.0";s:5:"alias";a:1:{s:8:"@yii/gii";s:43:"D:\website\web2\vendor/yiisoft/yii2-gii/src";}}s:24:"yiisoft/yii2-swiftmailer";a:3:{s:4:"name";s:24:"yiisoft/yii2-swiftmailer";s:7:"version";s:7:"2.1.2.0";s:5:"alias";a:1:{s:16:"@yii/swiftmailer";s:51:"D:\website\web2\vendor/yiisoft/yii2-swiftmailer/src";}}s:23:"yiisoft/yii2-bootstrap4";a:3:{s:4:"name";s:23:"yiisoft/yii2-bootstrap4";s:7:"version";s:7:"2.0.9.0";s:5:"alias";a:1:{s:15:"@yii/bootstrap4";s:50:"D:\website\web2\vendor/yiisoft/yii2-bootstrap4/src";}}s:18:"yiisoft/yii2-debug";a:3:{s:4:"name";s:18:"yiisoft/yii2-debug";s:7:"version";s:8:"2.1.15.0";s:5:"alias";a:1:{s:10:"@yii/debug";s:45:"D:\website\web2\vendor/yiisoft/yii2-debug/src";}}s:18:"yiisoft/yii2-faker";a:3:{s:4:"name";s:18:"yiisoft/yii2-faker";s:7:"version";s:7:"2.0.5.0";s:5:"alias";a:1:{s:10:"@yii/faker";s:45:"D:\website\web2\vendor/yiisoft/yii2-faker/src";}}s:16:"yiisoft/yii2-jui";a:3:{s:4:"name";s:16:"yiisoft/yii2-jui";s:7:"version";s:7:"2.0.7.0";s:5:"alias";a:1:{s:8:"@yii/jui";s:39:"D:\website\web2\vendor/yiisoft/yii2-jui";}}}}";s:7:"request";s:7651:"a:15:{s:7:"flashes";a:0:{}s:10:"statusCode";i:200;s:14:"requestHeaders";a:13:{s:12:"content-type";s:0:"";s:14:"content-length";s:1:"0";s:14:"x-original-url";s:56:"/oude/detail-for-one-semester?mssv=32163013VT2&hk=tn_193";s:16:"x-requested-with";s:14:"XMLHttpRequest";s:12:"x-csrf-token";s:88:"tlsKnd8OKKwca_LHVjMn9TbXeqnrpYj69IeOIP40RMj8CUPfs1Qez2ofkI8lWXOCB7UKhNnQwaiM_uwUyXY2vw==";s:10:"user-agent";s:115:"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.141 Safari/537.36";s:7:"referer";s:28:"http://duy.yiifrontend/oude/";s:4:"host";s:15:"duy.yiifrontend";s:6:"cookie";s:237:"advanced-frontend=npf2nipqc6h546768r7g5i8il8; _csrf-frontend=fec325763a26fa3217c6f4ca810a03a46986184286b0c43ba7ad9b761c1c53a8a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22JRIBlZ6cvtbHsjTw1bp-2uIRxyb47Brw%22%3B%7D";s:15:"accept-language";s:56:"vi-VN,vi;q=0.9,fr-FR;q=0.8,fr;q=0.7,en-US;q=0.6,en;q=0.5";s:15:"accept-encoding";s:13:"gzip, deflate";s:6:"accept";s:46:"application/json, text/javascript, */*; q=0.01";s:10:"connection";s:10:"keep-alive";}s:15:"responseHeaders";a:8:{s:12:"X-Powered-By";s:10:"PHP/7.3.24";s:7:"Expires";s:29:"Thu, 19 Nov 1981 08:52:00 GMT";s:13:"Cache-Control";s:35:"no-store, no-cache, must-revalidate";s:6:"Pragma";s:8:"no-cache";s:12:"Content-Type";s:31:"application/json; charset=UTF-8";s:11:"X-Debug-Tag";s:13:"600662df9614e";s:16:"X-Debug-Duration";s:3:"123";s:12:"X-Debug-Link";s:37:"/debug/default/view?tag=600662df9614e";}s:5:"route";s:28:"oude/detail-for-one-semester";s:6:"action";s:65:"frontend\controllers\OudeController::actionDetailForOneSemester()";s:12:"actionParams";a:2:{s:4:"mssv";s:11:"32163013VT2";s:2:"hk";s:6:"tn_193";}s:7:"general";a:5:{s:6:"method";s:3:"GET";s:6:"isAjax";b:1;s:6:"isPjax";b:0;s:7:"isFlash";b:0;s:18:"isSecureConnection";b:0;}s:11:"requestBody";a:0:{}s:6:"SERVER";a:98:{s:13:"_FCGI_X_PIPE_";s:53:"\\.\pipe\IISFCGI-9e6b84a9-e7cc-46e9-b92e-a3259aa1fe18";s:21:"PHP_FCGI_MAX_REQUESTS";s:3:"200";s:5:"PHPRC";s:18:"D:\PHP\php_7_3_24\";s:15:"ALLUSERSPROFILE";s:14:"C:\ProgramData";s:7:"APPDATA";s:56:"C:\Windows\system32\config\systemprofile\AppData\Roaming";s:15:"APP_POOL_CONFIG";s:55:"C:\inetpub\temp\apppools\yiifrontend\yiifrontend.config";s:11:"APP_POOL_ID";s:11:"yiifrontend";s:18:"CommonProgramFiles";s:29:"C:\Program Files\Common Files";s:23:"CommonProgramFiles(x86)";s:35:"C:\Program Files (x86)\Common Files";s:18:"CommonProgramW6432";s:29:"C:\Program Files\Common Files";s:12:"COMPUTERNAME";s:10:"DUYNK-CFDE";s:7:"ComSpec";s:27:"C:\Windows\system32\cmd.exe";s:10:"DriverData";s:38:"C:\Windows\System32\Drivers\DriverData";s:12:"LOCALAPPDATA";s:54:"C:\Windows\system32\config\systemprofile\AppData\Local";s:20:"NUMBER_OF_PROCESSORS";s:1:"2";s:2:"OS";s:10:"Windows_NT";s:4:"Path";s:411:"C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;D:\PHP\php_7_3_24;C:\ProgramData\ComposerSetup\bin;C:\Program Files\Git\cmd;C:\Program Files\dotnet\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files\Microsoft\Web Platform Installer\;C:\Windows\system32\config\systemprofile\AppData\Local\Microsoft\WindowsApps";s:7:"PATHEXT";s:53:".COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC";s:22:"PROCESSOR_ARCHITECTURE";s:5:"AMD64";s:20:"PROCESSOR_IDENTIFIER";s:51:"Intel64 Family 6 Model 23 Stepping 10, GenuineIntel";s:15:"PROCESSOR_LEVEL";s:1:"6";s:18:"PROCESSOR_REVISION";s:4:"170a";s:11:"ProgramData";s:14:"C:\ProgramData";s:12:"ProgramFiles";s:16:"C:\Program Files";s:17:"ProgramFiles(x86)";s:22:"C:\Program Files (x86)";s:12:"ProgramW6432";s:16:"C:\Program Files";s:12:"PSModulePath";s:93:"C:\Program Files\WindowsPowerShell\Modules;C:\Windows\system32\WindowsPowerShell\v1.0\Modules";s:6:"PUBLIC";s:15:"C:\Users\Public";s:11:"SystemDrive";s:2:"C:";s:10:"SystemRoot";s:10:"C:\Windows";s:4:"TEMP";s:15:"C:\Windows\TEMP";s:3:"TMP";s:15:"C:\Windows\TEMP";s:10:"USERDOMAIN";s:9:"WORKGROUP";s:8:"USERNAME";s:11:"DUYNK-CFDE$";s:11:"USERPROFILE";s:40:"C:\Windows\system32\config\systemprofile";s:17:"VS150COMCOMNTOOLS";s:76:"C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\Tools\";s:6:"windir";s:10:"C:\Windows";s:14:"ORIG_PATH_INFO";s:10:"/index.php";s:3:"URL";s:10:"/index.php";s:15:"SERVER_SOFTWARE";s:18:"Microsoft-IIS/10.0";s:15:"SERVER_PROTOCOL";s:8:"HTTP/1.1";s:18:"SERVER_PORT_SECURE";s:1:"0";s:11:"SERVER_PORT";s:2:"80";s:11:"SERVER_NAME";s:15:"duy.yiifrontend";s:11:"SCRIPT_NAME";s:10:"/index.php";s:15:"SCRIPT_FILENAME";s:38:"D:\website\web2\frontend\web\index.php";s:11:"REQUEST_URI";s:56:"/oude/detail-for-one-semester?mssv=32163013VT2&hk=tn_193";s:14:"REQUEST_METHOD";s:3:"GET";s:11:"REMOTE_USER";s:0:"";s:11:"REMOTE_PORT";s:5:"65110";s:11:"REMOTE_HOST";s:9:"127.0.0.1";s:11:"REMOTE_ADDR";s:9:"127.0.0.1";s:12:"QUERY_STRING";s:26:"mssv=32163013VT2&hk=tn_193";s:15:"PATH_TRANSLATED";s:38:"D:\website\web2\frontend\web\index.php";s:10:"LOGON_USER";s:0:"";s:10:"LOCAL_ADDR";s:9:"127.0.0.1";s:18:"INSTANCE_META_PATH";s:11:"/LM/W3SVC/2";s:13:"INSTANCE_NAME";s:11:"YIIFRONTEND";s:11:"INSTANCE_ID";s:1:"2";s:20:"HTTPS_SERVER_SUBJECT";s:0:"";s:19:"HTTPS_SERVER_ISSUER";s:0:"";s:19:"HTTPS_SECRETKEYSIZE";s:0:"";s:13:"HTTPS_KEYSIZE";s:0:"";s:5:"HTTPS";s:3:"off";s:17:"GATEWAY_INTERFACE";s:7:"CGI/1.1";s:13:"DOCUMENT_ROOT";s:28:"D:\website\web2\frontend\web";s:12:"CONTENT_TYPE";s:0:"";s:14:"CONTENT_LENGTH";s:1:"0";s:12:"CERT_SUBJECT";s:0:"";s:17:"CERT_SERIALNUMBER";s:0:"";s:11:"CERT_ISSUER";s:0:"";s:10:"CERT_FLAGS";s:0:"";s:11:"CERT_COOKIE";s:0:"";s:9:"AUTH_USER";s:0:"";s:13:"AUTH_PASSWORD";s:0:"";s:9:"AUTH_TYPE";s:0:"";s:18:"APPL_PHYSICAL_PATH";s:29:"D:\website\web2\frontend\web\";s:12:"APPL_MD_PATH";s:16:"/LM/W3SVC/2/ROOT";s:20:"IIS_UrlRewriteModule";s:13:"7,1,1993,2351";s:17:"WEBSOCKET_VERSION";s:2:"13";s:13:"UNENCODED_URL";s:56:"/oude/detail-for-one-semester?mssv=32163013VT2&hk=tn_193";s:19:"IIS_WasUrlRewritten";s:1:"1";s:19:"HTTP_X_ORIGINAL_URL";s:56:"/oude/detail-for-one-semester?mssv=32163013VT2&hk=tn_193";s:21:"HTTP_X_REQUESTED_WITH";s:14:"XMLHttpRequest";s:17:"HTTP_X_CSRF_TOKEN";s:88:"tlsKnd8OKKwca_LHVjMn9TbXeqnrpYj69IeOIP40RMj8CUPfs1Qez2ofkI8lWXOCB7UKhNnQwaiM_uwUyXY2vw==";s:15:"HTTP_USER_AGENT";s:115:"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.141 Safari/537.36";s:12:"HTTP_REFERER";s:28:"http://duy.yiifrontend/oude/";s:9:"HTTP_HOST";s:15:"duy.yiifrontend";s:11:"HTTP_COOKIE";s:237:"advanced-frontend=npf2nipqc6h546768r7g5i8il8; _csrf-frontend=fec325763a26fa3217c6f4ca810a03a46986184286b0c43ba7ad9b761c1c53a8a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22JRIBlZ6cvtbHsjTw1bp-2uIRxyb47Brw%22%3B%7D";s:20:"HTTP_ACCEPT_LANGUAGE";s:56:"vi-VN,vi;q=0.9,fr-FR;q=0.8,fr;q=0.7,en-US;q=0.6,en;q=0.5";s:20:"HTTP_ACCEPT_ENCODING";s:13:"gzip, deflate";s:11:"HTTP_ACCEPT";s:46:"application/json, text/javascript, */*; q=0.01";s:19:"HTTP_CONTENT_LENGTH";s:1:"0";s:15:"HTTP_CONNECTION";s:10:"keep-alive";s:9:"FCGI_ROLE";s:9:"RESPONDER";s:8:"PHP_SELF";s:10:"/index.php";s:18:"REQUEST_TIME_FLOAT";d:1611031263.566567;s:12:"REQUEST_TIME";i:1611031263;}s:3:"GET";a:2:{s:4:"mssv";s:11:"32163013VT2";s:2:"hk";s:6:"tn_193";}s:4:"POST";a:0:{}s:6:"COOKIE";a:2:{s:17:"advanced-frontend";s:26:"npf2nipqc6h546768r7g5i8il8";s:14:"_csrf-frontend";s:140:"fec325763a26fa3217c6f4ca810a03a46986184286b0c43ba7ad9b761c1c53a8a:2:{i:0;s:14:"_csrf-frontend";i:1;s:32:"JRIBlZ6cvtbHsjTw1bp-2uIRxyb47Brw";}";}s:5:"FILES";a:0:{}s:7:"SESSION";a:3:{s:7:"__flash";a:0:{}s:22:"__captcha/site/captcha";s:6:"gppibh";s:27:"__captcha/site/captchacount";i:1;}}";s:6:"router";s:1291:"a:3:{s:8:"messages";a:6:{i:6;a:6:{i:0;a:3:{s:4:"rule";s:3:"gii";s:5:"match";b:0;s:6:"parent";N;}i:1;i:8;i:2;s:32:"yii\web\UrlManager::parseRequest";i:3;d:1611031263.622163;i:4;a:0:{}i:5;i:4260376;}i:7;a:6:{i:0;a:3:{s:4:"rule";s:12:"gii/<id:\w+>";s:5:"match";b:0;s:6:"parent";N;}i:1;i:8;i:2;s:32:"yii\web\UrlManager::parseRequest";i:3;d:1611031263.62218;i:4;a:0:{}i:5;i:4261128;}i:8;a:6:{i:0;a:3:{s:4:"rule";s:41:"gii/<controller:[\w\-]+>/<action:[\w\-]+>";s:5:"match";b:0;s:6:"parent";N;}i:1;i:8;i:2;s:32:"yii\web\UrlManager::parseRequest";i:3;d:1611031263.622189;i:4;a:0:{}i:5;i:4261880;}i:9;a:6:{i:0;a:3:{s:4:"rule";s:5:"debug";s:5:"match";b:0;s:6:"parent";N;}i:1;i:8;i:2;s:32:"yii\web\UrlManager::parseRequest";i:3;d:1611031263.622198;i:4;a:0:{}i:5;i:4262952;}i:10;a:6:{i:0;a:3:{s:4:"rule";s:43:"debug/<controller:[\w\-]+>/<action:[\w\-]+>";s:5:"match";b:0;s:6:"parent";N;}i:1;i:8;i:2;s:32:"yii\web\UrlManager::parseRequest";i:3;d:1611031263.622207;i:4;a:0:{}i:5;i:4263704;}i:11;a:6:{i:0;s:55:"No matching URL rules. Using default URL parsing logic.";i:1;i:8;i:2;s:32:"yii\web\UrlManager::parseRequest";i:3;d:1611031263.622212;i:4;a:0:{}i:5;i:4264080;}}s:5:"route";s:28:"oude/detail-for-one-semester";s:6:"action";s:65:"frontend\controllers\OudeController::actionDetailForOneSemester()";}";s:3:"log";s:16005:"a:1:{s:8:"messages";a:34:{i:0;a:6:{i:0;s:33:"Bootstrap with yii\log\Dispatcher";i:1;i:8;i:2;s:31:"yii\base\Application::bootstrap";i:3;d:1611031263.59374;i:4;a:0:{}i:5;i:2397320;}i:1;a:6:{i:0;s:21:"Loading module: debug";i:1;i:8;i:2;s:26:"yii\base\Module::getModule";i:3;d:1611031263.593769;i:4;a:0:{}i:5;i:2398496;}i:2;a:6:{i:0;s:15:"Session started";i:1;i:4;i:2;s:21:"yii\web\Session::open";i:3;d:1611031263.610719;i:4;a:0:{}i:5;i:3373408;}i:3;a:6:{i:0;s:44:"Bootstrap with yii\debug\Module::bootstrap()";i:1;i:8;i:2;s:31:"yii\base\Application::bootstrap";i:3;d:1611031263.614207;i:4;a:0:{}i:5;i:3550456;}i:4;a:6:{i:0;s:19:"Loading module: gii";i:1;i:8;i:2;s:26:"yii\base\Module::getModule";i:3;d:1611031263.619387;i:4;a:0:{}i:5;i:4078432;}i:5;a:6:{i:0;s:42:"Bootstrap with yii\gii\Module::bootstrap()";i:1;i:8;i:2;s:31:"yii\base\Application::bootstrap";i:3;d:1611031263.619834;i:4;a:0:{}i:5;i:4102368;}i:12;a:6:{i:0;s:47:"Route requested: 'oude/detail-for-one-semester'";i:1;i:8;i:2;s:34:"yii\web\Application::handleRequest";i:3;d:1611031263.622222;i:4;a:0:{}i:5;i:4264160;}i:13;a:6:{i:0;s:42:"Route to run: oude/detail-for-one-semester";i:1;i:8;i:2;s:30:"yii\base\Controller::runAction";i:3;d:1611031263.626494;i:4;a:0:{}i:5;i:4410408;}i:14;a:6:{i:0;s:81:"Running action: frontend\controllers\OudeController::actionDetailForOneSemester()";i:1;i:8;i:2;s:36:"yii\base\InlineAction::runWithParams";i:3;d:1611031263.626989;i:4;a:0:{}i:5;i:4418968;}i:15;a:6:{i:0;s:63:"Opening DB connection: mysql:host=localhost;dbname=graduationdb";i:1;i:4;i:2;s:23:"yii\db\Connection::open";i:3;d:1611031263.646142;i:4;a:1:{i:0;a:5:{s:4:"file";s:55:"D:\website\web2\frontend\controllers\OudeController.php";s:4:"line";i:78;s:8:"function";s:3:"one";s:5:"class";s:18:"yii\db\ActiveQuery";s:4:"type";s:2:"->";}}i:5;i:5829440;}i:18;a:6:{i:0;s:106:"SELECT * FROM `tb_sv_hk` WHERE (`tb_sv_hk`.`mssv`='32163013VT2') AND (`tb_sv_hk`.`ma_hk`='tn_193') LIMIT 1";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1611031263.650817;i:4;a:1:{i:0;a:5:{s:4:"file";s:55:"D:\website\web2\frontend\controllers\OudeController.php";s:4:"line";i:78;s:8:"function";s:3:"one";s:5:"class";s:18:"yii\db\ActiveQuery";s:4:"type";s:2:"->";}}i:5;i:6021304;}i:21;a:6:{i:0;s:33:"SHOW FULL COLUMNS FROM `tb_sv_hk`";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1611031263.652693;i:4;a:1:{i:0;a:5:{s:4:"file";s:55:"D:\website\web2\frontend\controllers\OudeController.php";s:4:"line";i:78;s:8:"function";s:3:"one";s:5:"class";s:18:"yii\db\ActiveQuery";s:4:"type";s:2:"->";}}i:5;i:6035768;}i:24;a:6:{i:0;s:772:"SELECT
+    `kcu`.`CONSTRAINT_NAME` AS `constraint_name`,
+    `kcu`.`COLUMN_NAME` AS `column_name`,
+    `kcu`.`REFERENCED_TABLE_NAME` AS `referenced_table_name`,
+    `kcu`.`REFERENCED_COLUMN_NAME` AS `referenced_column_name`
+FROM `information_schema`.`REFERENTIAL_CONSTRAINTS` AS `rc`
+JOIN `information_schema`.`KEY_COLUMN_USAGE` AS `kcu` ON
+    (
+        `kcu`.`CONSTRAINT_CATALOG` = `rc`.`CONSTRAINT_CATALOG` OR
+        (`kcu`.`CONSTRAINT_CATALOG` IS NULL AND `rc`.`CONSTRAINT_CATALOG` IS NULL)
+    ) AND
+    `kcu`.`CONSTRAINT_SCHEMA` = `rc`.`CONSTRAINT_SCHEMA` AND
+    `kcu`.`CONSTRAINT_NAME` = `rc`.`CONSTRAINT_NAME`
+WHERE `rc`.`CONSTRAINT_SCHEMA` = database() AND `kcu`.`TABLE_SCHEMA` = database()
+AND `rc`.`TABLE_NAME` = 'tb_sv_hk' AND `kcu`.`TABLE_NAME` = 'tb_sv_hk'";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1611031263.655784;i:4;a:1:{i:0;a:5:{s:4:"file";s:55:"D:\website\web2\frontend\controllers\OudeController.php";s:4:"line";i:78;s:8:"function";s:3:"one";s:5:"class";s:18:"yii\db\ActiveQuery";s:4:"type";s:2:"->";}}i:5;i:6073328;}i:27;a:6:{i:0;s:55:"SELECT * FROM `tb_sinh_vien` WHERE `mssv`='32163013VT2'";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1611031263.660522;i:4;a:1:{i:0;a:5:{s:4:"file";s:55:"D:\website\web2\frontend\controllers\OudeController.php";s:4:"line";i:82;s:8:"function";s:5:"__get";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"->";}}i:5;i:6140360;}i:30;a:6:{i:0;s:37:"SHOW FULL COLUMNS FROM `tb_sinh_vien`";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1611031263.661258;i:4;a:1:{i:0;a:5:{s:4:"file";s:55:"D:\website\web2\frontend\controllers\OudeController.php";s:4:"line";i:82;s:8:"function";s:5:"__get";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"->";}}i:5;i:6148416;}i:33;a:6:{i:0;s:780:"SELECT
+    `kcu`.`CONSTRAINT_NAME` AS `constraint_name`,
+    `kcu`.`COLUMN_NAME` AS `column_name`,
+    `kcu`.`REFERENCED_TABLE_NAME` AS `referenced_table_name`,
+    `kcu`.`REFERENCED_COLUMN_NAME` AS `referenced_column_name`
+FROM `information_schema`.`REFERENTIAL_CONSTRAINTS` AS `rc`
+JOIN `information_schema`.`KEY_COLUMN_USAGE` AS `kcu` ON
+    (
+        `kcu`.`CONSTRAINT_CATALOG` = `rc`.`CONSTRAINT_CATALOG` OR
+        (`kcu`.`CONSTRAINT_CATALOG` IS NULL AND `rc`.`CONSTRAINT_CATALOG` IS NULL)
+    ) AND
+    `kcu`.`CONSTRAINT_SCHEMA` = `rc`.`CONSTRAINT_SCHEMA` AND
+    `kcu`.`CONSTRAINT_NAME` = `rc`.`CONSTRAINT_NAME`
+WHERE `rc`.`CONSTRAINT_SCHEMA` = database() AND `kcu`.`TABLE_SCHEMA` = database()
+AND `rc`.`TABLE_NAME` = 'tb_sinh_vien' AND `kcu`.`TABLE_NAME` = 'tb_sinh_vien'";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1611031263.663165;i:4;a:1:{i:0;a:5:{s:4:"file";s:55:"D:\website\web2\frontend\controllers\OudeController.php";s:4:"line";i:82;s:8:"function";s:5:"__get";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"->";}}i:5;i:6162504;}i:36;a:6:{i:0;s:54:"SELECT * FROM `tb_ho_so_sv` WHERE `mssv`='32163013VT2'";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1611031263.665732;i:4;a:1:{i:0;a:5:{s:4:"file";s:55:"D:\website\web2\frontend\controllers\OudeController.php";s:4:"line";i:82;s:8:"function";s:5:"__get";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"->";}}i:5;i:6199416;}i:39;a:6:{i:0;s:36:"SHOW FULL COLUMNS FROM `tb_ho_so_sv`";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1611031263.666444;i:4;a:1:{i:0;a:5:{s:4:"file";s:55:"D:\website\web2\frontend\controllers\OudeController.php";s:4:"line";i:82;s:8:"function";s:5:"__get";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"->";}}i:5;i:6206528;}i:42;a:6:{i:0;s:778:"SELECT
+    `kcu`.`CONSTRAINT_NAME` AS `constraint_name`,
+    `kcu`.`COLUMN_NAME` AS `column_name`,
+    `kcu`.`REFERENCED_TABLE_NAME` AS `referenced_table_name`,
+    `kcu`.`REFERENCED_COLUMN_NAME` AS `referenced_column_name`
+FROM `information_schema`.`REFERENTIAL_CONSTRAINTS` AS `rc`
+JOIN `information_schema`.`KEY_COLUMN_USAGE` AS `kcu` ON
+    (
+        `kcu`.`CONSTRAINT_CATALOG` = `rc`.`CONSTRAINT_CATALOG` OR
+        (`kcu`.`CONSTRAINT_CATALOG` IS NULL AND `rc`.`CONSTRAINT_CATALOG` IS NULL)
+    ) AND
+    `kcu`.`CONSTRAINT_SCHEMA` = `rc`.`CONSTRAINT_SCHEMA` AND
+    `kcu`.`CONSTRAINT_NAME` = `rc`.`CONSTRAINT_NAME`
+WHERE `rc`.`CONSTRAINT_SCHEMA` = database() AND `kcu`.`TABLE_SCHEMA` = database()
+AND `rc`.`TABLE_NAME` = 'tb_ho_so_sv' AND `kcu`.`TABLE_NAME` = 'tb_ho_so_sv'";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1611031263.668617;i:4;a:1:{i:0;a:5:{s:4:"file";s:55:"D:\website\web2\frontend\controllers\OudeController.php";s:4:"line";i:82;s:8:"function";s:5:"__get";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"->";}}i:5;i:6219368;}i:45;a:6:{i:0;s:49:"SELECT * FROM `tb_don_vi_lk` WHERE `ma_dvlk`='VT'";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1611031263.670815;i:4;a:1:{i:0;a:5:{s:4:"file";s:55:"D:\website\web2\frontend\controllers\OudeController.php";s:4:"line";i:82;s:8:"function";s:5:"__get";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"->";}}i:5;i:6222880;}i:48;a:6:{i:0;s:37:"SHOW FULL COLUMNS FROM `tb_don_vi_lk`";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1611031263.671555;i:4;a:1:{i:0;a:5:{s:4:"file";s:55:"D:\website\web2\frontend\controllers\OudeController.php";s:4:"line";i:82;s:8:"function";s:5:"__get";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"->";}}i:5;i:6230096;}i:51;a:6:{i:0;s:780:"SELECT
+    `kcu`.`CONSTRAINT_NAME` AS `constraint_name`,
+    `kcu`.`COLUMN_NAME` AS `column_name`,
+    `kcu`.`REFERENCED_TABLE_NAME` AS `referenced_table_name`,
+    `kcu`.`REFERENCED_COLUMN_NAME` AS `referenced_column_name`
+FROM `information_schema`.`REFERENTIAL_CONSTRAINTS` AS `rc`
+JOIN `information_schema`.`KEY_COLUMN_USAGE` AS `kcu` ON
+    (
+        `kcu`.`CONSTRAINT_CATALOG` = `rc`.`CONSTRAINT_CATALOG` OR
+        (`kcu`.`CONSTRAINT_CATALOG` IS NULL AND `rc`.`CONSTRAINT_CATALOG` IS NULL)
+    ) AND
+    `kcu`.`CONSTRAINT_SCHEMA` = `rc`.`CONSTRAINT_SCHEMA` AND
+    `kcu`.`CONSTRAINT_NAME` = `rc`.`CONSTRAINT_NAME`
+WHERE `rc`.`CONSTRAINT_SCHEMA` = database() AND `kcu`.`TABLE_SCHEMA` = database()
+AND `rc`.`TABLE_NAME` = 'tb_don_vi_lk' AND `kcu`.`TABLE_NAME` = 'tb_don_vi_lk'";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1611031263.674147;i:4;a:1:{i:0;a:5:{s:4:"file";s:55:"D:\website\web2\frontend\controllers\OudeController.php";s:4:"line";i:82;s:8:"function";s:5:"__get";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"->";}}i:5;i:6240736;}i:54;a:6:{i:0;s:44:"SELECT * FROM `tb_dan_toc` WHERE `ma_dt`='1'";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1611031263.676873;i:4;a:1:{i:0;a:5:{s:4:"file";s:55:"D:\website\web2\frontend\controllers\OudeController.php";s:4:"line";i:84;s:8:"function";s:5:"__get";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"->";}}i:5;i:6256768;}i:57;a:6:{i:0;s:35:"SHOW FULL COLUMNS FROM `tb_dan_toc`";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1611031263.677706;i:4;a:1:{i:0;a:5:{s:4:"file";s:55:"D:\website\web2\frontend\controllers\OudeController.php";s:4:"line";i:84;s:8:"function";s:5:"__get";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"->";}}i:5;i:6264008;}i:60;a:6:{i:0;s:776:"SELECT
+    `kcu`.`CONSTRAINT_NAME` AS `constraint_name`,
+    `kcu`.`COLUMN_NAME` AS `column_name`,
+    `kcu`.`REFERENCED_TABLE_NAME` AS `referenced_table_name`,
+    `kcu`.`REFERENCED_COLUMN_NAME` AS `referenced_column_name`
+FROM `information_schema`.`REFERENTIAL_CONSTRAINTS` AS `rc`
+JOIN `information_schema`.`KEY_COLUMN_USAGE` AS `kcu` ON
+    (
+        `kcu`.`CONSTRAINT_CATALOG` = `rc`.`CONSTRAINT_CATALOG` OR
+        (`kcu`.`CONSTRAINT_CATALOG` IS NULL AND `rc`.`CONSTRAINT_CATALOG` IS NULL)
+    ) AND
+    `kcu`.`CONSTRAINT_SCHEMA` = `rc`.`CONSTRAINT_SCHEMA` AND
+    `kcu`.`CONSTRAINT_NAME` = `rc`.`CONSTRAINT_NAME`
+WHERE `rc`.`CONSTRAINT_SCHEMA` = database() AND `kcu`.`TABLE_SCHEMA` = database()
+AND `rc`.`TABLE_NAME` = 'tb_dan_toc' AND `kcu`.`TABLE_NAME` = 'tb_dan_toc'";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1611031263.679392;i:4;a:1:{i:0;a:5:{s:4:"file";s:55:"D:\website\web2\frontend\controllers\OudeController.php";s:4:"line";i:84;s:8:"function";s:5:"__get";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"->";}}i:5;i:6274616;}i:63;a:6:{i:0;s:47:"SELECT * FROM `tb_quoc_tich` WHERE `ma_qt`='VN'";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1611031263.681496;i:4;a:1:{i:0;a:5:{s:4:"file";s:55:"D:\website\web2\frontend\controllers\OudeController.php";s:4:"line";i:85;s:8:"function";s:5:"__get";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"->";}}i:5;i:6290072;}i:66;a:6:{i:0;s:37:"SHOW FULL COLUMNS FROM `tb_quoc_tich`";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1611031263.682138;i:4;a:1:{i:0;a:5:{s:4:"file";s:55:"D:\website\web2\frontend\controllers\OudeController.php";s:4:"line";i:85;s:8:"function";s:5:"__get";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"->";}}i:5;i:6302944;}i:69;a:6:{i:0;s:780:"SELECT
+    `kcu`.`CONSTRAINT_NAME` AS `constraint_name`,
+    `kcu`.`COLUMN_NAME` AS `column_name`,
+    `kcu`.`REFERENCED_TABLE_NAME` AS `referenced_table_name`,
+    `kcu`.`REFERENCED_COLUMN_NAME` AS `referenced_column_name`
+FROM `information_schema`.`REFERENTIAL_CONSTRAINTS` AS `rc`
+JOIN `information_schema`.`KEY_COLUMN_USAGE` AS `kcu` ON
+    (
+        `kcu`.`CONSTRAINT_CATALOG` = `rc`.`CONSTRAINT_CATALOG` OR
+        (`kcu`.`CONSTRAINT_CATALOG` IS NULL AND `rc`.`CONSTRAINT_CATALOG` IS NULL)
+    ) AND
+    `kcu`.`CONSTRAINT_SCHEMA` = `rc`.`CONSTRAINT_SCHEMA` AND
+    `kcu`.`CONSTRAINT_NAME` = `rc`.`CONSTRAINT_NAME`
+WHERE `rc`.`CONSTRAINT_SCHEMA` = database() AND `kcu`.`TABLE_SCHEMA` = database()
+AND `rc`.`TABLE_NAME` = 'tb_quoc_tich' AND `kcu`.`TABLE_NAME` = 'tb_quoc_tich'";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1611031263.683818;i:4;a:1:{i:0;a:5:{s:4:"file";s:55:"D:\website\web2\frontend\controllers\OudeController.php";s:4:"line";i:85;s:8:"function";s:5:"__get";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"->";}}i:5;i:6313568;}i:72;a:6:{i:0;s:46:"SELECT * FROM `tb_nganh` WHERE `ma_nganh`='32'";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1611031263.686308;i:4;a:1:{i:0;a:5:{s:4:"file";s:55:"D:\website\web2\frontend\controllers\OudeController.php";s:4:"line";i:86;s:8:"function";s:5:"__get";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"->";}}i:5;i:6329008;}i:75;a:6:{i:0;s:33:"SHOW FULL COLUMNS FROM `tb_nganh`";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1611031263.68695;i:4;a:1:{i:0;a:5:{s:4:"file";s:55:"D:\website\web2\frontend\controllers\OudeController.php";s:4:"line";i:86;s:8:"function";s:5:"__get";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"->";}}i:5;i:6336240;}i:78;a:6:{i:0;s:772:"SELECT
+    `kcu`.`CONSTRAINT_NAME` AS `constraint_name`,
+    `kcu`.`COLUMN_NAME` AS `column_name`,
+    `kcu`.`REFERENCED_TABLE_NAME` AS `referenced_table_name`,
+    `kcu`.`REFERENCED_COLUMN_NAME` AS `referenced_column_name`
+FROM `information_schema`.`REFERENTIAL_CONSTRAINTS` AS `rc`
+JOIN `information_schema`.`KEY_COLUMN_USAGE` AS `kcu` ON
+    (
+        `kcu`.`CONSTRAINT_CATALOG` = `rc`.`CONSTRAINT_CATALOG` OR
+        (`kcu`.`CONSTRAINT_CATALOG` IS NULL AND `rc`.`CONSTRAINT_CATALOG` IS NULL)
+    ) AND
+    `kcu`.`CONSTRAINT_SCHEMA` = `rc`.`CONSTRAINT_SCHEMA` AND
+    `kcu`.`CONSTRAINT_NAME` = `rc`.`CONSTRAINT_NAME`
+WHERE `rc`.`CONSTRAINT_SCHEMA` = database() AND `kcu`.`TABLE_SCHEMA` = database()
+AND `rc`.`TABLE_NAME` = 'tb_nganh' AND `kcu`.`TABLE_NAME` = 'tb_nganh'";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1611031263.688549;i:4;a:1:{i:0;a:5:{s:4:"file";s:55:"D:\website\web2\frontend\controllers\OudeController.php";s:4:"line";i:86;s:8:"function";s:5:"__get";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"->";}}i:5;i:6346856;}i:81;a:6:{i:0;s:54:"SELECT * FROM `tb_ht_dao_tao` WHERE `ma_hinh_thuc`='2'";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1611031263.69081;i:4;a:1:{i:0;a:5:{s:4:"file";s:55:"D:\website\web2\frontend\controllers\OudeController.php";s:4:"line";i:92;s:8:"function";s:5:"__get";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"->";}}i:5;i:6363032;}i:84;a:6:{i:0;s:38:"SHOW FULL COLUMNS FROM `tb_ht_dao_tao`";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1611031263.691453;i:4;a:1:{i:0;a:5:{s:4:"file";s:55:"D:\website\web2\frontend\controllers\OudeController.php";s:4:"line";i:92;s:8:"function";s:5:"__get";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"->";}}i:5;i:6370480;}i:87;a:6:{i:0;s:782:"SELECT
+    `kcu`.`CONSTRAINT_NAME` AS `constraint_name`,
+    `kcu`.`COLUMN_NAME` AS `column_name`,
+    `kcu`.`REFERENCED_TABLE_NAME` AS `referenced_table_name`,
+    `kcu`.`REFERENCED_COLUMN_NAME` AS `referenced_column_name`
+FROM `information_schema`.`REFERENTIAL_CONSTRAINTS` AS `rc`
+JOIN `information_schema`.`KEY_COLUMN_USAGE` AS `kcu` ON
+    (
+        `kcu`.`CONSTRAINT_CATALOG` = `rc`.`CONSTRAINT_CATALOG` OR
+        (`kcu`.`CONSTRAINT_CATALOG` IS NULL AND `rc`.`CONSTRAINT_CATALOG` IS NULL)
+    ) AND
+    `kcu`.`CONSTRAINT_SCHEMA` = `rc`.`CONSTRAINT_SCHEMA` AND
+    `kcu`.`CONSTRAINT_NAME` = `rc`.`CONSTRAINT_NAME`
+WHERE `rc`.`CONSTRAINT_SCHEMA` = database() AND `kcu`.`TABLE_SCHEMA` = database()
+AND `rc`.`TABLE_NAME` = 'tb_ht_dao_tao' AND `kcu`.`TABLE_NAME` = 'tb_ht_dao_tao'";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1611031263.693127;i:4;a:1:{i:0;a:5:{s:4:"file";s:55:"D:\website\web2\frontend\controllers\OudeController.php";s:4:"line";i:92;s:8:"function";s:5:"__get";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"->";}}i:5;i:6381552;}}}";s:9:"profiling";s:29244:"a:3:{s:6:"memory";i:6760016;s:4:"time";d:0.12738680839538574;s:8:"messages";a:50:{i:16;a:6:{i:0;s:63:"Opening DB connection: mysql:host=localhost;dbname=graduationdb";i:1;i:80;i:2;s:23:"yii\db\Connection::open";i:3;d:1611031263.646173;i:4;a:1:{i:0;a:5:{s:4:"file";s:55:"D:\website\web2\frontend\controllers\OudeController.php";s:4:"line";i:78;s:8:"function";s:3:"one";s:5:"class";s:18:"yii\db\ActiveQuery";s:4:"type";s:2:"->";}}i:5;i:5830568;}i:17;a:6:{i:0;s:63:"Opening DB connection: mysql:host=localhost;dbname=graduationdb";i:1;i:96;i:2;s:23:"yii\db\Connection::open";i:3;d:1611031263.64803;i:4;a:1:{i:0;a:5:{s:4:"file";s:55:"D:\website\web2\frontend\controllers\OudeController.php";s:4:"line";i:78;s:8:"function";s:3:"one";s:5:"class";s:18:"yii\db\ActiveQuery";s:4:"type";s:2:"->";}}i:5;i:5876256;}i:19;a:6:{i:0;s:106:"SELECT * FROM `tb_sv_hk` WHERE (`tb_sv_hk`.`mssv`='32163013VT2') AND (`tb_sv_hk`.`ma_hk`='tn_193') LIMIT 1";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1611031263.650861;i:4;a:1:{i:0;a:5:{s:4:"file";s:55:"D:\website\web2\frontend\controllers\OudeController.php";s:4:"line";i:78;s:8:"function";s:3:"one";s:5:"class";s:18:"yii\db\ActiveQuery";s:4:"type";s:2:"->";}}i:5;i:6022664;}i:20;a:6:{i:0;s:106:"SELECT * FROM `tb_sv_hk` WHERE (`tb_sv_hk`.`mssv`='32163013VT2') AND (`tb_sv_hk`.`ma_hk`='tn_193') LIMIT 1";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1611031263.651917;i:4;a:1:{i:0;a:5:{s:4:"file";s:55:"D:\website\web2\frontend\controllers\OudeController.php";s:4:"line";i:78;s:8:"function";s:3:"one";s:5:"class";s:18:"yii\db\ActiveQuery";s:4:"type";s:2:"->";}}i:5;i:6025680;}i:22;a:6:{i:0;s:33:"SHOW FULL COLUMNS FROM `tb_sv_hk`";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1611031263.652733;i:4;a:1:{i:0;a:5:{s:4:"file";s:55:"D:\website\web2\frontend\controllers\OudeController.php";s:4:"line";i:78;s:8:"function";s:3:"one";s:5:"class";s:18:"yii\db\ActiveQuery";s:4:"type";s:2:"->";}}i:5;i:6037136;}i:23;a:6:{i:0;s:33:"SHOW FULL COLUMNS FROM `tb_sv_hk`";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1611031263.654766;i:4;a:1:{i:0;a:5:{s:4:"file";s:55:"D:\website\web2\frontend\controllers\OudeController.php";s:4:"line";i:78;s:8:"function";s:3:"one";s:5:"class";s:18:"yii\db\ActiveQuery";s:4:"type";s:2:"->";}}i:5;i:6049968;}i:25;a:6:{i:0;s:772:"SELECT
+    `kcu`.`CONSTRAINT_NAME` AS `constraint_name`,
+    `kcu`.`COLUMN_NAME` AS `column_name`,
+    `kcu`.`REFERENCED_TABLE_NAME` AS `referenced_table_name`,
+    `kcu`.`REFERENCED_COLUMN_NAME` AS `referenced_column_name`
+FROM `information_schema`.`REFERENTIAL_CONSTRAINTS` AS `rc`
+JOIN `information_schema`.`KEY_COLUMN_USAGE` AS `kcu` ON
+    (
+        `kcu`.`CONSTRAINT_CATALOG` = `rc`.`CONSTRAINT_CATALOG` OR
+        (`kcu`.`CONSTRAINT_CATALOG` IS NULL AND `rc`.`CONSTRAINT_CATALOG` IS NULL)
+    ) AND
+    `kcu`.`CONSTRAINT_SCHEMA` = `rc`.`CONSTRAINT_SCHEMA` AND
+    `kcu`.`CONSTRAINT_NAME` = `rc`.`CONSTRAINT_NAME`
+WHERE `rc`.`CONSTRAINT_SCHEMA` = database() AND `kcu`.`TABLE_SCHEMA` = database()
+AND `rc`.`TABLE_NAME` = 'tb_sv_hk' AND `kcu`.`TABLE_NAME` = 'tb_sv_hk'";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1611031263.655816;i:4;a:1:{i:0;a:5:{s:4:"file";s:55:"D:\website\web2\frontend\controllers\OudeController.php";s:4:"line";i:78;s:8:"function";s:3:"one";s:5:"class";s:18:"yii\db\ActiveQuery";s:4:"type";s:2:"->";}}i:5;i:6076192;}i:26;a:6:{i:0;s:772:"SELECT
+    `kcu`.`CONSTRAINT_NAME` AS `constraint_name`,
+    `kcu`.`COLUMN_NAME` AS `column_name`,
+    `kcu`.`REFERENCED_TABLE_NAME` AS `referenced_table_name`,
+    `kcu`.`REFERENCED_COLUMN_NAME` AS `referenced_column_name`
+FROM `information_schema`.`REFERENTIAL_CONSTRAINTS` AS `rc`
+JOIN `information_schema`.`KEY_COLUMN_USAGE` AS `kcu` ON
+    (
+        `kcu`.`CONSTRAINT_CATALOG` = `rc`.`CONSTRAINT_CATALOG` OR
+        (`kcu`.`CONSTRAINT_CATALOG` IS NULL AND `rc`.`CONSTRAINT_CATALOG` IS NULL)
+    ) AND
+    `kcu`.`CONSTRAINT_SCHEMA` = `rc`.`CONSTRAINT_SCHEMA` AND
+    `kcu`.`CONSTRAINT_NAME` = `rc`.`CONSTRAINT_NAME`
+WHERE `rc`.`CONSTRAINT_SCHEMA` = database() AND `kcu`.`TABLE_SCHEMA` = database()
+AND `rc`.`TABLE_NAME` = 'tb_sv_hk' AND `kcu`.`TABLE_NAME` = 'tb_sv_hk'";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1611031263.658424;i:4;a:1:{i:0;a:5:{s:4:"file";s:55:"D:\website\web2\frontend\controllers\OudeController.php";s:4:"line";i:78;s:8:"function";s:3:"one";s:5:"class";s:18:"yii\db\ActiveQuery";s:4:"type";s:2:"->";}}i:5;i:6079944;}i:28;a:6:{i:0;s:55:"SELECT * FROM `tb_sinh_vien` WHERE `mssv`='32163013VT2'";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1611031263.660559;i:4;a:1:{i:0;a:5:{s:4:"file";s:55:"D:\website\web2\frontend\controllers\OudeController.php";s:4:"line";i:82;s:8:"function";s:5:"__get";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"->";}}i:5;i:6141808;}i:29;a:6:{i:0;s:55:"SELECT * FROM `tb_sinh_vien` WHERE `mssv`='32163013VT2'";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1611031263.661153;i:4;a:1:{i:0;a:5:{s:4:"file";s:55:"D:\website\web2\frontend\controllers\OudeController.php";s:4:"line";i:82;s:8:"function";s:5:"__get";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"->";}}i:5;i:6144176;}i:31;a:6:{i:0;s:37:"SHOW FULL COLUMNS FROM `tb_sinh_vien`";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1611031263.661293;i:4;a:1:{i:0;a:5:{s:4:"file";s:55:"D:\website\web2\frontend\controllers\OudeController.php";s:4:"line";i:82;s:8:"function";s:5:"__get";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"->";}}i:5;i:6149784;}i:32;a:6:{i:0;s:37:"SHOW FULL COLUMNS FROM `tb_sinh_vien`";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1611031263.662922;i:4;a:1:{i:0;a:5:{s:4:"file";s:55:"D:\website\web2\frontend\controllers\OudeController.php";s:4:"line";i:82;s:8:"function";s:5:"__get";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"->";}}i:5;i:6158880;}i:34;a:6:{i:0;s:780:"SELECT
+    `kcu`.`CONSTRAINT_NAME` AS `constraint_name`,
+    `kcu`.`COLUMN_NAME` AS `column_name`,
+    `kcu`.`REFERENCED_TABLE_NAME` AS `referenced_table_name`,
+    `kcu`.`REFERENCED_COLUMN_NAME` AS `referenced_column_name`
+FROM `information_schema`.`REFERENTIAL_CONSTRAINTS` AS `rc`
+JOIN `information_schema`.`KEY_COLUMN_USAGE` AS `kcu` ON
+    (
+        `kcu`.`CONSTRAINT_CATALOG` = `rc`.`CONSTRAINT_CATALOG` OR
+        (`kcu`.`CONSTRAINT_CATALOG` IS NULL AND `rc`.`CONSTRAINT_CATALOG` IS NULL)
+    ) AND
+    `kcu`.`CONSTRAINT_SCHEMA` = `rc`.`CONSTRAINT_SCHEMA` AND
+    `kcu`.`CONSTRAINT_NAME` = `rc`.`CONSTRAINT_NAME`
+WHERE `rc`.`CONSTRAINT_SCHEMA` = database() AND `kcu`.`TABLE_SCHEMA` = database()
+AND `rc`.`TABLE_NAME` = 'tb_sinh_vien' AND `kcu`.`TABLE_NAME` = 'tb_sinh_vien'";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1611031263.663194;i:4;a:1:{i:0;a:5:{s:4:"file";s:55:"D:\website\web2\frontend\controllers\OudeController.php";s:4:"line";i:82;s:8:"function";s:5:"__get";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"->";}}i:5;i:6165368;}i:35;a:6:{i:0;s:780:"SELECT
+    `kcu`.`CONSTRAINT_NAME` AS `constraint_name`,
+    `kcu`.`COLUMN_NAME` AS `column_name`,
+    `kcu`.`REFERENCED_TABLE_NAME` AS `referenced_table_name`,
+    `kcu`.`REFERENCED_COLUMN_NAME` AS `referenced_column_name`
+FROM `information_schema`.`REFERENTIAL_CONSTRAINTS` AS `rc`
+JOIN `information_schema`.`KEY_COLUMN_USAGE` AS `kcu` ON
+    (
+        `kcu`.`CONSTRAINT_CATALOG` = `rc`.`CONSTRAINT_CATALOG` OR
+        (`kcu`.`CONSTRAINT_CATALOG` IS NULL AND `rc`.`CONSTRAINT_CATALOG` IS NULL)
+    ) AND
+    `kcu`.`CONSTRAINT_SCHEMA` = `rc`.`CONSTRAINT_SCHEMA` AND
+    `kcu`.`CONSTRAINT_NAME` = `rc`.`CONSTRAINT_NAME`
+WHERE `rc`.`CONSTRAINT_SCHEMA` = database() AND `kcu`.`TABLE_SCHEMA` = database()
+AND `rc`.`TABLE_NAME` = 'tb_sinh_vien' AND `kcu`.`TABLE_NAME` = 'tb_sinh_vien'";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1611031263.664555;i:4;a:1:{i:0;a:5:{s:4:"file";s:55:"D:\website\web2\frontend\controllers\OudeController.php";s:4:"line";i:82;s:8:"function";s:5:"__get";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"->";}}i:5;i:6167752;}i:37;a:6:{i:0;s:54:"SELECT * FROM `tb_ho_so_sv` WHERE `mssv`='32163013VT2'";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1611031263.665768;i:4;a:1:{i:0;a:5:{s:4:"file";s:55:"D:\website\web2\frontend\controllers\OudeController.php";s:4:"line";i:82;s:8:"function";s:5:"__get";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"->";}}i:5;i:6200864;}i:38;a:6:{i:0;s:54:"SELECT * FROM `tb_ho_so_sv` WHERE `mssv`='32163013VT2'";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1611031263.66635;i:4;a:1:{i:0;a:5:{s:4:"file";s:55:"D:\website\web2\frontend\controllers\OudeController.php";s:4:"line";i:82;s:8:"function";s:5:"__get";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"->";}}i:5;i:6203336;}i:40;a:6:{i:0;s:36:"SHOW FULL COLUMNS FROM `tb_ho_so_sv`";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1611031263.666469;i:4;a:1:{i:0;a:5:{s:4:"file";s:55:"D:\website\web2\frontend\controllers\OudeController.php";s:4:"line";i:82;s:8:"function";s:5:"__get";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"->";}}i:5;i:6207896;}i:41;a:6:{i:0;s:36:"SHOW FULL COLUMNS FROM `tb_ho_so_sv`";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1611031263.668355;i:4;a:1:{i:0;a:5:{s:4:"file";s:55:"D:\website\web2\frontend\controllers\OudeController.php";s:4:"line";i:82;s:8:"function";s:5:"__get";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"->";}}i:5;i:6217104;}i:43;a:6:{i:0;s:778:"SELECT
+    `kcu`.`CONSTRAINT_NAME` AS `constraint_name`,
+    `kcu`.`COLUMN_NAME` AS `column_name`,
+    `kcu`.`REFERENCED_TABLE_NAME` AS `referenced_table_name`,
+    `kcu`.`REFERENCED_COLUMN_NAME` AS `referenced_column_name`
+FROM `information_schema`.`REFERENTIAL_CONSTRAINTS` AS `rc`
+JOIN `information_schema`.`KEY_COLUMN_USAGE` AS `kcu` ON
+    (
+        `kcu`.`CONSTRAINT_CATALOG` = `rc`.`CONSTRAINT_CATALOG` OR
+        (`kcu`.`CONSTRAINT_CATALOG` IS NULL AND `rc`.`CONSTRAINT_CATALOG` IS NULL)
+    ) AND
+    `kcu`.`CONSTRAINT_SCHEMA` = `rc`.`CONSTRAINT_SCHEMA` AND
+    `kcu`.`CONSTRAINT_NAME` = `rc`.`CONSTRAINT_NAME`
+WHERE `rc`.`CONSTRAINT_SCHEMA` = database() AND `kcu`.`TABLE_SCHEMA` = database()
+AND `rc`.`TABLE_NAME` = 'tb_ho_so_sv' AND `kcu`.`TABLE_NAME` = 'tb_ho_so_sv'";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1611031263.668648;i:4;a:1:{i:0;a:5:{s:4:"file";s:55:"D:\website\web2\frontend\controllers\OudeController.php";s:4:"line";i:82;s:8:"function";s:5:"__get";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"->";}}i:5;i:6222232;}i:44;a:6:{i:0;s:778:"SELECT
+    `kcu`.`CONSTRAINT_NAME` AS `constraint_name`,
+    `kcu`.`COLUMN_NAME` AS `column_name`,
+    `kcu`.`REFERENCED_TABLE_NAME` AS `referenced_table_name`,
+    `kcu`.`REFERENCED_COLUMN_NAME` AS `referenced_column_name`
+FROM `information_schema`.`REFERENTIAL_CONSTRAINTS` AS `rc`
+JOIN `information_schema`.`KEY_COLUMN_USAGE` AS `kcu` ON
+    (
+        `kcu`.`CONSTRAINT_CATALOG` = `rc`.`CONSTRAINT_CATALOG` OR
+        (`kcu`.`CONSTRAINT_CATALOG` IS NULL AND `rc`.`CONSTRAINT_CATALOG` IS NULL)
+    ) AND
+    `kcu`.`CONSTRAINT_SCHEMA` = `rc`.`CONSTRAINT_SCHEMA` AND
+    `kcu`.`CONSTRAINT_NAME` = `rc`.`CONSTRAINT_NAME`
+WHERE `rc`.`CONSTRAINT_SCHEMA` = database() AND `kcu`.`TABLE_SCHEMA` = database()
+AND `rc`.`TABLE_NAME` = 'tb_ho_so_sv' AND `kcu`.`TABLE_NAME` = 'tb_ho_so_sv'";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1611031263.670556;i:4;a:1:{i:0;a:5:{s:4:"file";s:55:"D:\website\web2\frontend\controllers\OudeController.php";s:4:"line";i:82;s:8:"function";s:5:"__get";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"->";}}i:5;i:6228688;}i:46;a:6:{i:0;s:49:"SELECT * FROM `tb_don_vi_lk` WHERE `ma_dvlk`='VT'";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1611031263.670839;i:4;a:1:{i:0;a:5:{s:4:"file";s:55:"D:\website\web2\frontend\controllers\OudeController.php";s:4:"line";i:82;s:8:"function";s:5:"__get";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"->";}}i:5;i:6224336;}i:47;a:6:{i:0;s:49:"SELECT * FROM `tb_don_vi_lk` WHERE `ma_dvlk`='VT'";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1611031263.671439;i:4;a:1:{i:0;a:5:{s:4:"file";s:55:"D:\website\web2\frontend\controllers\OudeController.php";s:4:"line";i:82;s:8:"function";s:5:"__get";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"->";}}i:5;i:6226112;}i:49;a:6:{i:0;s:37:"SHOW FULL COLUMNS FROM `tb_don_vi_lk`";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1611031263.671584;i:4;a:1:{i:0;a:5:{s:4:"file";s:55:"D:\website\web2\frontend\controllers\OudeController.php";s:4:"line";i:82;s:8:"function";s:5:"__get";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"->";}}i:5;i:6231464;}i:50;a:6:{i:0;s:37:"SHOW FULL COLUMNS FROM `tb_don_vi_lk`";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1611031263.673795;i:4;a:1:{i:0;a:5:{s:4:"file";s:55:"D:\website\web2\frontend\controllers\OudeController.php";s:4:"line";i:82;s:8:"function";s:5:"__get";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"->";}}i:5;i:6235632;}i:52;a:6:{i:0;s:780:"SELECT
+    `kcu`.`CONSTRAINT_NAME` AS `constraint_name`,
+    `kcu`.`COLUMN_NAME` AS `column_name`,
+    `kcu`.`REFERENCED_TABLE_NAME` AS `referenced_table_name`,
+    `kcu`.`REFERENCED_COLUMN_NAME` AS `referenced_column_name`
+FROM `information_schema`.`REFERENTIAL_CONSTRAINTS` AS `rc`
+JOIN `information_schema`.`KEY_COLUMN_USAGE` AS `kcu` ON
+    (
+        `kcu`.`CONSTRAINT_CATALOG` = `rc`.`CONSTRAINT_CATALOG` OR
+        (`kcu`.`CONSTRAINT_CATALOG` IS NULL AND `rc`.`CONSTRAINT_CATALOG` IS NULL)
+    ) AND
+    `kcu`.`CONSTRAINT_SCHEMA` = `rc`.`CONSTRAINT_SCHEMA` AND
+    `kcu`.`CONSTRAINT_NAME` = `rc`.`CONSTRAINT_NAME`
+WHERE `rc`.`CONSTRAINT_SCHEMA` = database() AND `kcu`.`TABLE_SCHEMA` = database()
+AND `rc`.`TABLE_NAME` = 'tb_don_vi_lk' AND `kcu`.`TABLE_NAME` = 'tb_don_vi_lk'";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1611031263.674191;i:4;a:1:{i:0;a:5:{s:4:"file";s:55:"D:\website\web2\frontend\controllers\OudeController.php";s:4:"line";i:82;s:8:"function";s:5:"__get";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"->";}}i:5;i:6243600;}i:53;a:6:{i:0;s:780:"SELECT
+    `kcu`.`CONSTRAINT_NAME` AS `constraint_name`,
+    `kcu`.`COLUMN_NAME` AS `column_name`,
+    `kcu`.`REFERENCED_TABLE_NAME` AS `referenced_table_name`,
+    `kcu`.`REFERENCED_COLUMN_NAME` AS `referenced_column_name`
+FROM `information_schema`.`REFERENTIAL_CONSTRAINTS` AS `rc`
+JOIN `information_schema`.`KEY_COLUMN_USAGE` AS `kcu` ON
+    (
+        `kcu`.`CONSTRAINT_CATALOG` = `rc`.`CONSTRAINT_CATALOG` OR
+        (`kcu`.`CONSTRAINT_CATALOG` IS NULL AND `rc`.`CONSTRAINT_CATALOG` IS NULL)
+    ) AND
+    `kcu`.`CONSTRAINT_SCHEMA` = `rc`.`CONSTRAINT_SCHEMA` AND
+    `kcu`.`CONSTRAINT_NAME` = `rc`.`CONSTRAINT_NAME`
+WHERE `rc`.`CONSTRAINT_SCHEMA` = database() AND `kcu`.`TABLE_SCHEMA` = database()
+AND `rc`.`TABLE_NAME` = 'tb_don_vi_lk' AND `kcu`.`TABLE_NAME` = 'tb_don_vi_lk'";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1611031263.676058;i:4;a:1:{i:0;a:5:{s:4:"file";s:55:"D:\website\web2\frontend\controllers\OudeController.php";s:4:"line";i:82;s:8:"function";s:5:"__get";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"->";}}i:5;i:6245984;}i:55;a:6:{i:0;s:44:"SELECT * FROM `tb_dan_toc` WHERE `ma_dt`='1'";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1611031263.676902;i:4;a:1:{i:0;a:5:{s:4:"file";s:55:"D:\website\web2\frontend\controllers\OudeController.php";s:4:"line";i:84;s:8:"function";s:5:"__get";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"->";}}i:5;i:6258216;}i:56;a:6:{i:0;s:44:"SELECT * FROM `tb_dan_toc` WHERE `ma_dt`='1'";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1611031263.677599;i:4;a:1:{i:0;a:5:{s:4:"file";s:55:"D:\website\web2\frontend\controllers\OudeController.php";s:4:"line";i:84;s:8:"function";s:5:"__get";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"->";}}i:5;i:6260008;}i:58;a:6:{i:0;s:35:"SHOW FULL COLUMNS FROM `tb_dan_toc`";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1611031263.677731;i:4;a:1:{i:0;a:5:{s:4:"file";s:55:"D:\website\web2\frontend\controllers\OudeController.php";s:4:"line";i:84;s:8:"function";s:5:"__get";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"->";}}i:5;i:6265376;}i:59;a:6:{i:0;s:35:"SHOW FULL COLUMNS FROM `tb_dan_toc`";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1611031263.679164;i:4;a:1:{i:0;a:5:{s:4:"file";s:55:"D:\website\web2\frontend\controllers\OudeController.php";s:4:"line";i:84;s:8:"function";s:5:"__get";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"->";}}i:5;i:6269512;}i:61;a:6:{i:0;s:776:"SELECT
+    `kcu`.`CONSTRAINT_NAME` AS `constraint_name`,
+    `kcu`.`COLUMN_NAME` AS `column_name`,
+    `kcu`.`REFERENCED_TABLE_NAME` AS `referenced_table_name`,
+    `kcu`.`REFERENCED_COLUMN_NAME` AS `referenced_column_name`
+FROM `information_schema`.`REFERENTIAL_CONSTRAINTS` AS `rc`
+JOIN `information_schema`.`KEY_COLUMN_USAGE` AS `kcu` ON
+    (
+        `kcu`.`CONSTRAINT_CATALOG` = `rc`.`CONSTRAINT_CATALOG` OR
+        (`kcu`.`CONSTRAINT_CATALOG` IS NULL AND `rc`.`CONSTRAINT_CATALOG` IS NULL)
+    ) AND
+    `kcu`.`CONSTRAINT_SCHEMA` = `rc`.`CONSTRAINT_SCHEMA` AND
+    `kcu`.`CONSTRAINT_NAME` = `rc`.`CONSTRAINT_NAME`
+WHERE `rc`.`CONSTRAINT_SCHEMA` = database() AND `kcu`.`TABLE_SCHEMA` = database()
+AND `rc`.`TABLE_NAME` = 'tb_dan_toc' AND `kcu`.`TABLE_NAME` = 'tb_dan_toc'";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1611031263.679426;i:4;a:1:{i:0;a:5:{s:4:"file";s:55:"D:\website\web2\frontend\controllers\OudeController.php";s:4:"line";i:84;s:8:"function";s:5:"__get";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"->";}}i:5;i:6277480;}i:62;a:6:{i:0;s:776:"SELECT
+    `kcu`.`CONSTRAINT_NAME` AS `constraint_name`,
+    `kcu`.`COLUMN_NAME` AS `column_name`,
+    `kcu`.`REFERENCED_TABLE_NAME` AS `referenced_table_name`,
+    `kcu`.`REFERENCED_COLUMN_NAME` AS `referenced_column_name`
+FROM `information_schema`.`REFERENTIAL_CONSTRAINTS` AS `rc`
+JOIN `information_schema`.`KEY_COLUMN_USAGE` AS `kcu` ON
+    (
+        `kcu`.`CONSTRAINT_CATALOG` = `rc`.`CONSTRAINT_CATALOG` OR
+        (`kcu`.`CONSTRAINT_CATALOG` IS NULL AND `rc`.`CONSTRAINT_CATALOG` IS NULL)
+    ) AND
+    `kcu`.`CONSTRAINT_SCHEMA` = `rc`.`CONSTRAINT_SCHEMA` AND
+    `kcu`.`CONSTRAINT_NAME` = `rc`.`CONSTRAINT_NAME`
+WHERE `rc`.`CONSTRAINT_SCHEMA` = database() AND `kcu`.`TABLE_SCHEMA` = database()
+AND `rc`.`TABLE_NAME` = 'tb_dan_toc' AND `kcu`.`TABLE_NAME` = 'tb_dan_toc'";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1611031263.680801;i:4;a:1:{i:0;a:5:{s:4:"file";s:55:"D:\website\web2\frontend\controllers\OudeController.php";s:4:"line";i:84;s:8:"function";s:5:"__get";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"->";}}i:5;i:6279864;}i:64;a:6:{i:0;s:47:"SELECT * FROM `tb_quoc_tich` WHERE `ma_qt`='VN'";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1611031263.681522;i:4;a:1:{i:0;a:5:{s:4:"file";s:55:"D:\website\web2\frontend\controllers\OudeController.php";s:4:"line";i:85;s:8:"function";s:5:"__get";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"->";}}i:5;i:6291520;}i:65;a:6:{i:0;s:47:"SELECT * FROM `tb_quoc_tich` WHERE `ma_qt`='VN'";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1611031263.68205;i:4;a:1:{i:0;a:5:{s:4:"file";s:55:"D:\website\web2\frontend\controllers\OudeController.php";s:4:"line";i:85;s:8:"function";s:5:"__get";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"->";}}i:5;i:6298952;}i:67;a:6:{i:0;s:37:"SHOW FULL COLUMNS FROM `tb_quoc_tich`";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1611031263.682162;i:4;a:1:{i:0;a:5:{s:4:"file";s:55:"D:\website\web2\frontend\controllers\OudeController.php";s:4:"line";i:85;s:8:"function";s:5:"__get";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"->";}}i:5;i:6304312;}i:68;a:6:{i:0;s:37:"SHOW FULL COLUMNS FROM `tb_quoc_tich`";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1611031263.683645;i:4;a:1:{i:0;a:5:{s:4:"file";s:55:"D:\website\web2\frontend\controllers\OudeController.php";s:4:"line";i:85;s:8:"function";s:5:"__get";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"->";}}i:5;i:6308464;}i:70;a:6:{i:0;s:780:"SELECT
+    `kcu`.`CONSTRAINT_NAME` AS `constraint_name`,
+    `kcu`.`COLUMN_NAME` AS `column_name`,
+    `kcu`.`REFERENCED_TABLE_NAME` AS `referenced_table_name`,
+    `kcu`.`REFERENCED_COLUMN_NAME` AS `referenced_column_name`
+FROM `information_schema`.`REFERENTIAL_CONSTRAINTS` AS `rc`
+JOIN `information_schema`.`KEY_COLUMN_USAGE` AS `kcu` ON
+    (
+        `kcu`.`CONSTRAINT_CATALOG` = `rc`.`CONSTRAINT_CATALOG` OR
+        (`kcu`.`CONSTRAINT_CATALOG` IS NULL AND `rc`.`CONSTRAINT_CATALOG` IS NULL)
+    ) AND
+    `kcu`.`CONSTRAINT_SCHEMA` = `rc`.`CONSTRAINT_SCHEMA` AND
+    `kcu`.`CONSTRAINT_NAME` = `rc`.`CONSTRAINT_NAME`
+WHERE `rc`.`CONSTRAINT_SCHEMA` = database() AND `kcu`.`TABLE_SCHEMA` = database()
+AND `rc`.`TABLE_NAME` = 'tb_quoc_tich' AND `kcu`.`TABLE_NAME` = 'tb_quoc_tich'";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1611031263.68385;i:4;a:1:{i:0;a:5:{s:4:"file";s:55:"D:\website\web2\frontend\controllers\OudeController.php";s:4:"line";i:85;s:8:"function";s:5:"__get";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"->";}}i:5;i:6316432;}i:71;a:6:{i:0;s:780:"SELECT
+    `kcu`.`CONSTRAINT_NAME` AS `constraint_name`,
+    `kcu`.`COLUMN_NAME` AS `column_name`,
+    `kcu`.`REFERENCED_TABLE_NAME` AS `referenced_table_name`,
+    `kcu`.`REFERENCED_COLUMN_NAME` AS `referenced_column_name`
+FROM `information_schema`.`REFERENTIAL_CONSTRAINTS` AS `rc`
+JOIN `information_schema`.`KEY_COLUMN_USAGE` AS `kcu` ON
+    (
+        `kcu`.`CONSTRAINT_CATALOG` = `rc`.`CONSTRAINT_CATALOG` OR
+        (`kcu`.`CONSTRAINT_CATALOG` IS NULL AND `rc`.`CONSTRAINT_CATALOG` IS NULL)
+    ) AND
+    `kcu`.`CONSTRAINT_SCHEMA` = `rc`.`CONSTRAINT_SCHEMA` AND
+    `kcu`.`CONSTRAINT_NAME` = `rc`.`CONSTRAINT_NAME`
+WHERE `rc`.`CONSTRAINT_SCHEMA` = database() AND `kcu`.`TABLE_SCHEMA` = database()
+AND `rc`.`TABLE_NAME` = 'tb_quoc_tich' AND `kcu`.`TABLE_NAME` = 'tb_quoc_tich'";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1611031263.685577;i:4;a:1:{i:0;a:5:{s:4:"file";s:55:"D:\website\web2\frontend\controllers\OudeController.php";s:4:"line";i:85;s:8:"function";s:5:"__get";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"->";}}i:5;i:6318816;}i:73;a:6:{i:0;s:46:"SELECT * FROM `tb_nganh` WHERE `ma_nganh`='32'";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1611031263.686339;i:4;a:1:{i:0;a:5:{s:4:"file";s:55:"D:\website\web2\frontend\controllers\OudeController.php";s:4:"line";i:86;s:8:"function";s:5:"__get";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"->";}}i:5;i:6330456;}i:74;a:6:{i:0;s:46:"SELECT * FROM `tb_nganh` WHERE `ma_nganh`='32'";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1611031263.686849;i:4;a:1:{i:0;a:5:{s:4:"file";s:55:"D:\website\web2\frontend\controllers\OudeController.php";s:4:"line";i:86;s:8:"function";s:5:"__get";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"->";}}i:5;i:6332240;}i:76;a:6:{i:0;s:33:"SHOW FULL COLUMNS FROM `tb_nganh`";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1611031263.686975;i:4;a:1:{i:0;a:5:{s:4:"file";s:55:"D:\website\web2\frontend\controllers\OudeController.php";s:4:"line";i:86;s:8:"function";s:5:"__get";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"->";}}i:5;i:6337608;}i:77;a:6:{i:0;s:33:"SHOW FULL COLUMNS FROM `tb_nganh`";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1611031263.688403;i:4;a:1:{i:0;a:5:{s:4:"file";s:55:"D:\website\web2\frontend\controllers\OudeController.php";s:4:"line";i:86;s:8:"function";s:5:"__get";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"->";}}i:5;i:6341752;}i:79;a:6:{i:0;s:772:"SELECT
+    `kcu`.`CONSTRAINT_NAME` AS `constraint_name`,
+    `kcu`.`COLUMN_NAME` AS `column_name`,
+    `kcu`.`REFERENCED_TABLE_NAME` AS `referenced_table_name`,
+    `kcu`.`REFERENCED_COLUMN_NAME` AS `referenced_column_name`
+FROM `information_schema`.`REFERENTIAL_CONSTRAINTS` AS `rc`
+JOIN `information_schema`.`KEY_COLUMN_USAGE` AS `kcu` ON
+    (
+        `kcu`.`CONSTRAINT_CATALOG` = `rc`.`CONSTRAINT_CATALOG` OR
+        (`kcu`.`CONSTRAINT_CATALOG` IS NULL AND `rc`.`CONSTRAINT_CATALOG` IS NULL)
+    ) AND
+    `kcu`.`CONSTRAINT_SCHEMA` = `rc`.`CONSTRAINT_SCHEMA` AND
+    `kcu`.`CONSTRAINT_NAME` = `rc`.`CONSTRAINT_NAME`
+WHERE `rc`.`CONSTRAINT_SCHEMA` = database() AND `kcu`.`TABLE_SCHEMA` = database()
+AND `rc`.`TABLE_NAME` = 'tb_nganh' AND `kcu`.`TABLE_NAME` = 'tb_nganh'";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1611031263.688578;i:4;a:1:{i:0;a:5:{s:4:"file";s:55:"D:\website\web2\frontend\controllers\OudeController.php";s:4:"line";i:86;s:8:"function";s:5:"__get";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"->";}}i:5;i:6349720;}i:80;a:6:{i:0;s:772:"SELECT
+    `kcu`.`CONSTRAINT_NAME` AS `constraint_name`,
+    `kcu`.`COLUMN_NAME` AS `column_name`,
+    `kcu`.`REFERENCED_TABLE_NAME` AS `referenced_table_name`,
+    `kcu`.`REFERENCED_COLUMN_NAME` AS `referenced_column_name`
+FROM `information_schema`.`REFERENTIAL_CONSTRAINTS` AS `rc`
+JOIN `information_schema`.`KEY_COLUMN_USAGE` AS `kcu` ON
+    (
+        `kcu`.`CONSTRAINT_CATALOG` = `rc`.`CONSTRAINT_CATALOG` OR
+        (`kcu`.`CONSTRAINT_CATALOG` IS NULL AND `rc`.`CONSTRAINT_CATALOG` IS NULL)
+    ) AND
+    `kcu`.`CONSTRAINT_SCHEMA` = `rc`.`CONSTRAINT_SCHEMA` AND
+    `kcu`.`CONSTRAINT_NAME` = `rc`.`CONSTRAINT_NAME`
+WHERE `rc`.`CONSTRAINT_SCHEMA` = database() AND `kcu`.`TABLE_SCHEMA` = database()
+AND `rc`.`TABLE_NAME` = 'tb_nganh' AND `kcu`.`TABLE_NAME` = 'tb_nganh'";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1611031263.690085;i:4;a:1:{i:0;a:5:{s:4:"file";s:55:"D:\website\web2\frontend\controllers\OudeController.php";s:4:"line";i:86;s:8:"function";s:5:"__get";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"->";}}i:5;i:6352104;}i:82;a:6:{i:0;s:54:"SELECT * FROM `tb_ht_dao_tao` WHERE `ma_hinh_thuc`='2'";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1611031263.690836;i:4;a:1:{i:0;a:5:{s:4:"file";s:55:"D:\website\web2\frontend\controllers\OudeController.php";s:4:"line";i:92;s:8:"function";s:5:"__get";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"->";}}i:5;i:6364488;}i:83;a:6:{i:0;s:54:"SELECT * FROM `tb_ht_dao_tao` WHERE `ma_hinh_thuc`='2'";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1611031263.691299;i:4;a:1:{i:0;a:5:{s:4:"file";s:55:"D:\website\web2\frontend\controllers\OudeController.php";s:4:"line";i:92;s:8:"function";s:5:"__get";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"->";}}i:5;i:6366536;}i:85;a:6:{i:0;s:38:"SHOW FULL COLUMNS FROM `tb_ht_dao_tao`";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1611031263.691479;i:4;a:1:{i:0;a:5:{s:4:"file";s:55:"D:\website\web2\frontend\controllers\OudeController.php";s:4:"line";i:92;s:8:"function";s:5:"__get";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"->";}}i:5;i:6371848;}i:86;a:6:{i:0;s:38:"SHOW FULL COLUMNS FROM `tb_ht_dao_tao`";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1611031263.692959;i:4;a:1:{i:0;a:5:{s:4:"file";s:55:"D:\website\web2\frontend\controllers\OudeController.php";s:4:"line";i:92;s:8:"function";s:5:"__get";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"->";}}i:5;i:6377016;}i:88;a:6:{i:0;s:782:"SELECT
+    `kcu`.`CONSTRAINT_NAME` AS `constraint_name`,
+    `kcu`.`COLUMN_NAME` AS `column_name`,
+    `kcu`.`REFERENCED_TABLE_NAME` AS `referenced_table_name`,
+    `kcu`.`REFERENCED_COLUMN_NAME` AS `referenced_column_name`
+FROM `information_schema`.`REFERENTIAL_CONSTRAINTS` AS `rc`
+JOIN `information_schema`.`KEY_COLUMN_USAGE` AS `kcu` ON
+    (
+        `kcu`.`CONSTRAINT_CATALOG` = `rc`.`CONSTRAINT_CATALOG` OR
+        (`kcu`.`CONSTRAINT_CATALOG` IS NULL AND `rc`.`CONSTRAINT_CATALOG` IS NULL)
+    ) AND
+    `kcu`.`CONSTRAINT_SCHEMA` = `rc`.`CONSTRAINT_SCHEMA` AND
+    `kcu`.`CONSTRAINT_NAME` = `rc`.`CONSTRAINT_NAME`
+WHERE `rc`.`CONSTRAINT_SCHEMA` = database() AND `kcu`.`TABLE_SCHEMA` = database()
+AND `rc`.`TABLE_NAME` = 'tb_ht_dao_tao' AND `kcu`.`TABLE_NAME` = 'tb_ht_dao_tao'";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1611031263.693155;i:4;a:1:{i:0;a:5:{s:4:"file";s:55:"D:\website\web2\frontend\controllers\OudeController.php";s:4:"line";i:92;s:8:"function";s:5:"__get";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"->";}}i:5;i:6384416;}i:89;a:6:{i:0;s:782:"SELECT
+    `kcu`.`CONSTRAINT_NAME` AS `constraint_name`,
+    `kcu`.`COLUMN_NAME` AS `column_name`,
+    `kcu`.`REFERENCED_TABLE_NAME` AS `referenced_table_name`,
+    `kcu`.`REFERENCED_COLUMN_NAME` AS `referenced_column_name`
+FROM `information_schema`.`REFERENTIAL_CONSTRAINTS` AS `rc`
+JOIN `information_schema`.`KEY_COLUMN_USAGE` AS `kcu` ON
+    (
+        `kcu`.`CONSTRAINT_CATALOG` = `rc`.`CONSTRAINT_CATALOG` OR
+        (`kcu`.`CONSTRAINT_CATALOG` IS NULL AND `rc`.`CONSTRAINT_CATALOG` IS NULL)
+    ) AND
+    `kcu`.`CONSTRAINT_SCHEMA` = `rc`.`CONSTRAINT_SCHEMA` AND
+    `kcu`.`CONSTRAINT_NAME` = `rc`.`CONSTRAINT_NAME`
+WHERE `rc`.`CONSTRAINT_SCHEMA` = database() AND `kcu`.`TABLE_SCHEMA` = database()
+AND `rc`.`TABLE_NAME` = 'tb_ht_dao_tao' AND `kcu`.`TABLE_NAME` = 'tb_ht_dao_tao'";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1611031263.694515;i:4;a:1:{i:0;a:5:{s:4:"file";s:55:"D:\website\web2\frontend\controllers\OudeController.php";s:4:"line";i:92;s:8:"function";s:5:"__get";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"->";}}i:5;i:6386800;}}}";s:2:"db";s:28467:"a:1:{s:8:"messages";a:48:{i:19;a:6:{i:0;s:106:"SELECT * FROM `tb_sv_hk` WHERE (`tb_sv_hk`.`mssv`='32163013VT2') AND (`tb_sv_hk`.`ma_hk`='tn_193') LIMIT 1";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1611031263.650861;i:4;a:1:{i:0;a:5:{s:4:"file";s:55:"D:\website\web2\frontend\controllers\OudeController.php";s:4:"line";i:78;s:8:"function";s:3:"one";s:5:"class";s:18:"yii\db\ActiveQuery";s:4:"type";s:2:"->";}}i:5;i:6022664;}i:20;a:6:{i:0;s:106:"SELECT * FROM `tb_sv_hk` WHERE (`tb_sv_hk`.`mssv`='32163013VT2') AND (`tb_sv_hk`.`ma_hk`='tn_193') LIMIT 1";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1611031263.651917;i:4;a:1:{i:0;a:5:{s:4:"file";s:55:"D:\website\web2\frontend\controllers\OudeController.php";s:4:"line";i:78;s:8:"function";s:3:"one";s:5:"class";s:18:"yii\db\ActiveQuery";s:4:"type";s:2:"->";}}i:5;i:6025680;}i:22;a:6:{i:0;s:33:"SHOW FULL COLUMNS FROM `tb_sv_hk`";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1611031263.652733;i:4;a:1:{i:0;a:5:{s:4:"file";s:55:"D:\website\web2\frontend\controllers\OudeController.php";s:4:"line";i:78;s:8:"function";s:3:"one";s:5:"class";s:18:"yii\db\ActiveQuery";s:4:"type";s:2:"->";}}i:5;i:6037136;}i:23;a:6:{i:0;s:33:"SHOW FULL COLUMNS FROM `tb_sv_hk`";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1611031263.654766;i:4;a:1:{i:0;a:5:{s:4:"file";s:55:"D:\website\web2\frontend\controllers\OudeController.php";s:4:"line";i:78;s:8:"function";s:3:"one";s:5:"class";s:18:"yii\db\ActiveQuery";s:4:"type";s:2:"->";}}i:5;i:6049968;}i:25;a:6:{i:0;s:772:"SELECT
+    `kcu`.`CONSTRAINT_NAME` AS `constraint_name`,
+    `kcu`.`COLUMN_NAME` AS `column_name`,
+    `kcu`.`REFERENCED_TABLE_NAME` AS `referenced_table_name`,
+    `kcu`.`REFERENCED_COLUMN_NAME` AS `referenced_column_name`
+FROM `information_schema`.`REFERENTIAL_CONSTRAINTS` AS `rc`
+JOIN `information_schema`.`KEY_COLUMN_USAGE` AS `kcu` ON
+    (
+        `kcu`.`CONSTRAINT_CATALOG` = `rc`.`CONSTRAINT_CATALOG` OR
+        (`kcu`.`CONSTRAINT_CATALOG` IS NULL AND `rc`.`CONSTRAINT_CATALOG` IS NULL)
+    ) AND
+    `kcu`.`CONSTRAINT_SCHEMA` = `rc`.`CONSTRAINT_SCHEMA` AND
+    `kcu`.`CONSTRAINT_NAME` = `rc`.`CONSTRAINT_NAME`
+WHERE `rc`.`CONSTRAINT_SCHEMA` = database() AND `kcu`.`TABLE_SCHEMA` = database()
+AND `rc`.`TABLE_NAME` = 'tb_sv_hk' AND `kcu`.`TABLE_NAME` = 'tb_sv_hk'";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1611031263.655816;i:4;a:1:{i:0;a:5:{s:4:"file";s:55:"D:\website\web2\frontend\controllers\OudeController.php";s:4:"line";i:78;s:8:"function";s:3:"one";s:5:"class";s:18:"yii\db\ActiveQuery";s:4:"type";s:2:"->";}}i:5;i:6076192;}i:26;a:6:{i:0;s:772:"SELECT
+    `kcu`.`CONSTRAINT_NAME` AS `constraint_name`,
+    `kcu`.`COLUMN_NAME` AS `column_name`,
+    `kcu`.`REFERENCED_TABLE_NAME` AS `referenced_table_name`,
+    `kcu`.`REFERENCED_COLUMN_NAME` AS `referenced_column_name`
+FROM `information_schema`.`REFERENTIAL_CONSTRAINTS` AS `rc`
+JOIN `information_schema`.`KEY_COLUMN_USAGE` AS `kcu` ON
+    (
+        `kcu`.`CONSTRAINT_CATALOG` = `rc`.`CONSTRAINT_CATALOG` OR
+        (`kcu`.`CONSTRAINT_CATALOG` IS NULL AND `rc`.`CONSTRAINT_CATALOG` IS NULL)
+    ) AND
+    `kcu`.`CONSTRAINT_SCHEMA` = `rc`.`CONSTRAINT_SCHEMA` AND
+    `kcu`.`CONSTRAINT_NAME` = `rc`.`CONSTRAINT_NAME`
+WHERE `rc`.`CONSTRAINT_SCHEMA` = database() AND `kcu`.`TABLE_SCHEMA` = database()
+AND `rc`.`TABLE_NAME` = 'tb_sv_hk' AND `kcu`.`TABLE_NAME` = 'tb_sv_hk'";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1611031263.658424;i:4;a:1:{i:0;a:5:{s:4:"file";s:55:"D:\website\web2\frontend\controllers\OudeController.php";s:4:"line";i:78;s:8:"function";s:3:"one";s:5:"class";s:18:"yii\db\ActiveQuery";s:4:"type";s:2:"->";}}i:5;i:6079944;}i:28;a:6:{i:0;s:55:"SELECT * FROM `tb_sinh_vien` WHERE `mssv`='32163013VT2'";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1611031263.660559;i:4;a:1:{i:0;a:5:{s:4:"file";s:55:"D:\website\web2\frontend\controllers\OudeController.php";s:4:"line";i:82;s:8:"function";s:5:"__get";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"->";}}i:5;i:6141808;}i:29;a:6:{i:0;s:55:"SELECT * FROM `tb_sinh_vien` WHERE `mssv`='32163013VT2'";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1611031263.661153;i:4;a:1:{i:0;a:5:{s:4:"file";s:55:"D:\website\web2\frontend\controllers\OudeController.php";s:4:"line";i:82;s:8:"function";s:5:"__get";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"->";}}i:5;i:6144176;}i:31;a:6:{i:0;s:37:"SHOW FULL COLUMNS FROM `tb_sinh_vien`";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1611031263.661293;i:4;a:1:{i:0;a:5:{s:4:"file";s:55:"D:\website\web2\frontend\controllers\OudeController.php";s:4:"line";i:82;s:8:"function";s:5:"__get";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"->";}}i:5;i:6149784;}i:32;a:6:{i:0;s:37:"SHOW FULL COLUMNS FROM `tb_sinh_vien`";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1611031263.662922;i:4;a:1:{i:0;a:5:{s:4:"file";s:55:"D:\website\web2\frontend\controllers\OudeController.php";s:4:"line";i:82;s:8:"function";s:5:"__get";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"->";}}i:5;i:6158880;}i:34;a:6:{i:0;s:780:"SELECT
+    `kcu`.`CONSTRAINT_NAME` AS `constraint_name`,
+    `kcu`.`COLUMN_NAME` AS `column_name`,
+    `kcu`.`REFERENCED_TABLE_NAME` AS `referenced_table_name`,
+    `kcu`.`REFERENCED_COLUMN_NAME` AS `referenced_column_name`
+FROM `information_schema`.`REFERENTIAL_CONSTRAINTS` AS `rc`
+JOIN `information_schema`.`KEY_COLUMN_USAGE` AS `kcu` ON
+    (
+        `kcu`.`CONSTRAINT_CATALOG` = `rc`.`CONSTRAINT_CATALOG` OR
+        (`kcu`.`CONSTRAINT_CATALOG` IS NULL AND `rc`.`CONSTRAINT_CATALOG` IS NULL)
+    ) AND
+    `kcu`.`CONSTRAINT_SCHEMA` = `rc`.`CONSTRAINT_SCHEMA` AND
+    `kcu`.`CONSTRAINT_NAME` = `rc`.`CONSTRAINT_NAME`
+WHERE `rc`.`CONSTRAINT_SCHEMA` = database() AND `kcu`.`TABLE_SCHEMA` = database()
+AND `rc`.`TABLE_NAME` = 'tb_sinh_vien' AND `kcu`.`TABLE_NAME` = 'tb_sinh_vien'";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1611031263.663194;i:4;a:1:{i:0;a:5:{s:4:"file";s:55:"D:\website\web2\frontend\controllers\OudeController.php";s:4:"line";i:82;s:8:"function";s:5:"__get";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"->";}}i:5;i:6165368;}i:35;a:6:{i:0;s:780:"SELECT
+    `kcu`.`CONSTRAINT_NAME` AS `constraint_name`,
+    `kcu`.`COLUMN_NAME` AS `column_name`,
+    `kcu`.`REFERENCED_TABLE_NAME` AS `referenced_table_name`,
+    `kcu`.`REFERENCED_COLUMN_NAME` AS `referenced_column_name`
+FROM `information_schema`.`REFERENTIAL_CONSTRAINTS` AS `rc`
+JOIN `information_schema`.`KEY_COLUMN_USAGE` AS `kcu` ON
+    (
+        `kcu`.`CONSTRAINT_CATALOG` = `rc`.`CONSTRAINT_CATALOG` OR
+        (`kcu`.`CONSTRAINT_CATALOG` IS NULL AND `rc`.`CONSTRAINT_CATALOG` IS NULL)
+    ) AND
+    `kcu`.`CONSTRAINT_SCHEMA` = `rc`.`CONSTRAINT_SCHEMA` AND
+    `kcu`.`CONSTRAINT_NAME` = `rc`.`CONSTRAINT_NAME`
+WHERE `rc`.`CONSTRAINT_SCHEMA` = database() AND `kcu`.`TABLE_SCHEMA` = database()
+AND `rc`.`TABLE_NAME` = 'tb_sinh_vien' AND `kcu`.`TABLE_NAME` = 'tb_sinh_vien'";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1611031263.664555;i:4;a:1:{i:0;a:5:{s:4:"file";s:55:"D:\website\web2\frontend\controllers\OudeController.php";s:4:"line";i:82;s:8:"function";s:5:"__get";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"->";}}i:5;i:6167752;}i:37;a:6:{i:0;s:54:"SELECT * FROM `tb_ho_so_sv` WHERE `mssv`='32163013VT2'";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1611031263.665768;i:4;a:1:{i:0;a:5:{s:4:"file";s:55:"D:\website\web2\frontend\controllers\OudeController.php";s:4:"line";i:82;s:8:"function";s:5:"__get";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"->";}}i:5;i:6200864;}i:38;a:6:{i:0;s:54:"SELECT * FROM `tb_ho_so_sv` WHERE `mssv`='32163013VT2'";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1611031263.66635;i:4;a:1:{i:0;a:5:{s:4:"file";s:55:"D:\website\web2\frontend\controllers\OudeController.php";s:4:"line";i:82;s:8:"function";s:5:"__get";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"->";}}i:5;i:6203336;}i:40;a:6:{i:0;s:36:"SHOW FULL COLUMNS FROM `tb_ho_so_sv`";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1611031263.666469;i:4;a:1:{i:0;a:5:{s:4:"file";s:55:"D:\website\web2\frontend\controllers\OudeController.php";s:4:"line";i:82;s:8:"function";s:5:"__get";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"->";}}i:5;i:6207896;}i:41;a:6:{i:0;s:36:"SHOW FULL COLUMNS FROM `tb_ho_so_sv`";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1611031263.668355;i:4;a:1:{i:0;a:5:{s:4:"file";s:55:"D:\website\web2\frontend\controllers\OudeController.php";s:4:"line";i:82;s:8:"function";s:5:"__get";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"->";}}i:5;i:6217104;}i:43;a:6:{i:0;s:778:"SELECT
+    `kcu`.`CONSTRAINT_NAME` AS `constraint_name`,
+    `kcu`.`COLUMN_NAME` AS `column_name`,
+    `kcu`.`REFERENCED_TABLE_NAME` AS `referenced_table_name`,
+    `kcu`.`REFERENCED_COLUMN_NAME` AS `referenced_column_name`
+FROM `information_schema`.`REFERENTIAL_CONSTRAINTS` AS `rc`
+JOIN `information_schema`.`KEY_COLUMN_USAGE` AS `kcu` ON
+    (
+        `kcu`.`CONSTRAINT_CATALOG` = `rc`.`CONSTRAINT_CATALOG` OR
+        (`kcu`.`CONSTRAINT_CATALOG` IS NULL AND `rc`.`CONSTRAINT_CATALOG` IS NULL)
+    ) AND
+    `kcu`.`CONSTRAINT_SCHEMA` = `rc`.`CONSTRAINT_SCHEMA` AND
+    `kcu`.`CONSTRAINT_NAME` = `rc`.`CONSTRAINT_NAME`
+WHERE `rc`.`CONSTRAINT_SCHEMA` = database() AND `kcu`.`TABLE_SCHEMA` = database()
+AND `rc`.`TABLE_NAME` = 'tb_ho_so_sv' AND `kcu`.`TABLE_NAME` = 'tb_ho_so_sv'";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1611031263.668648;i:4;a:1:{i:0;a:5:{s:4:"file";s:55:"D:\website\web2\frontend\controllers\OudeController.php";s:4:"line";i:82;s:8:"function";s:5:"__get";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"->";}}i:5;i:6222232;}i:44;a:6:{i:0;s:778:"SELECT
+    `kcu`.`CONSTRAINT_NAME` AS `constraint_name`,
+    `kcu`.`COLUMN_NAME` AS `column_name`,
+    `kcu`.`REFERENCED_TABLE_NAME` AS `referenced_table_name`,
+    `kcu`.`REFERENCED_COLUMN_NAME` AS `referenced_column_name`
+FROM `information_schema`.`REFERENTIAL_CONSTRAINTS` AS `rc`
+JOIN `information_schema`.`KEY_COLUMN_USAGE` AS `kcu` ON
+    (
+        `kcu`.`CONSTRAINT_CATALOG` = `rc`.`CONSTRAINT_CATALOG` OR
+        (`kcu`.`CONSTRAINT_CATALOG` IS NULL AND `rc`.`CONSTRAINT_CATALOG` IS NULL)
+    ) AND
+    `kcu`.`CONSTRAINT_SCHEMA` = `rc`.`CONSTRAINT_SCHEMA` AND
+    `kcu`.`CONSTRAINT_NAME` = `rc`.`CONSTRAINT_NAME`
+WHERE `rc`.`CONSTRAINT_SCHEMA` = database() AND `kcu`.`TABLE_SCHEMA` = database()
+AND `rc`.`TABLE_NAME` = 'tb_ho_so_sv' AND `kcu`.`TABLE_NAME` = 'tb_ho_so_sv'";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1611031263.670556;i:4;a:1:{i:0;a:5:{s:4:"file";s:55:"D:\website\web2\frontend\controllers\OudeController.php";s:4:"line";i:82;s:8:"function";s:5:"__get";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"->";}}i:5;i:6228688;}i:46;a:6:{i:0;s:49:"SELECT * FROM `tb_don_vi_lk` WHERE `ma_dvlk`='VT'";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1611031263.670839;i:4;a:1:{i:0;a:5:{s:4:"file";s:55:"D:\website\web2\frontend\controllers\OudeController.php";s:4:"line";i:82;s:8:"function";s:5:"__get";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"->";}}i:5;i:6224336;}i:47;a:6:{i:0;s:49:"SELECT * FROM `tb_don_vi_lk` WHERE `ma_dvlk`='VT'";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1611031263.671439;i:4;a:1:{i:0;a:5:{s:4:"file";s:55:"D:\website\web2\frontend\controllers\OudeController.php";s:4:"line";i:82;s:8:"function";s:5:"__get";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"->";}}i:5;i:6226112;}i:49;a:6:{i:0;s:37:"SHOW FULL COLUMNS FROM `tb_don_vi_lk`";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1611031263.671584;i:4;a:1:{i:0;a:5:{s:4:"file";s:55:"D:\website\web2\frontend\controllers\OudeController.php";s:4:"line";i:82;s:8:"function";s:5:"__get";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"->";}}i:5;i:6231464;}i:50;a:6:{i:0;s:37:"SHOW FULL COLUMNS FROM `tb_don_vi_lk`";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1611031263.673795;i:4;a:1:{i:0;a:5:{s:4:"file";s:55:"D:\website\web2\frontend\controllers\OudeController.php";s:4:"line";i:82;s:8:"function";s:5:"__get";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"->";}}i:5;i:6235632;}i:52;a:6:{i:0;s:780:"SELECT
+    `kcu`.`CONSTRAINT_NAME` AS `constraint_name`,
+    `kcu`.`COLUMN_NAME` AS `column_name`,
+    `kcu`.`REFERENCED_TABLE_NAME` AS `referenced_table_name`,
+    `kcu`.`REFERENCED_COLUMN_NAME` AS `referenced_column_name`
+FROM `information_schema`.`REFERENTIAL_CONSTRAINTS` AS `rc`
+JOIN `information_schema`.`KEY_COLUMN_USAGE` AS `kcu` ON
+    (
+        `kcu`.`CONSTRAINT_CATALOG` = `rc`.`CONSTRAINT_CATALOG` OR
+        (`kcu`.`CONSTRAINT_CATALOG` IS NULL AND `rc`.`CONSTRAINT_CATALOG` IS NULL)
+    ) AND
+    `kcu`.`CONSTRAINT_SCHEMA` = `rc`.`CONSTRAINT_SCHEMA` AND
+    `kcu`.`CONSTRAINT_NAME` = `rc`.`CONSTRAINT_NAME`
+WHERE `rc`.`CONSTRAINT_SCHEMA` = database() AND `kcu`.`TABLE_SCHEMA` = database()
+AND `rc`.`TABLE_NAME` = 'tb_don_vi_lk' AND `kcu`.`TABLE_NAME` = 'tb_don_vi_lk'";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1611031263.674191;i:4;a:1:{i:0;a:5:{s:4:"file";s:55:"D:\website\web2\frontend\controllers\OudeController.php";s:4:"line";i:82;s:8:"function";s:5:"__get";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"->";}}i:5;i:6243600;}i:53;a:6:{i:0;s:780:"SELECT
+    `kcu`.`CONSTRAINT_NAME` AS `constraint_name`,
+    `kcu`.`COLUMN_NAME` AS `column_name`,
+    `kcu`.`REFERENCED_TABLE_NAME` AS `referenced_table_name`,
+    `kcu`.`REFERENCED_COLUMN_NAME` AS `referenced_column_name`
+FROM `information_schema`.`REFERENTIAL_CONSTRAINTS` AS `rc`
+JOIN `information_schema`.`KEY_COLUMN_USAGE` AS `kcu` ON
+    (
+        `kcu`.`CONSTRAINT_CATALOG` = `rc`.`CONSTRAINT_CATALOG` OR
+        (`kcu`.`CONSTRAINT_CATALOG` IS NULL AND `rc`.`CONSTRAINT_CATALOG` IS NULL)
+    ) AND
+    `kcu`.`CONSTRAINT_SCHEMA` = `rc`.`CONSTRAINT_SCHEMA` AND
+    `kcu`.`CONSTRAINT_NAME` = `rc`.`CONSTRAINT_NAME`
+WHERE `rc`.`CONSTRAINT_SCHEMA` = database() AND `kcu`.`TABLE_SCHEMA` = database()
+AND `rc`.`TABLE_NAME` = 'tb_don_vi_lk' AND `kcu`.`TABLE_NAME` = 'tb_don_vi_lk'";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1611031263.676058;i:4;a:1:{i:0;a:5:{s:4:"file";s:55:"D:\website\web2\frontend\controllers\OudeController.php";s:4:"line";i:82;s:8:"function";s:5:"__get";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"->";}}i:5;i:6245984;}i:55;a:6:{i:0;s:44:"SELECT * FROM `tb_dan_toc` WHERE `ma_dt`='1'";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1611031263.676902;i:4;a:1:{i:0;a:5:{s:4:"file";s:55:"D:\website\web2\frontend\controllers\OudeController.php";s:4:"line";i:84;s:8:"function";s:5:"__get";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"->";}}i:5;i:6258216;}i:56;a:6:{i:0;s:44:"SELECT * FROM `tb_dan_toc` WHERE `ma_dt`='1'";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1611031263.677599;i:4;a:1:{i:0;a:5:{s:4:"file";s:55:"D:\website\web2\frontend\controllers\OudeController.php";s:4:"line";i:84;s:8:"function";s:5:"__get";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"->";}}i:5;i:6260008;}i:58;a:6:{i:0;s:35:"SHOW FULL COLUMNS FROM `tb_dan_toc`";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1611031263.677731;i:4;a:1:{i:0;a:5:{s:4:"file";s:55:"D:\website\web2\frontend\controllers\OudeController.php";s:4:"line";i:84;s:8:"function";s:5:"__get";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"->";}}i:5;i:6265376;}i:59;a:6:{i:0;s:35:"SHOW FULL COLUMNS FROM `tb_dan_toc`";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1611031263.679164;i:4;a:1:{i:0;a:5:{s:4:"file";s:55:"D:\website\web2\frontend\controllers\OudeController.php";s:4:"line";i:84;s:8:"function";s:5:"__get";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"->";}}i:5;i:6269512;}i:61;a:6:{i:0;s:776:"SELECT
+    `kcu`.`CONSTRAINT_NAME` AS `constraint_name`,
+    `kcu`.`COLUMN_NAME` AS `column_name`,
+    `kcu`.`REFERENCED_TABLE_NAME` AS `referenced_table_name`,
+    `kcu`.`REFERENCED_COLUMN_NAME` AS `referenced_column_name`
+FROM `information_schema`.`REFERENTIAL_CONSTRAINTS` AS `rc`
+JOIN `information_schema`.`KEY_COLUMN_USAGE` AS `kcu` ON
+    (
+        `kcu`.`CONSTRAINT_CATALOG` = `rc`.`CONSTRAINT_CATALOG` OR
+        (`kcu`.`CONSTRAINT_CATALOG` IS NULL AND `rc`.`CONSTRAINT_CATALOG` IS NULL)
+    ) AND
+    `kcu`.`CONSTRAINT_SCHEMA` = `rc`.`CONSTRAINT_SCHEMA` AND
+    `kcu`.`CONSTRAINT_NAME` = `rc`.`CONSTRAINT_NAME`
+WHERE `rc`.`CONSTRAINT_SCHEMA` = database() AND `kcu`.`TABLE_SCHEMA` = database()
+AND `rc`.`TABLE_NAME` = 'tb_dan_toc' AND `kcu`.`TABLE_NAME` = 'tb_dan_toc'";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1611031263.679426;i:4;a:1:{i:0;a:5:{s:4:"file";s:55:"D:\website\web2\frontend\controllers\OudeController.php";s:4:"line";i:84;s:8:"function";s:5:"__get";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"->";}}i:5;i:6277480;}i:62;a:6:{i:0;s:776:"SELECT
+    `kcu`.`CONSTRAINT_NAME` AS `constraint_name`,
+    `kcu`.`COLUMN_NAME` AS `column_name`,
+    `kcu`.`REFERENCED_TABLE_NAME` AS `referenced_table_name`,
+    `kcu`.`REFERENCED_COLUMN_NAME` AS `referenced_column_name`
+FROM `information_schema`.`REFERENTIAL_CONSTRAINTS` AS `rc`
+JOIN `information_schema`.`KEY_COLUMN_USAGE` AS `kcu` ON
+    (
+        `kcu`.`CONSTRAINT_CATALOG` = `rc`.`CONSTRAINT_CATALOG` OR
+        (`kcu`.`CONSTRAINT_CATALOG` IS NULL AND `rc`.`CONSTRAINT_CATALOG` IS NULL)
+    ) AND
+    `kcu`.`CONSTRAINT_SCHEMA` = `rc`.`CONSTRAINT_SCHEMA` AND
+    `kcu`.`CONSTRAINT_NAME` = `rc`.`CONSTRAINT_NAME`
+WHERE `rc`.`CONSTRAINT_SCHEMA` = database() AND `kcu`.`TABLE_SCHEMA` = database()
+AND `rc`.`TABLE_NAME` = 'tb_dan_toc' AND `kcu`.`TABLE_NAME` = 'tb_dan_toc'";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1611031263.680801;i:4;a:1:{i:0;a:5:{s:4:"file";s:55:"D:\website\web2\frontend\controllers\OudeController.php";s:4:"line";i:84;s:8:"function";s:5:"__get";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"->";}}i:5;i:6279864;}i:64;a:6:{i:0;s:47:"SELECT * FROM `tb_quoc_tich` WHERE `ma_qt`='VN'";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1611031263.681522;i:4;a:1:{i:0;a:5:{s:4:"file";s:55:"D:\website\web2\frontend\controllers\OudeController.php";s:4:"line";i:85;s:8:"function";s:5:"__get";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"->";}}i:5;i:6291520;}i:65;a:6:{i:0;s:47:"SELECT * FROM `tb_quoc_tich` WHERE `ma_qt`='VN'";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1611031263.68205;i:4;a:1:{i:0;a:5:{s:4:"file";s:55:"D:\website\web2\frontend\controllers\OudeController.php";s:4:"line";i:85;s:8:"function";s:5:"__get";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"->";}}i:5;i:6298952;}i:67;a:6:{i:0;s:37:"SHOW FULL COLUMNS FROM `tb_quoc_tich`";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1611031263.682162;i:4;a:1:{i:0;a:5:{s:4:"file";s:55:"D:\website\web2\frontend\controllers\OudeController.php";s:4:"line";i:85;s:8:"function";s:5:"__get";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"->";}}i:5;i:6304312;}i:68;a:6:{i:0;s:37:"SHOW FULL COLUMNS FROM `tb_quoc_tich`";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1611031263.683645;i:4;a:1:{i:0;a:5:{s:4:"file";s:55:"D:\website\web2\frontend\controllers\OudeController.php";s:4:"line";i:85;s:8:"function";s:5:"__get";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"->";}}i:5;i:6308464;}i:70;a:6:{i:0;s:780:"SELECT
+    `kcu`.`CONSTRAINT_NAME` AS `constraint_name`,
+    `kcu`.`COLUMN_NAME` AS `column_name`,
+    `kcu`.`REFERENCED_TABLE_NAME` AS `referenced_table_name`,
+    `kcu`.`REFERENCED_COLUMN_NAME` AS `referenced_column_name`
+FROM `information_schema`.`REFERENTIAL_CONSTRAINTS` AS `rc`
+JOIN `information_schema`.`KEY_COLUMN_USAGE` AS `kcu` ON
+    (
+        `kcu`.`CONSTRAINT_CATALOG` = `rc`.`CONSTRAINT_CATALOG` OR
+        (`kcu`.`CONSTRAINT_CATALOG` IS NULL AND `rc`.`CONSTRAINT_CATALOG` IS NULL)
+    ) AND
+    `kcu`.`CONSTRAINT_SCHEMA` = `rc`.`CONSTRAINT_SCHEMA` AND
+    `kcu`.`CONSTRAINT_NAME` = `rc`.`CONSTRAINT_NAME`
+WHERE `rc`.`CONSTRAINT_SCHEMA` = database() AND `kcu`.`TABLE_SCHEMA` = database()
+AND `rc`.`TABLE_NAME` = 'tb_quoc_tich' AND `kcu`.`TABLE_NAME` = 'tb_quoc_tich'";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1611031263.68385;i:4;a:1:{i:0;a:5:{s:4:"file";s:55:"D:\website\web2\frontend\controllers\OudeController.php";s:4:"line";i:85;s:8:"function";s:5:"__get";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"->";}}i:5;i:6316432;}i:71;a:6:{i:0;s:780:"SELECT
+    `kcu`.`CONSTRAINT_NAME` AS `constraint_name`,
+    `kcu`.`COLUMN_NAME` AS `column_name`,
+    `kcu`.`REFERENCED_TABLE_NAME` AS `referenced_table_name`,
+    `kcu`.`REFERENCED_COLUMN_NAME` AS `referenced_column_name`
+FROM `information_schema`.`REFERENTIAL_CONSTRAINTS` AS `rc`
+JOIN `information_schema`.`KEY_COLUMN_USAGE` AS `kcu` ON
+    (
+        `kcu`.`CONSTRAINT_CATALOG` = `rc`.`CONSTRAINT_CATALOG` OR
+        (`kcu`.`CONSTRAINT_CATALOG` IS NULL AND `rc`.`CONSTRAINT_CATALOG` IS NULL)
+    ) AND
+    `kcu`.`CONSTRAINT_SCHEMA` = `rc`.`CONSTRAINT_SCHEMA` AND
+    `kcu`.`CONSTRAINT_NAME` = `rc`.`CONSTRAINT_NAME`
+WHERE `rc`.`CONSTRAINT_SCHEMA` = database() AND `kcu`.`TABLE_SCHEMA` = database()
+AND `rc`.`TABLE_NAME` = 'tb_quoc_tich' AND `kcu`.`TABLE_NAME` = 'tb_quoc_tich'";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1611031263.685577;i:4;a:1:{i:0;a:5:{s:4:"file";s:55:"D:\website\web2\frontend\controllers\OudeController.php";s:4:"line";i:85;s:8:"function";s:5:"__get";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"->";}}i:5;i:6318816;}i:73;a:6:{i:0;s:46:"SELECT * FROM `tb_nganh` WHERE `ma_nganh`='32'";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1611031263.686339;i:4;a:1:{i:0;a:5:{s:4:"file";s:55:"D:\website\web2\frontend\controllers\OudeController.php";s:4:"line";i:86;s:8:"function";s:5:"__get";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"->";}}i:5;i:6330456;}i:74;a:6:{i:0;s:46:"SELECT * FROM `tb_nganh` WHERE `ma_nganh`='32'";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1611031263.686849;i:4;a:1:{i:0;a:5:{s:4:"file";s:55:"D:\website\web2\frontend\controllers\OudeController.php";s:4:"line";i:86;s:8:"function";s:5:"__get";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"->";}}i:5;i:6332240;}i:76;a:6:{i:0;s:33:"SHOW FULL COLUMNS FROM `tb_nganh`";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1611031263.686975;i:4;a:1:{i:0;a:5:{s:4:"file";s:55:"D:\website\web2\frontend\controllers\OudeController.php";s:4:"line";i:86;s:8:"function";s:5:"__get";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"->";}}i:5;i:6337608;}i:77;a:6:{i:0;s:33:"SHOW FULL COLUMNS FROM `tb_nganh`";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1611031263.688403;i:4;a:1:{i:0;a:5:{s:4:"file";s:55:"D:\website\web2\frontend\controllers\OudeController.php";s:4:"line";i:86;s:8:"function";s:5:"__get";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"->";}}i:5;i:6341752;}i:79;a:6:{i:0;s:772:"SELECT
+    `kcu`.`CONSTRAINT_NAME` AS `constraint_name`,
+    `kcu`.`COLUMN_NAME` AS `column_name`,
+    `kcu`.`REFERENCED_TABLE_NAME` AS `referenced_table_name`,
+    `kcu`.`REFERENCED_COLUMN_NAME` AS `referenced_column_name`
+FROM `information_schema`.`REFERENTIAL_CONSTRAINTS` AS `rc`
+JOIN `information_schema`.`KEY_COLUMN_USAGE` AS `kcu` ON
+    (
+        `kcu`.`CONSTRAINT_CATALOG` = `rc`.`CONSTRAINT_CATALOG` OR
+        (`kcu`.`CONSTRAINT_CATALOG` IS NULL AND `rc`.`CONSTRAINT_CATALOG` IS NULL)
+    ) AND
+    `kcu`.`CONSTRAINT_SCHEMA` = `rc`.`CONSTRAINT_SCHEMA` AND
+    `kcu`.`CONSTRAINT_NAME` = `rc`.`CONSTRAINT_NAME`
+WHERE `rc`.`CONSTRAINT_SCHEMA` = database() AND `kcu`.`TABLE_SCHEMA` = database()
+AND `rc`.`TABLE_NAME` = 'tb_nganh' AND `kcu`.`TABLE_NAME` = 'tb_nganh'";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1611031263.688578;i:4;a:1:{i:0;a:5:{s:4:"file";s:55:"D:\website\web2\frontend\controllers\OudeController.php";s:4:"line";i:86;s:8:"function";s:5:"__get";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"->";}}i:5;i:6349720;}i:80;a:6:{i:0;s:772:"SELECT
+    `kcu`.`CONSTRAINT_NAME` AS `constraint_name`,
+    `kcu`.`COLUMN_NAME` AS `column_name`,
+    `kcu`.`REFERENCED_TABLE_NAME` AS `referenced_table_name`,
+    `kcu`.`REFERENCED_COLUMN_NAME` AS `referenced_column_name`
+FROM `information_schema`.`REFERENTIAL_CONSTRAINTS` AS `rc`
+JOIN `information_schema`.`KEY_COLUMN_USAGE` AS `kcu` ON
+    (
+        `kcu`.`CONSTRAINT_CATALOG` = `rc`.`CONSTRAINT_CATALOG` OR
+        (`kcu`.`CONSTRAINT_CATALOG` IS NULL AND `rc`.`CONSTRAINT_CATALOG` IS NULL)
+    ) AND
+    `kcu`.`CONSTRAINT_SCHEMA` = `rc`.`CONSTRAINT_SCHEMA` AND
+    `kcu`.`CONSTRAINT_NAME` = `rc`.`CONSTRAINT_NAME`
+WHERE `rc`.`CONSTRAINT_SCHEMA` = database() AND `kcu`.`TABLE_SCHEMA` = database()
+AND `rc`.`TABLE_NAME` = 'tb_nganh' AND `kcu`.`TABLE_NAME` = 'tb_nganh'";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1611031263.690085;i:4;a:1:{i:0;a:5:{s:4:"file";s:55:"D:\website\web2\frontend\controllers\OudeController.php";s:4:"line";i:86;s:8:"function";s:5:"__get";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"->";}}i:5;i:6352104;}i:82;a:6:{i:0;s:54:"SELECT * FROM `tb_ht_dao_tao` WHERE `ma_hinh_thuc`='2'";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1611031263.690836;i:4;a:1:{i:0;a:5:{s:4:"file";s:55:"D:\website\web2\frontend\controllers\OudeController.php";s:4:"line";i:92;s:8:"function";s:5:"__get";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"->";}}i:5;i:6364488;}i:83;a:6:{i:0;s:54:"SELECT * FROM `tb_ht_dao_tao` WHERE `ma_hinh_thuc`='2'";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1611031263.691299;i:4;a:1:{i:0;a:5:{s:4:"file";s:55:"D:\website\web2\frontend\controllers\OudeController.php";s:4:"line";i:92;s:8:"function";s:5:"__get";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"->";}}i:5;i:6366536;}i:85;a:6:{i:0;s:38:"SHOW FULL COLUMNS FROM `tb_ht_dao_tao`";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1611031263.691479;i:4;a:1:{i:0;a:5:{s:4:"file";s:55:"D:\website\web2\frontend\controllers\OudeController.php";s:4:"line";i:92;s:8:"function";s:5:"__get";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"->";}}i:5;i:6371848;}i:86;a:6:{i:0;s:38:"SHOW FULL COLUMNS FROM `tb_ht_dao_tao`";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1611031263.692959;i:4;a:1:{i:0;a:5:{s:4:"file";s:55:"D:\website\web2\frontend\controllers\OudeController.php";s:4:"line";i:92;s:8:"function";s:5:"__get";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"->";}}i:5;i:6377016;}i:88;a:6:{i:0;s:782:"SELECT
+    `kcu`.`CONSTRAINT_NAME` AS `constraint_name`,
+    `kcu`.`COLUMN_NAME` AS `column_name`,
+    `kcu`.`REFERENCED_TABLE_NAME` AS `referenced_table_name`,
+    `kcu`.`REFERENCED_COLUMN_NAME` AS `referenced_column_name`
+FROM `information_schema`.`REFERENTIAL_CONSTRAINTS` AS `rc`
+JOIN `information_schema`.`KEY_COLUMN_USAGE` AS `kcu` ON
+    (
+        `kcu`.`CONSTRAINT_CATALOG` = `rc`.`CONSTRAINT_CATALOG` OR
+        (`kcu`.`CONSTRAINT_CATALOG` IS NULL AND `rc`.`CONSTRAINT_CATALOG` IS NULL)
+    ) AND
+    `kcu`.`CONSTRAINT_SCHEMA` = `rc`.`CONSTRAINT_SCHEMA` AND
+    `kcu`.`CONSTRAINT_NAME` = `rc`.`CONSTRAINT_NAME`
+WHERE `rc`.`CONSTRAINT_SCHEMA` = database() AND `kcu`.`TABLE_SCHEMA` = database()
+AND `rc`.`TABLE_NAME` = 'tb_ht_dao_tao' AND `kcu`.`TABLE_NAME` = 'tb_ht_dao_tao'";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1611031263.693155;i:4;a:1:{i:0;a:5:{s:4:"file";s:55:"D:\website\web2\frontend\controllers\OudeController.php";s:4:"line";i:92;s:8:"function";s:5:"__get";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"->";}}i:5;i:6384416;}i:89;a:6:{i:0;s:782:"SELECT
+    `kcu`.`CONSTRAINT_NAME` AS `constraint_name`,
+    `kcu`.`COLUMN_NAME` AS `column_name`,
+    `kcu`.`REFERENCED_TABLE_NAME` AS `referenced_table_name`,
+    `kcu`.`REFERENCED_COLUMN_NAME` AS `referenced_column_name`
+FROM `information_schema`.`REFERENTIAL_CONSTRAINTS` AS `rc`
+JOIN `information_schema`.`KEY_COLUMN_USAGE` AS `kcu` ON
+    (
+        `kcu`.`CONSTRAINT_CATALOG` = `rc`.`CONSTRAINT_CATALOG` OR
+        (`kcu`.`CONSTRAINT_CATALOG` IS NULL AND `rc`.`CONSTRAINT_CATALOG` IS NULL)
+    ) AND
+    `kcu`.`CONSTRAINT_SCHEMA` = `rc`.`CONSTRAINT_SCHEMA` AND
+    `kcu`.`CONSTRAINT_NAME` = `rc`.`CONSTRAINT_NAME`
+WHERE `rc`.`CONSTRAINT_SCHEMA` = database() AND `kcu`.`TABLE_SCHEMA` = database()
+AND `rc`.`TABLE_NAME` = 'tb_ht_dao_tao' AND `kcu`.`TABLE_NAME` = 'tb_ht_dao_tao'";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1611031263.694515;i:4;a:1:{i:0;a:5:{s:4:"file";s:55:"D:\website\web2\frontend\controllers\OudeController.php";s:4:"line";i:92;s:8:"function";s:5:"__get";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"->";}}i:5;i:6386800;}}}";s:5:"event";s:6592:"a:38:{i:0;a:5:{s:4:"time";d:1611031263.621765;s:4:"name";s:13:"beforeRequest";s:5:"class";s:14:"yii\base\Event";s:8:"isStatic";s:1:"0";s:11:"senderClass";s:19:"yii\web\Application";}i:1;a:5:{s:4:"time";d:1611031263.626901;s:4:"name";s:12:"beforeAction";s:5:"class";s:20:"yii\base\ActionEvent";s:8:"isStatic";s:1:"0";s:11:"senderClass";s:19:"yii\web\Application";}i:2;a:5:{s:4:"time";d:1611031263.626924;s:4:"name";s:12:"beforeAction";s:5:"class";s:20:"yii\base\ActionEvent";s:8:"isStatic";s:1:"0";s:11:"senderClass";s:35:"frontend\controllers\OudeController";}i:3;a:5:{s:4:"time";d:1611031263.637726;s:4:"name";s:4:"init";s:5:"class";s:14:"yii\base\Event";s:8:"isStatic";s:1:"0";s:11:"senderClass";s:18:"yii\db\ActiveQuery";}i:4;a:5:{s:4:"time";d:1611031263.648019;s:4:"name";s:9:"afterOpen";s:5:"class";s:14:"yii\base\Event";s:8:"isStatic";s:1:"0";s:11:"senderClass";s:17:"yii\db\Connection";}i:5;a:5:{s:4:"time";d:1611031263.652004;s:4:"name";s:4:"init";s:5:"class";s:14:"yii\base\Event";s:8:"isStatic";s:1:"0";s:11:"senderClass";s:31:"frontend\models\StudentSemester";}i:6;a:5:{s:4:"time";d:1611031263.65857;s:4:"name";s:9:"afterFind";s:5:"class";s:14:"yii\base\Event";s:8:"isStatic";s:1:"0";s:11:"senderClass";s:31:"frontend\models\StudentSemester";}i:7;a:5:{s:4:"time";d:1611031263.659335;s:4:"name";s:4:"init";s:5:"class";s:14:"yii\base\Event";s:8:"isStatic";s:1:"0";s:11:"senderClass";s:18:"yii\db\ActiveQuery";}i:8;a:5:{s:4:"time";d:1611031263.661203;s:4:"name";s:4:"init";s:5:"class";s:14:"yii\base\Event";s:8:"isStatic";s:1:"0";s:11:"senderClass";s:23:"frontend\models\Student";}i:9;a:5:{s:4:"time";d:1611031263.66465;s:4:"name";s:9:"afterFind";s:5:"class";s:14:"yii\base\Event";s:8:"isStatic";s:1:"0";s:11:"senderClass";s:23:"frontend\models\Student";}i:10;a:5:{s:4:"time";d:1611031263.665073;s:4:"name";s:4:"init";s:5:"class";s:14:"yii\base\Event";s:8:"isStatic";s:1:"0";s:11:"senderClass";s:18:"yii\db\ActiveQuery";}i:11;a:5:{s:4:"time";d:1611031263.665576;s:4:"name";s:4:"init";s:5:"class";s:14:"yii\base\Event";s:8:"isStatic";s:1:"0";s:11:"senderClass";s:18:"yii\db\ActiveQuery";}i:12;a:5:{s:4:"time";d:1611031263.666393;s:4:"name";s:4:"init";s:5:"class";s:14:"yii\base\Event";s:8:"isStatic";s:1:"0";s:11:"senderClass";s:29:"frontend\models\StudentRecord";}i:13;a:5:{s:4:"time";d:1611031263.670684;s:4:"name";s:9:"afterFind";s:5:"class";s:14:"yii\base\Event";s:8:"isStatic";s:1:"0";s:11:"senderClass";s:29:"frontend\models\StudentRecord";}i:14;a:5:{s:4:"time";d:1611031263.671492;s:4:"name";s:4:"init";s:5:"class";s:14:"yii\base\Event";s:8:"isStatic";s:1:"0";s:11:"senderClass";s:26:"frontend\models\LinkedUnit";}i:15;a:5:{s:4:"time";d:1611031263.676169;s:4:"name";s:9:"afterFind";s:5:"class";s:14:"yii\base\Event";s:8:"isStatic";s:1:"0";s:11:"senderClass";s:26:"frontend\models\LinkedUnit";}i:16;a:5:{s:4:"time";d:1611031263.676708;s:4:"name";s:4:"init";s:5:"class";s:14:"yii\base\Event";s:8:"isStatic";s:1:"0";s:11:"senderClass";s:18:"yii\db\ActiveQuery";}i:17;a:5:{s:4:"time";d:1611031263.676729;s:4:"name";s:4:"init";s:5:"class";s:14:"yii\base\Event";s:8:"isStatic";s:1:"0";s:11:"senderClass";s:18:"yii\db\ActiveQuery";}i:18;a:5:{s:4:"time";d:1611031263.677648;s:4:"name";s:4:"init";s:5:"class";s:14:"yii\base\Event";s:8:"isStatic";s:1:"0";s:11:"senderClass";s:22:"frontend\models\Nation";}i:19;a:5:{s:4:"time";d:1611031263.680887;s:4:"name";s:9:"afterFind";s:5:"class";s:14:"yii\base\Event";s:8:"isStatic";s:1:"0";s:11:"senderClass";s:22:"frontend\models\Nation";}i:20;a:5:{s:4:"time";d:1611031263.681334;s:4:"name";s:4:"init";s:5:"class";s:14:"yii\base\Event";s:8:"isStatic";s:1:"0";s:11:"senderClass";s:18:"yii\db\ActiveQuery";}i:21;a:5:{s:4:"time";d:1611031263.681355;s:4:"name";s:4:"init";s:5:"class";s:14:"yii\base\Event";s:8:"isStatic";s:1:"0";s:11:"senderClass";s:18:"yii\db\ActiveQuery";}i:22;a:5:{s:4:"time";d:1611031263.68209;s:4:"name";s:4:"init";s:5:"class";s:14:"yii\base\Event";s:8:"isStatic";s:1:"0";s:11:"senderClass";s:23:"frontend\models\Country";}i:23;a:5:{s:4:"time";d:1611031263.685684;s:4:"name";s:9:"afterFind";s:5:"class";s:14:"yii\base\Event";s:8:"isStatic";s:1:"0";s:11:"senderClass";s:23:"frontend\models\Country";}i:24;a:5:{s:4:"time";d:1611031263.686127;s:4:"name";s:4:"init";s:5:"class";s:14:"yii\base\Event";s:8:"isStatic";s:1:"0";s:11:"senderClass";s:18:"yii\db\ActiveQuery";}i:25;a:5:{s:4:"time";d:1611031263.686147;s:4:"name";s:4:"init";s:5:"class";s:14:"yii\base\Event";s:8:"isStatic";s:1:"0";s:11:"senderClass";s:18:"yii\db\ActiveQuery";}i:26;a:5:{s:4:"time";d:1611031263.686896;s:4:"name";s:4:"init";s:5:"class";s:14:"yii\base\Event";s:8:"isStatic";s:1:"0";s:11:"senderClass";s:21:"frontend\models\Major";}i:27;a:5:{s:4:"time";d:1611031263.690185;s:4:"name";s:9:"afterFind";s:5:"class";s:14:"yii\base\Event";s:8:"isStatic";s:1:"0";s:11:"senderClass";s:21:"frontend\models\Major";}i:28;a:5:{s:4:"time";d:1611031263.690644;s:4:"name";s:4:"init";s:5:"class";s:14:"yii\base\Event";s:8:"isStatic";s:1:"0";s:11:"senderClass";s:18:"yii\db\ActiveQuery";}i:29;a:5:{s:4:"time";d:1611031263.690665;s:4:"name";s:4:"init";s:5:"class";s:14:"yii\base\Event";s:8:"isStatic";s:1:"0";s:11:"senderClass";s:18:"yii\db\ActiveQuery";}i:30;a:5:{s:4:"time";d:1611031263.691344;s:4:"name";s:4:"init";s:5:"class";s:14:"yii\base\Event";s:8:"isStatic";s:1:"0";s:11:"senderClass";s:28:"frontend\models\TrainingForm";}i:31;a:5:{s:4:"time";d:1611031263.694603;s:4:"name";s:9:"afterFind";s:5:"class";s:14:"yii\base\Event";s:8:"isStatic";s:1:"0";s:11:"senderClass";s:28:"frontend\models\TrainingForm";}i:32;a:5:{s:4:"time";d:1611031263.69467;s:4:"name";s:11:"afterAction";s:5:"class";s:20:"yii\base\ActionEvent";s:8:"isStatic";s:1:"0";s:11:"senderClass";s:35:"frontend\controllers\OudeController";}i:33;a:5:{s:4:"time";d:1611031263.694684;s:4:"name";s:11:"afterAction";s:5:"class";s:20:"yii\base\ActionEvent";s:8:"isStatic";s:1:"0";s:11:"senderClass";s:19:"yii\web\Application";}i:34;a:5:{s:4:"time";d:1611031263.694699;s:4:"name";s:12:"afterRequest";s:5:"class";s:14:"yii\base\Event";s:8:"isStatic";s:1:"0";s:11:"senderClass";s:19:"yii\web\Application";}i:35;a:5:{s:4:"time";d:1611031263.69471;s:4:"name";s:10:"beforeSend";s:5:"class";s:14:"yii\base\Event";s:8:"isStatic";s:1:"0";s:11:"senderClass";s:16:"yii\web\Response";}i:36;a:5:{s:4:"time";d:1611031263.699808;s:4:"name";s:12:"afterPrepare";s:5:"class";s:14:"yii\base\Event";s:8:"isStatic";s:1:"0";s:11:"senderClass";s:16:"yii\web\Response";}i:37;a:5:{s:4:"time";d:1611031263.699856;s:4:"name";s:9:"afterSend";s:5:"class";s:14:"yii\base\Event";s:8:"isStatic";s:1:"0";s:11:"senderClass";s:16:"yii\web\Response";}}";s:6:"assets";s:6:"a:0:{}";s:4:"mail";s:6:"a:0:{}";s:8:"timeline";s:91:"a:3:{s:5:"start";d:1611031263.577721;s:3:"end";d:1611031263.706501;s:6:"memory";i:6822272;}";s:4:"user";s:2:"N;";s:4:"dump";s:6:"a:0:{}";s:7:"summary";a:12:{s:3:"tag";s:13:"600662df9614e";s:3:"url";s:78:"http://duy.yiifrontend/oude/detail-for-one-semester?mssv=32163013VT2&hk=tn_193";s:4:"ajax";i:1;s:6:"method";s:3:"GET";s:2:"ip";s:9:"127.0.0.1";s:4:"time";d:1611031263.566567;s:10:"statusCode";i:200;s:8:"sqlCount";i:24;s:9:"mailCount";i:0;s:9:"mailFiles";a:0:{}s:10:"peakMemory";i:6760016;s:14:"processingTime";d:0.12738680839538574;}s:10:"exceptions";a:0:{}}
