@@ -27,6 +27,10 @@ AppAsset::register($this);
 		<img src="<?= Yii::$app->request->baseUrl . "/images/" . "cancel.png" ?>" style="width:4%; " class="img-fluid" id="imgHome">
 		<span id="danger-notification"></span>
 	</div>
+	<div style='font-size:20px;' class="text-warning"  id="showFailed">
+		<img src="<?= Yii::$app->request->baseUrl . "/images/" . "alert.png" ?>" style="width:10%; " class="img-fluid" id="imgHome">
+		<span id="alert-notification">aaaa</span>
+	</div>
 </div>
 
 

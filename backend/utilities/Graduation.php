@@ -46,18 +46,7 @@ class Graduation
 			return false;
 		}
 	}
-	/*
-	public static function addToGraduationSemester($student, $data)
-	{
-		$student->ma_hk = $data[23];
-		$student->chi_tiet_hk = $data[24];
-		
-		if ($student->save())
-			return true;
-		else
-			return false;
-	}
-	*/
+	
 	public static function addToSemesterStudent($student, $data)
 	{
 		$student->mssv = $data[3];
