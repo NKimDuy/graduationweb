@@ -35,6 +35,108 @@ class OudeController extends Controller
         ]);
 	}
 	
+	// new 
+	public function actionEdit()
+	{
+		$allGraduationSemester = GraduationSemester::find()->select(['chi_tiet_hk'])->indexBy('ma_hk')->column(); // lấy tất cả học kì hiện có trong database để thêm vào dropdownlist
+		return $this->render('edit', [
+			'allGraduationSemester' => $allGraduationSemester,
+		]);
+	}
+	
+	// new
+	public function actionCreate()
+	{
+		$allStudentInSemester = [];
+		
+		if(\Yii::$app->request->isAjax)
+		{
+			$username = \Yii::$app->request->post('username');
+			$semester = \Yii::$app->request->post('semester');
+			$mssv = \Yii::$app->request->post('mssv');
+			
+			$errors = '';
+		
+			$data = [];
+			
+			$model = new Student();
+			
+			$model->scenario = Student::SCENARIO_FIND;
+			
+			$model->mssv = HtmlPurifier::process($mssv);
+			
+			$model->username = HtmlPurifier::process($username);
+			
+			$model->semester = HtmlPurifier::process($semester);
+			
+			if($model->validate()) 
+			{
+				if ($model->semester == 'all')
+				{
+					$allStudentInSemester = Student::find()
+					
+							
+								->where(['like', 'tb_sinh_vien.mssv', $model->mssv])
+								->andFilterWhere(['or', ['like', 'CONCAT(tb_sinh_vien.ho, " ", tb_sinh_vien.ten)', $model->username], ['like', 'CONCAT(tb_sinh_vien.ho_kd, " ", tb_sinh_vien.ten_kd)' , $model->username]])
+								
+								->all();
+					
+					
+					foreach($allStudentInSemester as $item)
+					{
+						$temp = [];
+						
+						foreach($item->graduationSemesters as $studentPerSemester)
+						{
+							$temp[] = $item->mssv;
+							$temp[] = $item->ho;
+							$temp[] = $item->ten;
+							$temp[] = $studentPerSemester->chi_tiet_hk;
+							$temp[] = $studentPerSemester->ma_hk;
+							$data[] = $temp;
+						}
+						
+					}
+				}
+				else
+				{
+					$allStudentInSemester = Student::find()
+								->innerJoinWith('graduationSemesters')
+								
+								->where(['tb_hk_tot_nghiep.ma_hk' => $model->semester])
+								->andWhere(['like', 'tb_sinh_vien.mssv', $model->mssv])
+								->andFilterWhere(['or', ['like', 'CONCAT(tb_sinh_vien.ho, " ", tb_sinh_vien.ten)', $model->username], ['like', 'CONCAT(tb_sinh_vien.ho_kd, " ", tb_sinh_vien.ten_kd)' , $model->username]])
+								->all();
+							
+					$detailSemester = GraduationSemester::find()
+							->where(['tb_hk_tot_nghiep.ma_hk' => $model->semester])
+							->one();
+					
+						
+					foreach($allStudentInSemester as $item)
+					{
+						$temp = [];
+						$temp[] = $item->mssv;
+						$temp[] = $item->ho;
+						$temp[] = $item->ten;
+						$temp[] = $detailSemester->chi_tiet_hk;
+						$temp[] = $detailSemester->ma_hk;
+						$data[] = $temp;
+					}
+				}
+			}
+			else
+			{
+				$errors = $model->errors;
+			}
+			return [
+			'allStudentInSemester' => $data,
+			'errors' => $errors
+		];
+		}
+	}
+	
+	
 	public function actionUpload()
 	{
 		$model = new UploadForm();
@@ -84,7 +186,7 @@ class OudeController extends Controller
 																										//chỉ trả về những dòng không thêm được , giữ lại các dòng đã có mà bị trùng
 			return $data[0]; // nếu thêm không thành công, sẽ trả về hàng thêm không thành công
 		else if (!$successAddToStudent && !$successAddToStudentRecord && $successAddToSemesterStudent)
-			return $data[4] . " " . $data[5];
+			return true;
 		else // nếu 1 trong các bảng không được thêm thành công, thì sẽ trả về số thứ tự của dòng không thêm được, đồng thời xóa dữ liệu ở các bảng khác mà dòng đó không gặp lỗi
 			$studentDelete = Student::findOne($data[3]); // xóa sinh viên có mã số sinh viên đã được thêm vào bảng sinh viên, nhưng không thêm thành công ở 2 bảng hồ sơ sinh viên và sinh viên học kì
 			$studentDelete->delete();
