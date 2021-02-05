@@ -4,6 +4,7 @@ namespace backend\models;
 
 use yii\base\Model;
 use yii\db\ActiveRecord;
+use backend\models\StudentSemester;
 
 class Student extends ActiveRecord
 {
@@ -20,16 +21,13 @@ class Student extends ActiveRecord
 	public function scenarios() 
 	{
 		$scenarios = parent::scenarios();
-		$scenarios[self::SCENARIO_FIND] = ['mssv', 'username', 'semester'];
+		$scenarios[self::SCENARIO_FIND] = ['mssv', 'username'];
 		return $scenarios;
 	}
 	
 	public function rules()
 	{
 		return [
-			[['semester'], 'required', 'on' => self::SCENARIO_FIND],
-			['captcha', 'captcha'],
-			
 			[['mssv', 'username'], 'string', 'max' => 60],
 			[['mssv', 'username'], 'trim'],
 			[['mssv', 'username'], 'default'],
@@ -48,6 +46,5 @@ class Student extends ActiveRecord
 				//->viaTable('tb_sv_hk', ['mssv' => 'mssv']);
 				->via('studentSemester');
 	}
-	
 	
 }

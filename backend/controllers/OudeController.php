@@ -14,8 +14,11 @@ use backend\models\StudentStatus;
 use backend\models\Student;
 use backend\models\Result;
 use backend\models\StudentRecord;
-use backend\models\SemesterStudent;
+use backend\models\StudentSemester;
 use backend\models\GraduationSemester;
+use yii\helpers\HtmlPurifier;
+use yii\web\Response;
+use yii\db;
 
 
 use backend\utilities\Graduation;
@@ -51,6 +54,8 @@ class OudeController extends Controller
 		
 		if(\Yii::$app->request->isAjax)
 		{
+			\Yii::$app->response->format = Response::FORMAT_JSON;
+			
 			$username = \Yii::$app->request->post('username');
 			$semester = \Yii::$app->request->post('semester');
 			$mssv = \Yii::$app->request->post('mssv');
@@ -71,12 +76,12 @@ class OudeController extends Controller
 			
 			if($model->validate()) 
 			{
+				
 				if ($model->semester == 'all')
 				{
 					$allStudentInSemester = Student::find()
-					
-							
-								->where(['like', 'tb_sinh_vien.mssv', $model->mssv])
+								->innerJoinWith('graduationSemesters')
+								->andFilterWhere(['like', 'tb_sinh_vien.mssv', $model->mssv])
 								->andFilterWhere(['or', ['like', 'CONCAT(tb_sinh_vien.ho, " ", tb_sinh_vien.ten)', $model->username], ['like', 'CONCAT(tb_sinh_vien.ho_kd, " ", tb_sinh_vien.ten_kd)' , $model->username]])
 								
 								->all();
@@ -88,26 +93,47 @@ class OudeController extends Controller
 						
 						foreach($item->graduationSemesters as $studentPerSemester)
 						{
-							$temp[] = $item->mssv;
-							$temp[] = $item->ho;
-							$temp[] = $item->ten;
+							//$temp[] = $item->mssv;
+							//$temp[] = $item->ho;
+							//$temp[] = $item->ten;
 							$temp[] = $studentPerSemester->chi_tiet_hk;
 							$temp[] = $studentPerSemester->ma_hk;
-							$data[] = $temp;
+							$data[] = $temp; 
 						}
 						
 					}
+					
+					/*
+					foreach($allStudentInSemester[0]->graduationSemesters as $item)
+					{
+						$temp = [];
+						$temp[] = $item->chi_tiet_hk;		
+						$temp[] = $item->ma_hk;
+						$data[] = $temp;
+					}
+					*/
 				}
 				else
 				{
 					$allStudentInSemester = Student::find()
 								->innerJoinWith('graduationSemesters')
-								
 								->where(['tb_hk_tot_nghiep.ma_hk' => $model->semester])
-								->andWhere(['like', 'tb_sinh_vien.mssv', $model->mssv])
+								->andFilterWhere(['like', 'tb_sinh_vien.mssv', $model->mssv])
 								->andFilterWhere(['or', ['like', 'CONCAT(tb_sinh_vien.ho, " ", tb_sinh_vien.ten)', $model->username], ['like', 'CONCAT(tb_sinh_vien.ho_kd, " ", tb_sinh_vien.ten_kd)' , $model->username]])
+								//->andFilterWhere(['or', ['like', 'CONCAT(tb_sinh_vien.ho, " ", tb_sinh_vien.ten)', $model->username], ['like', 'CONCAT(tb_sinh_vien.ho_kd, " ", tb_sinh_vien.ten_kd)' , $model->username]])
+								//->andFilterWhere(['like', 'CONCAT(tb_sinh_vien.ho, " ", tb_sinh_vien.ten)', $model->username])
+								//->orFilterWhere(['like', 'tb_sinh_vien.ten', $model->username])
+								//->andWhere(['like', 'tb_sinh_vien.ten', $model->username])
+								//->andFilterCompare('tb_sinh_vien.mssv', $model->mssv, 'like')
+								/*
+								->filterWhere([
+									['like', 'tb_sinh_vien.ten', $model->username],
+									['like', 'tb_sinh_vien.mssv', $model->mssv],
+								])
+								
+								*/
 								->all();
-							
+									
 					$detailSemester = GraduationSemester::find()
 							->where(['tb_hk_tot_nghiep.ma_hk' => $model->semester])
 							->one();
@@ -119,20 +145,26 @@ class OudeController extends Controller
 						$temp[] = $item->mssv;
 						$temp[] = $item->ho;
 						$temp[] = $item->ten;
+						
 						$temp[] = $detailSemester->chi_tiet_hk;
 						$temp[] = $detailSemester->ma_hk;
+						$temp[] = $model->username;
 						$data[] = $temp;
 					}
 				}
+				
 			}
 			else
 			{
 				$errors = $model->errors;
 			}
+			
+			
+			
 			return [
-			'allStudentInSemester' => $data,
-			'errors' => $errors
-		];
+				'allStudentInSemester' => $data,
+				'errors' => $errors
+			];
 		}
 	}
 	
@@ -161,7 +193,7 @@ class OudeController extends Controller
 	{
 		if (Yii::$app->request->isAjax) 
 		{
-			
+			\Yii::$app->response->format = Response::FORMAT_JSON;
 			$data = \Yii::$app->request->post('data');
 		}
 		
@@ -169,7 +201,7 @@ class OudeController extends Controller
 		
 		$studentRecord = new StudentRecord(); // thêm vào bảng hồ sơ sinh viên
 		
-		$semesterStudent = new SemesterStudent(); // thêm vào bảng sinh viên_học kì
+		$semesterStudent = new StudentSemester(); // thêm vào bảng sinh viên_học kì
 		
 		
 		$successAddToStudent = Graduation::addToStudent($student, $data); // thêm vào bảng sinh viên

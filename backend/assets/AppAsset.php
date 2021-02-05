@@ -15,10 +15,12 @@ class AppAsset extends AssetBundle
         'css/site.css',
 		'css/fonts/circular-std/style.css',
 		'css/style.css',
+		'css/my-css.css',
 		'css/fonts/fontawesome/css/fontawesome-all.css',
 		'https://cdn.datatables.net/1.10.23/css/jquery.dataTables.min.css',
 		'css/tooltipster/tooltipster.bundle.min.css',
 		'css/tooltipster/plugins/tooltipster/sideTip/themes/tooltipster-sideTip-light.min.css',
+		'https://cdn.datatables.net/1.10.23/css/jquery.dataTables.min.css',
     ];
     public $js = [
 		'js/upload.js',
@@ -27,6 +29,7 @@ class AppAsset extends AssetBundle
 		'js/sheetjs/dist/xlsx.full.min.js',
 		'https://cdn.datatables.net/1.10.23/js/jquery.dataTables.min.js',
 		'js/tooltipster/tooltipster.bundle.min.js',
+		'https://cdn.datatables.net/1.10.23/js/jquery.dataTables.min.js',
     ];
     public $depends = [
         'yii\web\YiiAsset',

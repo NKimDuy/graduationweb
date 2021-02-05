@@ -1,0 +1,46 @@
+<div id="dialogEdit">
+		<?php $form = ActiveForm::begin([
+			'id' => 'formEdit',
+		]) ?>
+			<fieldset>
+				<label for="mssv">Mã số sinh viên</label>
+				<?= $form->field($student, 'mssv')->textInput(['class' => 'form-control', 'id' => 'mssv', 'name' => 'mssv'])->label(false); ?>
+				<label for="ho">Họ</label>
+				<?= $form->field($student, 'ho')->textInput(['class' => 'form-control', 'id' => 'ho', 'name' => 'ho'])->label(false); ?>
+				<label for="ten">Tên</label>
+				<?= $form->field($student, 'ten')->textInput(['class' => 'form-control', 'id' => 'ten', 'name' => 'ten'])->label(false); ?>
+				<label for="ngaySinh">Ngày sinh</label>
+				<?= $form->field($student, 'ngay_sinh')->textInput(['class' => 'form-control', 'id' => 'ngaySinh', 'name' => 'ngaySinh'])->label(false); ?>
+				<label for="gioiTinh">giới tính</label>
+				<?= $form->field($student, 'gioi_tinh')->dropdownList(['1' => 'Nam', '2' => 'Nữ'], ['name' => 'gioiTinh', 'id' => 'gioiTinh'])->label(false); ?>
+				<label for="danToc">Dân tộc</label>
+				<?= $form->field($studentRecord, 'ma_dan_toc')->dropdownList($,  ['name' => 'danToc', 'id' => 'danToc'])->label(false); ?>
+				<label for="noiSinh">Nơi sinh</label>
+				<?= $form->field($studentRecord, 'ma_noi_sinh')->dropdownList($,  ['name' => 'noiSinh', 'id' => 'noiSinh'])->label(false); ?>
+				<label for="quocTich">Quốc tịch</label>
+				<?= $form->field($studentRecord, 'ma_quoc_tich')->dropdownList($,  ['name' => 'quocTich', 'id' => 'quocTich'])->label(false); ?>
+				<label for="dvlk">Đơn vị liên kết</label>
+				<?= $form->field($studentRecord, 'ma_dvlk')->dropdownList($,  ['name' => 'dvlk', 'id' => 'dvlk'])->label(false); ?>
+				<label for="nganh">Ngành</label>
+				<?= $form->field($studentRecord, 'ma_nganh')->dropdownList($,  ['name' => 'nganh', 'id' => 'nganh'])->label(false); ?>
+				<label for="htdt">Hình thức đào tạo</label>
+				<?= $form->field($studentRecord, 'ma_htdt')->dropdownList($,  ['name' => 'htdt', 'id' => 'htdt'])->label(false); ?>
+				<label for="diem">Điểm</label>
+				<?= $form->field($semesterStudent, 'diem')->textInput(['class' => 'form-control', 'id' => 'diem', 'name' => 'diem'])->label(false); ?>
+				<label for="xepLoai">Xếp loại</label>
+				<?= $form->field($semesterStudent, 'xep_loai')->textInput(['class' => 'form-control', 'id' => 'xepLoai', 'name' => 'xepLoai'])->label(false); ?>
+				<label for="dktn">Điều kiện tốt nghiệp</label>
+				<?= $form->field($semesterStudent, 'dk_tn')->textInput(['class' => 'form-control', 'id' => 'dktn', 'name' => 'dktn'])->label(false); ?>
+				<label for="giayKs">Giấy khai sinh</label>
+				<?= $form->field($semesterStudent, 'giay_ks')->textInput(['class' => 'form-control', 'id' => 'giayKs', 'name' => 'giayKs'])->label(false); ?>
+				<label for="bangCap">Bằng cấp</label>
+				<?= $form->field($semesterStudent, 'bang_cap')->textInput(['class' => 'form-control', 'id' => 'bangCap', 'name' => 'bangCap'])->label(false); ?>
+				<label for="hinh">Hình</label>
+				<?= $form->field($semesterStudent, 'hinh')->textInput(['class' => 'form-control', 'id' => 'hinh', 'name' => 'hinh'])->label(false); ?>
+				<label for="phieuDkxcb">Phiếu đăng kí xét cấp bằng</label>
+				<?= $form->field($semesterStudent, 'phieu_dkxcb')->textInput(['class' => 'form-control', 'id' => 'phieuDkxcb', 'name' => 'phieuDkxcb'])->label(false); ?>
+				<label for="ctdt">Chương trình đào tạo</label>
+				<?= $form->field($semesterStudent, 'ct_dt')->textInput(['class' => 'form-control', 'id' => 'ctdt', 'name' => 'ctdt'])->label(false); ?>
+			</fieldset>
+		<?php ActiveForm::end() ?>
+	</div>
