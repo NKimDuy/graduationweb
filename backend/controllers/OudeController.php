@@ -85,33 +85,38 @@ class OudeController extends Controller
 								->andFilterWhere(['or', ['like', 'CONCAT(tb_sinh_vien.ho, " ", tb_sinh_vien.ten)', $model->username], ['like', 'CONCAT(tb_sinh_vien.ho_kd, " ", tb_sinh_vien.ten_kd)' , $model->username]])
 								
 								->all();
-					
-					
-					foreach($allStudentInSemester as $item)
-					{
-						$temp = [];
-						
-						foreach($item->graduationSemesters as $studentPerSemester)
-						{
-							//$temp[] = $item->mssv;
-							//$temp[] = $item->ho;
-							//$temp[] = $item->ten;
-							$temp[] = $studentPerSemester->chi_tiet_hk;
-							$temp[] = $studentPerSemester->ma_hk;
-							$data[] = $temp; 
-						}
-						
-					}
-					
 					/*
 					foreach($allStudentInSemester[0]->graduationSemesters as $item)
 					{
-						$temp = [];
-						$temp[] = $item->chi_tiet_hk;		
-						$temp[] = $item->ma_hk;
-						$data[] = $temp;
+							$temp = [];
+							
+							$temp[] = $item->chi_tiet_hk;
+							$temp[] = $item->ma_hk;
+							$data[] = $temp; 
 					}
 					*/
+					
+					
+					foreach($allStudentInSemester as $stud)
+					{
+						$temp = []; // khởi tạo mảng 1 chiều, để lưu từng dòng dữ liệu, sau đó lưu tất cả các dòng vào mảng chung " data "
+						
+						foreach($allStudentInSemester[0]->graduationSemesters as $graSemester)
+						{
+							$temp[] = $stud->mssv;
+							//$temp[] = $stud->ho;
+							//$temp[] = $stud->ten;
+							$temp[] = $graSemester->chi_tiet_hk;
+							//$temp[] = $graSemester->ma_hk;
+							$data[] = $temp;
+							$temp = []; // phải đưa mảng tạm về rỗng, để tránh việc mảng đã có dữ liệu, dẫn đến bị trùng dữ liệu
+						}
+						
+						//$temp[] = $stud->mssv;
+						//$data[] = $temp;
+					}
+					
+					
 				}
 				else
 				{
@@ -120,18 +125,7 @@ class OudeController extends Controller
 								->where(['tb_hk_tot_nghiep.ma_hk' => $model->semester])
 								->andFilterWhere(['like', 'tb_sinh_vien.mssv', $model->mssv])
 								->andFilterWhere(['or', ['like', 'CONCAT(tb_sinh_vien.ho, " ", tb_sinh_vien.ten)', $model->username], ['like', 'CONCAT(tb_sinh_vien.ho_kd, " ", tb_sinh_vien.ten_kd)' , $model->username]])
-								//->andFilterWhere(['or', ['like', 'CONCAT(tb_sinh_vien.ho, " ", tb_sinh_vien.ten)', $model->username], ['like', 'CONCAT(tb_sinh_vien.ho_kd, " ", tb_sinh_vien.ten_kd)' , $model->username]])
-								//->andFilterWhere(['like', 'CONCAT(tb_sinh_vien.ho, " ", tb_sinh_vien.ten)', $model->username])
-								//->orFilterWhere(['like', 'tb_sinh_vien.ten', $model->username])
-								//->andWhere(['like', 'tb_sinh_vien.ten', $model->username])
-								//->andFilterCompare('tb_sinh_vien.mssv', $model->mssv, 'like')
-								/*
-								->filterWhere([
-									['like', 'tb_sinh_vien.ten', $model->username],
-									['like', 'tb_sinh_vien.mssv', $model->mssv],
-								])
 								
-								*/
 								->all();
 									
 					$detailSemester = GraduationSemester::find()
@@ -148,7 +142,6 @@ class OudeController extends Controller
 						
 						$temp[] = $detailSemester->chi_tiet_hk;
 						$temp[] = $detailSemester->ma_hk;
-						$temp[] = $model->username;
 						$data[] = $temp;
 					}
 				}
