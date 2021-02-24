@@ -1,7 +1,43 @@
 
-function test() {
-	alert('abc');
+function showStudentToEdit(mssv, hk) {
+	$.ajax({
+		url: '/oude/show-detail-to-edit',
+		dataType: "json", // dữ liệu nhận về dạng json
+		data: { // dữ liệu được gửi đến file xử lý
+			'mssv': mssv,
+			'hk': hk
+		},
+		success: function (result){
+			$('#mssv-edit').val(result[14]);
+			$('#ho').val(result[15]);
+			$('#ten').val(result[16]);
+			$('#ngaySinh').val(result[17]);
+			$('#gioiTinh').val(result[18]);
+			$('#danToc option').val(result[2]);
+			$('#noiSinh option').val(result[19]);
+			$('#quocTich option').val(result[3]);
+			$('#dvlk option').val(result[1]);
+			$('#nganh option').val(result[4]);
+			$('#htdt option').val(result[10]);
+			$('#diem').val(result[11]);
+			$('#xepLoai').val(result[12]);
+			$('#dktn option').val(result[13]);
+			$('#giayKs option').val(result[5]);
+			$('#bangCap').val(result[6]);
+			$('#hinh option').val(result[7]);
+			$('#phieuDkxcb option').val(result[8]);
+			$('#ctdt option').val(result[9]);
+			
+			//alert(result[14]);
+		}
+	});
 }
+
+function deleteOneRow(mssv, hk) {
+	
+}
+
+
 
 function createTableDetailStudent(mssv, username, semester) { // khi sinh viên tiến hành tìm kiếm thông tin, nếu submit thành công thì sẽ hiển thị các thông tin tương ứng
 	
@@ -23,8 +59,8 @@ function createTableDetailStudent(mssv, username, semester) { // khi sinh viên 
 				
 			}
 			else {
-				alert(JSON.stringify(result.allStudentInSemester));
-				/*
+				//alert(JSON.stringify(result.allStudentInSemester));
+				
 				$('.progress').css('display', 'grid'); // khi submit thành công sẽ hiện thanh quá trình
 				
 				var table = '<table class="table table-striped display" id = "result1" style="width:100%;" >';
@@ -47,7 +83,9 @@ function createTableDetailStudent(mssv, username, semester) { // khi sinh viên 
 					table += '<td class="align-middle">' + item[2] + '</td>';
 					table += '<td class="align-middle">' + item[3] + '</td>';
 					//table += '<td class="align-middle">' + item[5] + '</td>';
-					table += '<td class="align-middle">' + '<i onclick="test()" class="fas fa-edit" style="font-size: re;"></i>' + ' | ' + '<i class="fas fa-trash-alt" style="font-size: re;"></i>' + '</td>';
+					
+					table += '<td class="align-middle">' + '<i onclick="showStudentToEdit(' + "'" + item[0] + "', '" + item[4] + "'" + ')" class="fas fa-edit" style="font-size: re;"></i>' + ' | ' + '<i class="fas fa-trash-alt" style="font-size: re;"></i>' + '</td>';
+					//table += '<td class="align-middle">' + '<i onclick="test()" class="fas fa-edit" style="font-size: re;"></i>' + ' | ' + '<i class="fas fa-trash-alt" style="font-size: re;"></i>' + '</td>';
 					//table += '<td class="align-middle">' + "<img src = '/images/edit.png' style='width:10%;' />" + "<img src = '/images/delete.png' style='width:10%;' />" + '</td>';
 					
 					//nhét 2 cái hình vô đây
@@ -68,7 +106,7 @@ function createTableDetailStudent(mssv, username, semester) { // khi sinh viên 
 				
 				//$('#imgHome').css('display','block'); // hiện image home để quay lại giao diện tìm kiếm 
 				
-				*/
+				
 			}
 		}
 	});
@@ -128,7 +166,7 @@ $(document).ready(function() {
 		createTableDetailStudent($('#mssv').val(), $('#username').val(), $('#semesterlist').val());
 		
 		
-		//e.preventDefault();
+		
 	
 	});
 });

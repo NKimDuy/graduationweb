@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+	</head>
+	<body>
+		<input type="text" id="txt" />
+		<button id="btnCheck">test</button>
+		<div id="result"></div>
+	</body>
+	<script>
+		$(document).ready(function() {
+			$("#btnCheck").click(() =>{
+				//var txt = $("#txt").val();
+				//var regexp = /^([0-9]{2})\/([0-9]{2})\/([0-9]{4})$/.test($("#txt").val());
+				//var regexp = /^[a-z]([a-z_\d])/i.test(txt);
+				//var regexp = /tn_[\d]+/i.test(txt);
+				var regexp = /^[a-z]+$/i.test($("#txt").val());
+				$("#result").text(regexp).css("font-size","31px");
+			});
+		});
+	</script>
+</html>

@@ -47,4 +47,45 @@ class Student extends ActiveRecord
 				->via('studentSemester');
 	}
 	
+	public function getStudentRecord() 
+	{
+		return $this->hasOne(StudentRecord::className(), ['mssv' => 'mssv']);
+	}
+	
+	public function getProvince()
+	{
+		return $this->hasOne(Province::className(), ['ma_tinh_thanh' => 'ma_noi_sinh'])
+					->via('studentRecord');
+	}
+	
+	public function getCountry()
+	{
+		return $this->hasOne(Country::className(), ['ma_qt' => 'ma_quoc_tich'])
+					->via('studentRecord');
+	}
+	
+	public function getNation()
+	{
+		return $this->hasOne(nation::className(), ['ma_dt' => 'ma_dan_toc'])
+					->via('studentRecord');
+	}
+	
+	public function getLinkedUnit()
+	{
+		return $this->hasOne(LinkedUnit::className(), ['ma_dvlk' => 'ma_dvlk'])
+					->via('studentRecord');
+	}
+	
+	public function getMajor()
+	{
+		return $this->hasOne(Major::className(), ['ma_nganh' => 'ma_nganh'])
+					->via('studentRecord');
+	}
+	
+	public function getTrainingForm()
+	{
+		return $this->hasOne(TrainingForm::className(), ['ma_hinh_thuc' => 'ma_htdt'])
+					->via('studentRecord');
+	}
+	
 }

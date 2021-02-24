@@ -1,0 +1,176 @@
+html {
+	height: 100%;
+}
+
+ body {
+	/*position: relative;*/
+	font-family: "Arial", Times, serif;
+	min-height: 100%;
+	display: grid;
+	grid-template-rows: 1fr auto;
+	
+}
+
+
+
+/* thiep lap vi tri cho hinh anh quay ve trang chu */
+#home {
+	
+	display:none;
+}
+
+/* thiep lap css cho img hinh anh quay ve trang chu */
+#img-home {
+	width: 55px;
+}
+
+/* thiep lap css cho thanh qua trinh  */
+#progressbar {
+	position: absolute;
+	/*
+	top: 40%;
+	left: 42%;
+	z-index: 1000;
+	*/
+	width: 96.5%;
+	margin-left: 0;
+	
+}
+
+/* doi mau thanh progressbar */
+#progressbar > .ui-progressbar-value {
+	background-color: #007bff;
+}
+
+/* thiet lap css cho dong chu " trung tam dao tao tu xa " */
+.theme {
+	color: white;
+	margin-top: 20px;
+}
+
+/* thiep lap css cho footer */
+.foot {
+
+	background-color:#444;
+}
+
+/* thiep lap css cho nhung lien ket o footer */
+ul {
+	color:#FFF;
+}
+
+.foot ul > li > a {
+	color: white;
+	font-size:13px;
+}
+
+
+.foot ul > li > a:hover {
+	color: white;
+	
+}
+
+.foot .title {
+	color:#FFF;
+}
+
+
+
+/* chinh mau nen cho thanh header */
+.header {
+	background-color: #006799;
+}
+
+/* thiet lap css cho dong chu " tra cuu thong tin tot nghiep " */
+.full-screen {
+	height: 56px;
+	margin-left: -14px;
+    margin-right: -14px;
+	padding-top: 16px;
+}
+
+/* thiet lap css cho dropdown list */
+.opt {
+	height:40px;
+	width:100%;	
+}
+
+/* thiet lap css cho phan tim kiem thong tin */
+.find_mssv {
+	margin-top: 22px;
+	background-color: #f0f0f0;
+}
+
+/* thiet lap css cho bang chi tiet sinh vien */
+.show_mssv {
+	margin-top: 10px;
+}
+
+/* thiep lap css cho danh sach trong thanh footer */
+.float-left {
+	float: left;
+	padding-top: 10px;
+	
+}
+.first {
+	margin-left: 220px;
+}
+
+/* thiet lap css cho nhung tieu de o footer */
+.label {
+	color: white;
+}
+
+@media only screen and (max-width: 600px) {
+	.theme {
+		display:none;
+	}
+}
+
+/* css tooltip*/
+.ui-tooltip, .arrow:after {
+    background: white;
+    border: 2px solid white;
+}
+  .ui-tooltip {
+    padding: 10px 20px;
+    color: white;
+    border-radius: 20px;
+    font: bold 14px "Helvetica Neue", Sans-Serif;
+    text-transform: uppercase;
+    box-shadow: 0 0 7px black;
+}
+  .arrow {
+    width: 70px;
+    height: 16px;
+    overflow: hidden;
+    position: absolute;
+    left: 50%;
+    margin-left: -35px;
+    bottom: -16px;
+}
+  .arrow.top {
+    top: -16px;
+    bottom: auto;
+}
+  .arrow.left {
+    left: 20%;
+}
+  .arrow:after {
+    content: "";
+    position: absolute;
+    left: 20px;
+    top: -20px;
+    width: 25px;
+    height: 25px;
+    box-shadow: 6px 5px 9px -9px black;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+  .arrow.top:after {
+    bottom: -20px;
+    top: auto;
+}
+
+

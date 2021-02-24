@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<script lang="javascript" src="./sheetjs/dist/xlsx.full.min.js"></script>
+		<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+		<script src="https://cdn.datatables.net/1.10.21/js/jquery.dataTables.min.js"></script>
+		<link rel="stylesheet" href="https://cdn.datatables.net/1.10.21/css/jquery.dataTables.min.css" >
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	</head>
+	<body>
+	<div class="container">
+		<div class="row">
+			<div id="navbar"><span>Chuyển dữ liệu từ excel sang mysql</span></div>
+			<!--<form class="form-inline">-->
+				<div class="form-group mx-sm-3 mb-2">
+					<input type ="text" id ="txtTableName" placeholder ="nhập tên bảng" />
+					<button class ="btn btn-primary" id="btnAdd">Chuyển</button>
+					<div id="notification" style ="color:red;"></div>
+					<div id="wrapper">
+						<input type="file" id="input-excel" />
+					</div>
+				</div>
+			<!--</form>-->
+		<div>
+		<div class ="row">
+			<table id ="example">
+				<thead>
+					<tr>
+						<th></th>
+						<th></th>
+						<th>stt</th>
+						<th>ma_dvlk</th>
+						<th>ten_dvlk</th>
+						<th>mssv</th>
+						<th>ho</th>
+						<th>ten</th>
+						<th>ngay_sinh</th>
+						<th>noi_sinh</th>
+						<th>gioi_tinh</th>
+						<th>dan_toc</th>
+						<th>quoc_tich</th>
+						<th>nganh_dt</th>
+						<th>giay_ks</th>
+						<th>bang_cap</th>
+						<th>hinh</th>
+						<th>phieu_dkxcb</th>
+						<th>ct_dt</th>
+						<th>hinh_thuc_dt</th>
+						<th>diem</th>
+						<th>xep_loai</th>
+						<th>dk_tn</th>
+						<th>ho_temp</th>
+						<th>ten_temp</th>
+						<th>ten_temp</th>
+						<th>hk</th>
+						<th>chi_tiet_hk</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td><a href="#">update</a></td>
+						<td><a href="#">delete</a></td>
+						<td>1</td>
+						<td>AG</td>
+						<td>TT GDTX An Giang</td>
+						<td>41150001AG</td>
+						<td>Nguyễn Phan</td>
+						<td>Anh</td>
+						<td>02/02/1995</td>
+						<td>	An Giang</td>
+						<td>Nam</td>
+						<td>Kinh</td>
+						<td>Việt Nam</td>
+						<td>Quản Trị Kinh Doanh</td>
+						<td>HỢP LỆ</td>
+						<td>2013 - THPT</td>
+						<td>HỢP LỆ</td>
+						<td>HỢP LỆ</td>
+						<td>HOÀN THÀNH</td>
+						<td>Đào tạo từ xa</td>
+						<td>Đang cập nhật</td>
+						<td>Đang cập nhật</td>
+						<td>Đủ điều kiện</td>
+						<td>Nguyen Phan</td>
+						<td>Anh</td>
+						<td>Nguyen Phan Anh	</td>
+						<td>tn_193</td>
+						<td>Năm 2020 - đợt 2</td>
+					</tr>
+					
+				</tbody>
+			</table>
+		</div>
+	</div>
+	<script>
+		$(document).ready(() =>{
+			$('#example').DataTable();
+		});
+	</script>
+	</body>
+	
+</html>

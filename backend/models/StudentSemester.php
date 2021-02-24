@@ -12,4 +12,14 @@ class StudentSemester extends ActiveRecord
 		return '{{tb_sv_hk}}';
 	}
 	
+	public function getStudent()
+	{
+		return $this->hasOne(Student::className(), ['mssv' => 'mssv']);
+	}
+	
+	public function getGraduation()
+	{
+		return $this->hasOne(GraduationSemester::className(), ['ma_hk' => 'ma_hk']);
+	}
+	
 }

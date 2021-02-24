@@ -1,0 +1,9 @@
+https://amitness.com/2020/05/data-augmentation-for-nlp/
+
+https://medium.com/swlh/data-augmentation-in-natural-language-processing-756e942b42f3
+
+https://arxiv.org/pdf/1901.11196.pdf
+
+data augmentation ofr natural language processing
+
+https://github.com/jasonwei20/eda_nlp

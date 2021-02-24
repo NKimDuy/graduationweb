@@ -16,6 +16,12 @@ use backend\models\Result;
 use backend\models\StudentRecord;
 use backend\models\StudentSemester;
 use backend\models\GraduationSemester;
+use backend\models\Nation;
+use backend\models\Province;
+use backend\models\Country;
+use backend\models\LinkedUnit;
+use backend\models\Major;
+use backend\models\TrainingForm;
 use yii\helpers\HtmlPurifier;
 use yii\web\Response;
 use yii\db;
@@ -42,9 +48,70 @@ class OudeController extends Controller
 	public function actionEdit()
 	{
 		$allGraduationSemester = GraduationSemester::find()->select(['chi_tiet_hk'])->indexBy('ma_hk')->column(); // lấy tất cả học kì hiện có trong database để thêm vào dropdownlist
+		
+		$allNation = Nation::find()->select(['ten_dan_toc'])->indexBy('ma_dt')->column();
+		
+		$allProvince = Province::find()->select(['ten_tinh_thanh_at'])->indexBy('ma_tinh_thanh')->column();
+		
+		$allCountry = Country::find()->select(['ten_quoc_tich'])->indexBy('ma_qt')->column();
+		
+		$allLinkedUnit = LinkedUnit::find()->select(['ten_dvlk'])->indexBy('ma_dvlk')->column();
+		
+		$allMajor = Major::find()->select(['ten_nganh'])->indexBy('ma_nganh')->column();
+		
+		$allTrainingForm = TrainingForm::find()->select(['ten_hinh_thuc_at'])->indexBy('ma_hinh_thuc')->column();
+		
 		return $this->render('edit', [
 			'allGraduationSemester' => $allGraduationSemester,
+			'allNation' => $allNation,
+			'allProvince' => $allProvince,
+			'allCountry' => $allCountry,
+			'allLinkedUnit' => $allLinkedUnit,
+			'allMajor' => $allMajor,
+			'allTrainingForm' => $allTrainingForm,
 		]);
+	}
+	
+	public function actionShowDetailToEdit($mssv, $hk)
+	{
+		if(\Yii::$app->request->isAjax)
+		{
+			
+			\Yii::$app->response->format = Response::FORMAT_JSON;
+			
+			$detailStudent = StudentSemester::find()
+							->where([
+								'tb_sv_hk.mssv' => $mssv,
+								'tb_sv_hk.ma_hk' => $hk
+							])
+							->limit(1)
+							->one(); // trả về đúng 1 sinh viên theo kết quả tìm kiếm
+			
+			$detailStudentArray = [];
+			
+			array_push($detailStudentArray, $detailStudent->student->linkedUnit->ma_dvlk);
+			array_push($detailStudentArray, $detailStudent->student->linkedUnit->ten_dvlk);
+			array_push($detailStudentArray, $detailStudent->student->nation->ten_dan_toc);
+			array_push($detailStudentArray, $detailStudent->student->country->ten_quoc_tich);
+			array_push($detailStudentArray, $detailStudent->student->major->ten_nganh);
+			array_push($detailStudentArray, $detailStudent->giay_ks);
+			array_push($detailStudentArray, $detailStudent->bang_cap);
+			array_push($detailStudentArray, $detailStudent->hinh);
+			array_push($detailStudentArray, $detailStudent->phieu_dkxcb);
+			array_push($detailStudentArray, $detailStudent->ct_dt);
+			array_push($detailStudentArray, $detailStudent->student->trainingForm->ten_hinh_thuc_at);
+			array_push($detailStudentArray, $detailStudent->diem);
+			array_push($detailStudentArray, $detailStudent->xep_loai);
+			array_push($detailStudentArray, $detailStudent->dk_tn);
+			array_push($detailStudentArray, $detailStudent->student->mssv);
+			array_push($detailStudentArray, $detailStudent->student->ho);
+			array_push($detailStudentArray, $detailStudent->student->ten);
+			array_push($detailStudentArray, $detailStudent->student->ngay_sinh);
+			array_push($detailStudentArray, $detailStudent->student->gioi_tinh);
+			array_push($detailStudentArray, $detailStudent->student->province->ten_tinh_thanh_at);
+			
+			return $detailStudentArray;
+		}
 	}
 	
 	// new
@@ -104,16 +171,15 @@ class OudeController extends Controller
 						foreach($allStudentInSemester[0]->graduationSemesters as $graSemester)
 						{
 							$temp[] = $stud->mssv;
-							//$temp[] = $stud->ho;
-							//$temp[] = $stud->ten;
+							$temp[] = $stud->ho;
+							$temp[] = $stud->ten;
 							$temp[] = $graSemester->chi_tiet_hk;
-							//$temp[] = $graSemester->ma_hk;
+							$temp[] = $graSemester->ma_hk;
 							$data[] = $temp;
 							$temp = []; // phải đưa mảng tạm về rỗng, để tránh việc mảng đã có dữ liệu, dẫn đến bị trùng dữ liệu
 						}
 						
-						//$temp[] = $stud->mssv;
-						//$data[] = $temp;
+						
 					}
 					
 					
@@ -210,12 +276,13 @@ class OudeController extends Controller
 		else if (!$successAddToStudent && !$successAddToStudentRecord && !$successAddToSemesterStudent) // nếu tất cà không thêm được vào database do trùng dữ liệu thì 
 																										//chỉ trả về những dòng không thêm được , giữ lại các dòng đã có mà bị trùng
 			return $data[0]; // nếu thêm không thành công, sẽ trả về hàng thêm không thành công
-		else if (!$successAddToStudent && !$successAddToStudentRecord && $successAddToSemesterStudent)
+		else if (!$successAddToStudent && !$successAddToStudentRecord && $successAddToSemesterStudent) // trong trường hợp 1 sinh viên nằm trong nhiều đợt xét tốt nghiệp , thì chỉ thêm vào bảng sinh viên học kì
 			return true;
 		else // nếu 1 trong các bảng không được thêm thành công, thì sẽ trả về số thứ tự của dòng không thêm được, đồng thời xóa dữ liệu ở các bảng khác mà dòng đó không gặp lỗi
 			$studentDelete = Student::findOne($data[3]); // xóa sinh viên có mã số sinh viên đã được thêm vào bảng sinh viên, nhưng không thêm thành công ở 2 bảng hồ sơ sinh viên và sinh viên học kì
 			$studentDelete->delete();
 			return $data[0]; // nếu thêm không thành công, sẽ trả về hàng thêm không thành công
-		
+			
+		// chưa tính đến trường hợp 1 sinh viên có trong nhiều đợt xét tốt nghiệp , nếu xét các điều kiện ở trên thì sẽ không thêm được vào bảng sinhvien_hocki
 	}
 }

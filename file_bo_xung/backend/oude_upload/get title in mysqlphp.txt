@@ -1,0 +1,3 @@
+https://stackoverflow.com/questions/1853094/how-to-get-the-columns-names-along-with-resultset-in-php-mysql
+
+php get column names from sql results
