@@ -81,19 +81,19 @@ $editStudent = new EditStudent();
 	
 
 	<!-- thêm dialog sửa thông tin sinh viên -->
-	<div id="dialogEdit">
+	<div id="dialogEdit" style='display:none;'>
 		<?php $form = ActiveForm::begin([
 			'id' => 'formEdit',
 		]) ?>
 			<fieldset>
 				<label for="mssv">Mã số sinh viên</label>
-				<?= $form->field($editStudent, 'mssv')->textInput(['class' => 'form-control', 'id' => 'mssv-edit', 'name' => 'mssv'])->label(false); ?>
+				<?= $form->field($editStudent, 'mssv')->textInput(['class' => 'form-control', 'id' => 'mssv-edit', 'name' => 'mssv', 'readOnly' => true])->label(false); ?>
 				<label for="ho">Họ</label>
-				<?= $form->field($editStudent, 'ho')->textInput(['class' => 'form-control', 'id' => 'ho', 'name' => 'ho'])->label(false); ?>
+				<?= $form->field($editStudent, 'ho')->textInput(['class' => 'form-control', 'id' => 'ho', 'name' => 'ho', 'maxLength' => '50'])->label(false); ?>
 				<label for="ten">Tên</label>
-				<?= $form->field($editStudent, 'ten')->textInput(['class' => 'form-control', 'id' => 'ten', 'name' => 'ten'])->label(false); ?>
+				<?= $form->field($editStudent, 'ten')->textInput(['class' => 'form-control', 'id' => 'ten', 'name' => 'ten', 'maxLength' => '50'])->label(false); ?>
 				<label for="ngaySinh">Ngày sinh</label>
-				<?= $form->field($editStudent, 'ngay_sinh')->textInput(['class' => 'form-control', 'id' => 'ngaySinh', 'name' => 'ngaySinh'])->label(false); ?>
+				<?= $form->field($editStudent, 'ngay_sinh')->textInput(['class' => 'form-control', 'id' => 'datepicker', 'name' => 'ngaySinh'])->label(false); ?>
 				<label for="gioiTinh">giới tính</label>
 				<?= $form->field($editStudent, 'gioi_tinh')->dropdownList(['1' => 'Nam', '2' => 'Nữ'], ['name' => 'gioiTinh', 'id' => 'gioiTinh'])->label(false); ?>
 				<label for="danToc">Dân tộc</label>
@@ -109,9 +109,9 @@ $editStudent = new EditStudent();
 				<label for="htdt">Hình thức đào tạo</label>
 				<?= $form->field($editStudent, 'ma_htdt')->dropdownList($allTrainingForm,  ['name' => 'htdt', 'id' => 'htdt'])->label(false); ?>
 				<label for="diem">Điểm</label>
-				<?= $form->field($editStudent, 'diem')->textInput(['class' => 'form-control', 'id' => 'diem', 'name' => 'diem'])->label(false); ?>
+				<?= $form->field($editStudent, 'diem')->textInput(['class' => 'form-control', 'id' => 'diem', 'name' => 'diem', 'maxLength' => '5'])->label(false); ?>
 				<label for="xepLoai">Xếp loại</label>
-				<?= $form->field($editStudent, 'xep_loai')->textInput(['class' => 'form-control', 'id' => 'xepLoai', 'name' => 'xepLoai'])->label(false); ?>
+				<?= $form->field($editStudent, 'xep_loai')->textInput(['class' => 'form-control', 'id' => 'xepLoai', 'name' => 'xepLoai', 'maxLength' => '20'])->label(false); ?>
 				<label for="dktn">Điều kiện tốt nghiệp</label>
 				<?= $form->field($editStudent, 'dk_tn')->dropdownList(['ddk' => 'Đủ điều kiện', 'cddk' => 'Chưa đủ điều kiện'], ['id' => 'dktn', 'name' => 'dktn'])->label(false); ?>
 				<label for="giayKs">Giấy khai sinh</label>

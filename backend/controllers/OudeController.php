@@ -10,6 +10,7 @@ use yii\web\UploadedFile;
 
 use backend\models\UploadForm;
 
+use backend\models\EditStudent;
 use backend\models\StudentStatus;
 use backend\models\Student;
 use backend\models\Result;
@@ -114,6 +115,61 @@ class OudeController extends Controller
 		}
 	}
 	
+	public function actionGetDataToEdit()
+	{
+		if(\Yii::$app->request->isAjax)
+		{
+			
+			\Yii::$app->response->format = Response::FORMAT_JSON;
+			$data = \Yii::$app->request->post('data');
+			
+			$student = Student::findOne($data[0]);
+			$studentRecord = StudentRecord::findOne($data[0]);
+			$semesterStudent = StudentSemester::find($data[0])
+								->where([
+									'tb_sv_hk.mssv' => $data[0],
+									'tb_sv_hk.ma_hk' => $data[19]
+								])
+								->limit(1)
+								->one(); // trả về đúng 1 sinh viên theo kết quả tìm kiếm
+			
+			$editStudent = new EditStudent();
+			
+			$editStudent->scenario = EditStudent::SCENARIO_EDIT;
+			
+			$editStudent->ho = HtmlPurifier::process($data[1]);
+			
+			$editStudent->ten = HtmlPurifier::process($data[2]);
+			
+			$editStudent->diem = HtmlPurifier::process($data[11]);
+			
+			$editStudent->xep_loai = HtmlPurifier::process($data[12]);
+			
+			$editStudent->bang_cap = HtmlPurifier::process($data[15]);
+			
+			if ($editStudent->validate())
+			{
+				$data[1] = $editStudent->ho;
+				
+				$data[2] = $editStudent->ten;
+				
+				$data[11] = $editStudent->diem;
+				
+				$data[12] = $editStudent->xep_loai;
+				
+				$data[15] = $editStudent->bang_cap;
+				
+				$successEditStudent = Graduation::editStudent($student, $data);
+				
+				$successEditStudentRecord = Graduation::editStudentRecord($studentRecord, $data);
+				
+				$successEditSemesterStudent = Graduation::editSemesterStudent($semesterStudent, $data);
+			}
+			
+			
+		}
+	}
+	
 	// new
 	public function actionCreate()
 	{
@@ -152,18 +208,25 @@ class OudeController extends Controller
 								->andFilterWhere(['or', ['like', 'CONCAT(tb_sinh_vien.ho, " ", tb_sinh_vien.ten)', $model->username], ['like', 'CONCAT(tb_sinh_vien.ho_kd, " ", tb_sinh_vien.ten_kd)' , $model->username]])
 								
 								->all();
-					/*
-					foreach($allStudentInSemester[0]->graduationSemesters as $item)
+					
+					foreach($allStudentInSemester as $item)
 					{
-							$temp = [];
-							
-							$temp[] = $item->chi_tiet_hk;
-							$temp[] = $item->ma_hk;
+						$temp = [];
+						
+						foreach($item->graduationSemesters as $studentPerSemester)
+						{
+							$temp[] = $item->mssv;
+							$temp[] = $item->ho;
+							$temp[] = $item->ten;
+							$temp[] = $studentPerSemester->chi_tiet_hk;
+							$temp[] = $studentPerSemester->ma_hk;
 							$data[] = $temp; 
+							$temp = []; // phải đưa mảng tạm về rỗng, để tránh việc mảng đã có dữ liệu, dẫn đến bị trùng dữ liệu
+						}
+						
 					}
-					*/
 					
-					
+					/*
 					foreach($allStudentInSemester as $stud)
 					{
 						$temp = []; // khởi tạo mảng 1 chiều, để lưu từng dòng dữ liệu, sau đó lưu tất cả các dòng vào mảng chung " data "
@@ -178,10 +241,8 @@ class OudeController extends Controller
 							$data[] = $temp;
 							$temp = []; // phải đưa mảng tạm về rỗng, để tránh việc mảng đã có dữ liệu, dẫn đến bị trùng dữ liệu
 						}
-						
-						
 					}
-					
+					*/
 					
 				}
 				else

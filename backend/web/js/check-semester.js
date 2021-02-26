@@ -1,4 +1,18 @@
 
+function editStudent(data) {
+	$.ajax({
+		method: "POST",
+		url: '/oude/get-data-to-edit',
+		dataType: "json", // dữ liệu nhận về dạng json
+		data: { // dữ liệu được gửi đến file xử lý
+			'data': data
+		},
+		success: function (result){
+			alert('thông tin sinh viên đã được chỉnh sửa');
+		}
+	});
+}
+
 function showStudentToEdit(mssv, hk) {
 	$.ajax({
 		url: '/oude/show-detail-to-edit',
@@ -11,8 +25,8 @@ function showStudentToEdit(mssv, hk) {
 			$('#mssv-edit').val(result[14]);
 			$('#ho').val(result[15]);
 			$('#ten').val(result[16]);
-			$('#ngaySinh').val(result[17]);
-			$('#gioiTinh').val(result[18]);
+			$('#datepicker').val(result[17]);
+			$('#gioiTinh option').val(result[18]);
 			$('#danToc option').val(result[2]);
 			$('#noiSinh option').val(result[19]);
 			$('#quocTich option').val(result[3]);
@@ -28,7 +42,52 @@ function showStudentToEdit(mssv, hk) {
 			$('#phieuDkxcb option').val(result[8]);
 			$('#ctdt option').val(result[9]);
 			
-			//alert(result[14]);
+			$("#dialogEdit").dialog({ // tạo dialog
+					width: 'auto',
+					height: 700,
+					maxWidth: 1000,
+					fluid: true,
+					my: "center",
+					at: "center",
+					of: window,
+					modal: true, // không cho phép thao tác các vị trí khác khi dialog xuất hiện
+					buttons: {
+						"Sửa": function() { // khi nhấn vào button sửa, sẽ gom dữ liệu gửi sang oudeController để tiến hành edit
+							//alert('abc');
+							var data = [];
+							data.push($('#mssv-edit').val());
+							data.push($('#ho').val());
+							data.push($('#ten').val());
+							data.push($('#datepicker').val());
+							data.push($('#gioiTinh').val());
+							data.push($('#danToc').val());
+							data.push($('#noiSinh').val());
+							data.push($('#quocTich').val());
+							data.push($('#dvlk').val());
+							data.push($('#nganh').val());
+							data.push($('#htdt').val());
+							data.push($('#diem').val());
+							data.push($('#xepLoai').val());
+							data.push($('#dktn').val());
+							data.push($('#giayKs').val());
+							data.push($('#bangCap').val());
+							data.push($('#hinh').val());
+							data.push($('#phieuDkxcb').val());
+							data.push($('#ctdt').val());
+							data.push(hk);
+							
+							editStudent(data);
+							
+							$( this ).dialog( "destroy" );
+						},
+						"Hủy": function() {
+							$( this ).dialog( "destroy" );
+						}
+					},
+					close: function() { // hủy thông tin hiển thị của sinh viên cũ
+						$( this ).dialog( "destroy" );
+					}
+				});
 		}
 	});
 }
@@ -129,6 +188,17 @@ $(document).ready(function() {
 		$('#imgHome').css('display','none');
 	});
 	*/
+	
+	$("#datepicker").datepicker({
+		 monthNamesShort: [ "01", "02", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12" ],
+		dateFormat: 'dd/mm/yy',
+		changeMonth: true,
+		
+		changeYear: true,
+		yearRange: "1950:2000"
+	});
+	
+	
 	
 	$('#result1').DataTable({
 		language: {
