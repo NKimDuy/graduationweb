@@ -1,5 +1,5 @@
 
-function editStudent(data) {
+function editStudent(data) { // gửi những dữ liệu mới để cập nhật
 	$.ajax({
 		method: "POST",
 		url: '/oude/get-data-to-edit',
@@ -13,7 +13,7 @@ function editStudent(data) {
 	});
 }
 
-function showStudentToEdit(mssv, hk) {
+function showStudentToEdit(mssv, hk) { // hiên thị dialog thông tin của 1 sinh viên
 	$.ajax({
 		url: '/oude/show-detail-to-edit',
 		dataType: "json", // dữ liệu nhận về dạng json

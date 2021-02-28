@@ -36,7 +36,7 @@ use backend\utilities\Graduation;
  */
 class OudeController extends Controller
 {
-	public $layout = 'demo1';
+	public $layout = 'demo1'; // áp dụng layout demo1 cho view
 	
 	public function actionIndex()
 	{
@@ -46,19 +46,19 @@ class OudeController extends Controller
 	}
 	
 	// new 
-	public function actionEdit()
+	public function actionEdit() // render view edit và gửi kèm những dữ liệu để hiện các dropdownlist
 	{
 		$allGraduationSemester = GraduationSemester::find()->select(['chi_tiet_hk'])->indexBy('ma_hk')->column(); // lấy tất cả học kì hiện có trong database để thêm vào dropdownlist
 		
-		$allNation = Nation::find()->select(['ten_dan_toc'])->indexBy('ma_dt')->column();
+		$allNation = Nation::find()->select(['ten_dan_toc'])->indexBy('ma_dt')->column(); // lấy tất cả dân tộc
 		
-		$allProvince = Province::find()->select(['ten_tinh_thanh_at'])->indexBy('ma_tinh_thanh')->column();
+		$allProvince = Province::find()->select(['ten_tinh_thanh_at'])->indexBy('ma_tinh_thanh')->column(); // lấy tất cả tên tỉnh thành
 		
-		$allCountry = Country::find()->select(['ten_quoc_tich'])->indexBy('ma_qt')->column();
+		$allCountry = Country::find()->select(['ten_quoc_tich'])->indexBy('ma_qt')->column(); // lấy tất cả tên quốc tịch
 		
-		$allLinkedUnit = LinkedUnit::find()->select(['ten_dvlk'])->indexBy('ma_dvlk')->column();
+		$allLinkedUnit = LinkedUnit::find()->select(['ten_dvlk'])->indexBy('ma_dvlk')->column(); // lấy tất cả tên đơn vị liên kết
 		
-		$allMajor = Major::find()->select(['ten_nganh'])->indexBy('ma_nganh')->column();
+		$allMajor = Major::find()->select(['ten_nganh'])->indexBy('ma_nganh')->column(); // lấy tất cả tên ngành
 		
 		$allTrainingForm = TrainingForm::find()->select(['ten_hinh_thuc_at'])->indexBy('ma_hinh_thuc')->column();
 		
@@ -73,7 +73,7 @@ class OudeController extends Controller
 		]);
 	}
 	
-	public function actionShowDetailToEdit($mssv, $hk)
+	public function actionShowDetailToEdit($mssv, $hk) // khi có kết quả tìm kiếm , khi nhấn vào 1 sinh viên sẽ hiện dialog chứa thông tin của sinh viên đó để cập nhập
 	{
 		if(\Yii::$app->request->isAjax)
 		{
@@ -115,20 +115,23 @@ class OudeController extends Controller
 		}
 	}
 	
-	public function actionGetDataToEdit()
+	public function actionGetDataToEdit() // lấy những trường dữ liệu tương ứng để gửi sang Graduation để cập nhật
 	{
 		if(\Yii::$app->request->isAjax)
 		{
 			
 			\Yii::$app->response->format = Response::FORMAT_JSON;
+			
 			$data = \Yii::$app->request->post('data');
 			
 			$student = Student::findOne($data[0]);
-			$studentRecord = StudentRecord::findOne($data[0]);
+			
+			$studentRecord = StudentRecord::findOne($data[0]); // $data[0] là mssv
+			
 			$semesterStudent = StudentSemester::find($data[0])
 								->where([
 									'tb_sv_hk.mssv' => $data[0],
-									'tb_sv_hk.ma_hk' => $data[19]
+									'tb_sv_hk.ma_hk' => $data[19] // $data[19] là học kì
 								])
 								->limit(1)
 								->one(); // trả về đúng 1 sinh viên theo kết quả tìm kiếm
@@ -171,7 +174,7 @@ class OudeController extends Controller
 	}
 	
 	// new
-	public function actionCreate()
+	public function actionCreate() // trả về kết quả tim kiếm
 	{
 		$allStudentInSemester = [];
 		
