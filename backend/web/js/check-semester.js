@@ -1,5 +1,5 @@
 
-function editStudent(data) { // gửi những dữ liệu mới để cập nhật
+function editStudent(data) { // gửi những dữ liệu mới để cập nhật  // chưa xử lý được kiểm tra ngoại lệ cho trường họ và tên
 	$.ajax({
 		method: "POST",
 		url: '/oude/get-data-to-edit',
@@ -8,9 +8,66 @@ function editStudent(data) { // gửi những dữ liệu mới để cập nh�
 			'data': data
 		},
 		success: function (result){
-			alert('thông tin sinh viên đã được chỉnh sửa');
+				
+			//alert('thông tin sinh viên đã được chỉnh sửa');
+			//alert(result.errors);
+			/*
+			var temp = result.errors;
+			temp.forEach((item) => {
+				alert(item);
+			});
+			*/
 		}
 	});
+}
+
+
+function deleteStudent(mssv, hk) { // hàm xóa sinh viên
+	$("#dialogToDelete").dialog({ // tạo dialog
+				width: 'auto',
+				height: 'auto',
+				maxWidth: 1000,
+				fluid: true,
+				my: "center",
+				at: "center",
+				of: window,
+				modal: true, // không cho phép thao tác các vị trí khác khi dialog xuất hiện
+				buttons: {
+					"Xóa": function() { // khi nhấn vào button sửa, sẽ gom dữ liệu gửi sang oudeController để tiến hành edit
+						
+						$.ajax({
+							method: "POST",
+							url: '/oude/get-data-to-delete',
+							dataType: "json", // dữ liệu nhận về dạng json
+							data: { // dữ liệu được gửi đến file xử lý
+								'mssv': mssv,
+								'hk': hk
+							},
+							success: function (result){
+								if (result.checkIfDeleteSuccess) {
+									
+									$('tr[id=' + mssv + '-' + hk + ']').remove();
+									alert('Đã xóa thành công ');
+								}
+								else
+									alert('Xóa thất bại');
+								
+							}
+						});
+						
+						$( this ).dialog( "destroy" );
+					},
+					"Hủy": function() {
+						$( this ).dialog( "destroy" );
+					}
+				},
+				close: function() { // hủy thông tin hiển thị của sinh viên cũ
+					$( this ).dialog( "destroy" );
+				}
+			});
+	
+	
+	
 }
 
 function showStudentToEdit(mssv, hk) { // hiên thị dialog thông tin của 1 sinh viên
@@ -43,59 +100,54 @@ function showStudentToEdit(mssv, hk) { // hiên thị dialog thông tin của 1 
 			$('#ctdt option').val(result[9]);
 			
 			$("#dialogEdit").dialog({ // tạo dialog
-					width: 'auto',
-					height: 700,
-					maxWidth: 1000,
-					fluid: true,
-					my: "center",
-					at: "center",
-					of: window,
-					modal: true, // không cho phép thao tác các vị trí khác khi dialog xuất hiện
-					buttons: {
-						"Sửa": function() { // khi nhấn vào button sửa, sẽ gom dữ liệu gửi sang oudeController để tiến hành edit
-							//alert('abc');
-							var data = [];
-							data.push($('#mssv-edit').val());
-							data.push($('#ho').val());
-							data.push($('#ten').val());
-							data.push($('#datepicker').val());
-							data.push($('#gioiTinh').val());
-							data.push($('#danToc').val());
-							data.push($('#noiSinh').val());
-							data.push($('#quocTich').val());
-							data.push($('#dvlk').val());
-							data.push($('#nganh').val());
-							data.push($('#htdt').val());
-							data.push($('#diem').val());
-							data.push($('#xepLoai').val());
-							data.push($('#dktn').val());
-							data.push($('#giayKs').val());
-							data.push($('#bangCap').val());
-							data.push($('#hinh').val());
-							data.push($('#phieuDkxcb').val());
-							data.push($('#ctdt').val());
-							data.push(hk);
-							
-							editStudent(data);
-							
-							$( this ).dialog( "destroy" );
-						},
-						"Hủy": function() {
-							$( this ).dialog( "destroy" );
-						}
+				width: 'auto',
+				height: 700,
+				maxWidth: 1000,
+				fluid: true,
+				my: "center",
+				at: "center",
+				of: window,
+				modal: true, // không cho phép thao tác các vị trí khác khi dialog xuất hiện
+				buttons: {
+					"Sửa": function() { // khi nhấn vào button sửa, sẽ gom dữ liệu gửi sang oudeController để tiến hành edit
+						//alert('abc');
+						var data = [];
+						data.push($('#mssv-edit').val());
+						data.push($('#ho').val());
+						data.push($('#ten').val());
+						data.push($('#datepicker').val());
+						data.push($('#gioiTinh').val());
+						data.push($('#danToc').val());
+						data.push($('#noiSinh').val());
+						data.push($('#quocTich').val());
+						data.push($('#dvlk').val());
+						data.push($('#nganh').val());
+						data.push($('#htdt').val());
+						data.push($('#diem').val());
+						data.push($('#xepLoai').val());
+						data.push($('#dktn').val());
+						data.push($('#giayKs').val());
+						data.push($('#bangCap').val());
+						data.push($('#hinh').val());
+						data.push($('#phieuDkxcb').val());
+						data.push($('#ctdt').val());
+						data.push(hk);
+						
+						editStudent(data);
+						
+						$( this ).dialog( "destroy" );
 					},
-					close: function() { // hủy thông tin hiển thị của sinh viên cũ
+					"Hủy": function() {
 						$( this ).dialog( "destroy" );
 					}
-				});
+				},
+				close: function() { // hủy thông tin hiển thị của sinh viên cũ
+					$( this ).dialog( "destroy" );
+				}
+			});
 		}
 	});
 }
-
-function deleteOneRow(mssv, hk) {
-	
-}
-
 
 
 function createTableDetailStudent(mssv, username, semester) { // khi sinh viên tiến hành tìm kiếm thông tin, nếu submit thành công thì sẽ hiển thị các thông tin tương ứng
@@ -136,14 +188,18 @@ function createTableDetailStudent(mssv, username, semester) { // khi sinh viên 
 				
 				table += '<tbody>';
 				$.each(result.allStudentInSemester, function(index, item) {
-					table += '<tr>';
+					table += '<tr id= ' + item[0] + '-' + item[4] + '>';
 					table += '<td class="align-middle">' + item[0] + '</td>';
 					table += '<td class="align-middle">' + item[1] + '</td>';
 					table += '<td class="align-middle">' + item[2] + '</td>';
 					table += '<td class="align-middle">' + item[3] + '</td>';
 					//table += '<td class="align-middle">' + item[5] + '</td>';
 					
-					table += '<td class="align-middle">' + '<i onclick="showStudentToEdit(' + "'" + item[0] + "', '" + item[4] + "'" + ')" class="fas fa-edit" style="font-size: re;"></i>' + ' | ' + '<i class="fas fa-trash-alt" style="font-size: re;"></i>' + '</td>';
+					table += '<td class="align-middle">' + 
+					'<i onclick="showStudentToEdit(' + "'" + item[0] + "', '" + item[4] + "'" + ')" class="fas fa-edit" style="font-size: re;"></i>' + ' | ' + 
+					'<i onclick="deleteStudent(' + "'" + item[0] + "', '" + item[4] + "'" + ')" class="fas fa-trash-alt" style="font-size: re;"></i>' + ' | ' + 
+					//'<i class="fas fa-trash-alt" style="font-size: re;"></i>' + 
+					'</td>';
 					//table += '<td class="align-middle">' + '<i onclick="test()" class="fas fa-edit" style="font-size: re;"></i>' + ' | ' + '<i class="fas fa-trash-alt" style="font-size: re;"></i>' + '</td>';
 					//table += '<td class="align-middle">' + "<img src = '/images/edit.png' style='width:10%;' />" + "<img src = '/images/delete.png' style='width:10%;' />" + '</td>';
 					

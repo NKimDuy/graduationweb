@@ -30,12 +30,20 @@ class Student extends ActiveRecord
 	public function rules()
 	{
 		return [
-			[['semester'], 'required', 'on' => self::SCENARIO_FIND],
-			['captcha', 'captcha'],
+			
+			['captcha', 'captcha', 'captchaAction'=>'oude/captcha'],
 			//[['mssv', 'username'], 'string'],
 			[['mssv', 'username'], 'string', 'max' => 60],
 			[['mssv', 'username'], 'trim'],
 			[['mssv', 'username'], 'default'],
+			/*
+			['mssv', 'required', 'when' => function($model) {
+				return $model->username == '';
+			}],
+			['username', 'required', 'when' => function($model) {
+				return $model->mssv == '';
+			}],
+			*/
 			//['captcha', 'message' => 'captcha không hợp lệ'],
 		];
 	}

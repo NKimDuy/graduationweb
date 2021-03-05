@@ -115,6 +115,50 @@ class OudeController extends Controller
 		}
 	}
 	
+	public function actionGetDataToDelete() // nhận dữ liệu để xóa sinh viên
+	{
+		if(\Yii::$app->request->isAjax)
+		{
+			\Yii::$app->response->format = Response::FORMAT_JSON;
+			
+			$mssv = \Yii::$app->request->post('mssv');
+			
+			$hk = \Yii::$app->request->post('hk');
+			
+			//$findStudentToDelete = Student::findOne(mssv);
+			$findStudentToDelete = Student::find() 
+									->innerJoinWith('graduationSemesters')
+									->where(['tb_sinh_vien.mssv' => $mssv])
+									->one();
+			
+			$checkIfStudentHasManySemester = $findStudentToDelete->graduationSemesters; // kiểm tra xem 1 sinh viên có nhiều học kì hay không
+			$checkIfDeleteSuccess = true; // cờ để xác định xóa thành công
+			if (count($checkIfStudentHasManySemester) > 1)
+			{
+				$semesterStudent = StudentSemester::find($mssv)
+									->where([
+										'tb_sv_hk.mssv' => $mssv,
+										'tb_sv_hk.ma_hk' => $hk 
+									])
+									->limit(1)
+									->one(); // trả về đúng 1 sinh viên theo kết quả tìm kiếm
+				$sucessDelete = $semesterStudent->delete(); // xóa cụ thể 1 học kì của sinh viên, nhưng vẫn giữ được thông tin cơ bản của sinh viên
+				if($sucessDelete == false)
+					$checkIfDeleteSuccess = false;
+			}
+			else
+			{
+				$sucessDelete = $findStudentToDelete->delete(); // nếu sinh viên chỉ có 1 học kì duy nhất, thì khi xóa, sẽ xóa hoàn toàn sinh viên
+				if($sucessDelete == false)
+					$checkIfDeleteSuccess = false;
+			}
+			
+			return [
+				'checkIfDeleteSuccess' => $checkIfDeleteSuccess
+			];
+		}
+	}
+	
 	public function actionGetDataToEdit() // lấy những trường dữ liệu tương ứng để gửi sang Graduation để cập nhật
 	{
 		if(\Yii::$app->request->isAjax)
@@ -150,6 +194,8 @@ class OudeController extends Controller
 			
 			$editStudent->bang_cap = HtmlPurifier::process($data[15]);
 			
+			$errors = '';
+			
 			if ($editStudent->validate())
 			{
 				$data[1] = $editStudent->ho;
@@ -168,8 +214,13 @@ class OudeController extends Controller
 				
 				$successEditSemesterStudent = Graduation::editSemesterStudent($semesterStudent, $data);
 			}
+			else
+				$errors = $editStudent->errors;
 			
-			
+			return [
+				'errors' => $errors,
+				'type' => gettype($data[2])
+			];
 		}
 	}
 	

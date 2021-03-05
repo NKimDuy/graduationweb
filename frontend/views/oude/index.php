@@ -78,7 +78,7 @@ $student = new Student(); // tạo lớp lấy các trường tương ứng đ�
 						<label style="font-size:15px;" class="badge badge-info"> Mã xác nhận: </label>
 						
 						 <?= $form->field($student, 'captcha')
-							->widget(Captcha::className(), ['captchaAction' => ['/site/captcha'], 'options' => ['name' => 'cap', 'id' => 'cap']]) ?>
+							->widget(Captcha::className(), ['captchaAction' => ['oude/captcha'], 'options' => ['name' => 'cap', 'id' => 'cap']]) ?>
 						
 						
 						<?= Html::submitButton('Submit', ['class' => 'btn btn-primary btn-lg btn-block', 'id' => 'btnSubmit']) ?>

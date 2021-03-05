@@ -47,7 +47,7 @@ class CaptchaAction extends Action
      * @var int how many times should the same CAPTCHA be displayed. Defaults to 3.
      * A value less than or equal to 0 means the test is unlimited (available since version 1.1.2).
      */
-    public $testLimit = 3;
+    public $testLimit = 1;
     /**
      * @var int the width of the generated CAPTCHA image. Defaults to 120.
      */

@@ -9,6 +9,7 @@ use frontend\models\Student;
 use frontend\models\StudentSemester;
 use frontend\models\GraduationSemester;
 use yii\web\Response;
+use yii\captcha\CaptchaAction;
 use yii\db;
 use yii\helpers\HtmlPurifier;
 
@@ -50,6 +51,7 @@ class OudeController extends Controller
 		return [
 			'captcha' => [ // gắn captcha 
 				'class' => 'yii\captcha\CaptchaAction',
+				//'enableClientValidation' => false,
 			],
 		];
 	}
@@ -168,7 +170,7 @@ class OudeController extends Controller
 		{
 			\Yii::$app->response->format = Response::FORMAT_JSON;
 			
-			$checkAll = \Yii::$app->request->post('checkAll');
+			
 			$username = \Yii::$app->request->post('username');
 			$semester = \Yii::$app->request->post('semester');
 			$captcha = \Yii::$app->request->post('captcha');
@@ -190,7 +192,9 @@ class OudeController extends Controller
 			
 			$model->semester = HtmlPurifier::process($semester);
 			
-			if($model->validate()) 
+			$verifyCaptcha = new CaptchaAction();
+			
+			if($model->validate() and $model->captcha == $verifyCaptcha->getVerifyCode()) //////////////////////// !!!!! \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
 			{
 				
 				if ($model->semester == 'all')
@@ -253,32 +257,14 @@ class OudeController extends Controller
 			{
 				$errors = $model->errors;
 			}
-			/*
-			$allStudentInSemester = Student::find()
-								->innerJoinWith('graduationSemesters')
-								->innerJoinWith('province')
-								->where(['tb_hk_tot_nghiep.ma_hk' => $selectedSemester])
-								->andWhere(['like', 'tb_sinh_vien.mssv', $mssv])
-								->andFilterWhere(['or', ['like', 'CONCAT(tb_sinh_vien.ho, " ", tb_sinh_vien.ten)', $username], ['like', 'CONCAT(tb_sinh_vien.ho_kd, " ", tb_sinh_vien.ten_kd)' , $username]])
-								->all();
-		
-			$detailSemester = GraduationSemester::find()
-							->where(['tb_hk_tot_nghiep.ma_hk' => $selectedSemester])
-							->one();
-				
-			*/
 			
-			/*
-			return [
-				'allStudentInSemester' => $allStudentInSemester,
-				'detailSemester' => $detailSemester,
-				'errors' => $errors
-			];
-			*/
+			
 		}
 		return [
 			'allStudentInSemester' => $data,
-			'errors' => $errors
+			'errors' => $errors,
+			'test' => $verifyCaptcha->getVerifyCode()
+			
 		];
 	}
 	

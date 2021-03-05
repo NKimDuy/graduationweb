@@ -46,21 +46,22 @@ class EditStudent extends Model
 			[['ho', 'ten', 'diem', 'xep_loai', 'bang_cap'], 'required'],
 			[['ho', 'ten', 'diem', 'xep_loai', 'bang_cap'], 'trim'],
 			[['ho', 'ten', 'diem', 'xep_loai', 'bang_cap'], 'default'],
-			[['ho', 'ten'], 'validateAtributeIsString'],
-			['diem', 'validateAtributeIsFloat'],
+			[['ho', 'ten'], 'string'],
+			//[['diem'], 'double'],
 			
 		];
 	}
 	
 	public function validateAtributeIsString($attribute, $params, $validator)
 	{
-		if (!is_string($attribute))
+		if (!is_string($this->$attribute))
 			 $this->addError($attribute, 'họ và tên phải là chuỗi');
 	}
-	
+	/*
 	public function validateAtributeIsFloat($attribute, $params, $validator)
 	{
-		if (!is_float($attribute))
+		if (!is_float($this->$attribute))
 			 $this->addError($attribute, 'điểm phải là số thực');
 	}
+	*/
 }

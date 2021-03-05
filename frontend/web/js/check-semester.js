@@ -299,7 +299,7 @@ function studentAllSemester(mssv) { // khi sinh viên không chọn cụ thể �
 	});
 }
 
-function createTableDetailStudent(mssv, username, semester, captcha, checkAll) { // khi sinh viên tiến hành tìm kiếm thông tin, nếu submit thành công thì sẽ hiển thị các thông tin tương ứng
+function createTableDetailStudent(mssv, username, semester, captcha) { // khi sinh viên tiến hành tìm kiếm thông tin, nếu submit thành công thì sẽ hiển thị các thông tin tương ứng
 	
 	$.ajax({
 		method: "POST",
@@ -309,20 +309,23 @@ function createTableDetailStudent(mssv, username, semester, captcha, checkAll) {
 			'mssv': mssv,
 			'username': username,
 			'semester': semester,
-			'captcha': captcha,
-			'checkAll': checkAll
+			'captcha': captcha
 		},
 		success: function(result){
-			//alert(JSON.stringify(result.errors));
-			//
+			//alert(result.test);
+			alert('abc');
+			/*
 			//alert($('.help-block').text());
 			if ($('#mssv').val() == "" && $('#username').val() == "") { // nếu không nhập mssv hoặc họ tên
 				alert('Mã số sinh viên hoặc họ tên không được trống');
 				//$('.help-block').text($('.help-block').text() + ', ' + 'Mã số sinh viên hoặc họ tên không được trống');
 			}
-			else if($('.help-block').text() == "") { // nếu người dùng nhập đúng captcha , thì div báo lỗi sẽ trống
+			//else if (captcha != result.verifyCaptcha)
+			//	aler('captcha không hợp lệ');
+			else {
+			//else if($('.help-block').text() == "") { // nếu người dùng nhập đúng captcha , thì div báo lỗi sẽ trống
 			
-				//alert("every thing success");
+				
 				
 				$('.progress').css('display', 'grid'); // khi submit thành công sẽ hiện thanh quá trình
 				
@@ -377,7 +380,7 @@ function createTableDetailStudent(mssv, username, semester, captcha, checkAll) {
 				$('#imgHome').css('display','block'); // hiện image home để quay lại giao diện tìm kiếm 
 				
 			}
-			
+			*/
 		}
 	});
 }
@@ -430,11 +433,11 @@ $(document).ready(function() {
 	
 	$("#login-form").submit((e) => {	
 		//$('#login-form').submit();
-		e.preventDefault();
-		createTableDetailStudent($('#mssv').val(), $('#username').val(), $('#semesterlist').val(), $('#cap').val(), $('#checkAll').prop('checked'));
-		
-		
 		//e.preventDefault();
+		createTableDetailStudent($('#mssv').val(), $('#username').val(), $('#semesterlist').val(), $('#cap').val());
+		
+		
+		e.preventDefault();
 	
 	});
 });

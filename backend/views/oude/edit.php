@@ -23,7 +23,11 @@ $editStudent = new EditStudent();
 		<div class="progress-bar progress-bar-striped bg-warning progress-bar-animated" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%"></div>
 	</div>
 	<div id="dialog" style = "display:none;"></div>
-	<!--display:none;-->
+	
+	
+	<div id="dialogToDelete" style = "display:none;">
+		<div>Bạn có chắc chắn muốn xóa?</div>
+	</div>
 	
 	<div class="container-fluid">
 		<div>
@@ -109,7 +113,7 @@ $editStudent = new EditStudent();
 				<label for="htdt">Hình thức đào tạo</label>
 				<?= $form->field($editStudent, 'ma_htdt')->dropdownList($allTrainingForm,  ['name' => 'htdt', 'id' => 'htdt'])->label(false); ?>
 				<label for="diem">Điểm</label>
-				<?= $form->field($editStudent, 'diem')->textInput(['class' => 'form-control', 'id' => 'diem', 'name' => 'diem', 'maxLength' => '5'])->label(false); ?>
+				<?= $form->field($editStudent, 'diem')->textInput(['type' => 'number', 'class' => 'form-control', 'id' => 'diem', 'name' => 'diem', 'min' => '0', 'max' => '10', 'step' => '0.01',])->label(false); ?>
 				<label for="xepLoai">Xếp loại</label>
 				<?= $form->field($editStudent, 'xep_loai')->textInput(['class' => 'form-control', 'id' => 'xepLoai', 'name' => 'xepLoai', 'maxLength' => '20'])->label(false); ?>
 				<label for="dktn">Điều kiện tốt nghiệp</label>
